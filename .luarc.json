@@ -1,0 +1,8 @@
+{
+    "diagnostics.globals": [
+        "include"
+    ],
+    "diagnostics.disable": [
+        "undefined-global"
+    ]
+}
