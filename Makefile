@@ -117,19 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named GLFW
-
-# Build rule for target.
-GLFW: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GLFW
-.PHONY : GLFW
-
-# fast build rule for target.
-GLFW/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/build
-.PHONY : GLFW/fast
-
-#=============================================================================
 # Target rules for targets named ImGui
 
 # Build rule for target.
@@ -218,54 +205,6 @@ App/src/App.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/App.cpp.s
 .PHONY : App/src/App.cpp.s
 
-App/src/Main.o: App/src/Main.cpp.o
-.PHONY : App/src/Main.o
-
-# target to build an object file
-App/src/Main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/Main.cpp.o
-.PHONY : App/src/Main.cpp.o
-
-App/src/Main.i: App/src/Main.cpp.i
-.PHONY : App/src/Main.i
-
-# target to preprocess a source file
-App/src/Main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/Main.cpp.i
-.PHONY : App/src/Main.cpp.i
-
-App/src/Main.s: App/src/Main.cpp.s
-.PHONY : App/src/Main.s
-
-# target to generate assembly for a file
-App/src/Main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/Main.cpp.s
-.PHONY : App/src/Main.cpp.s
-
-App/src/imgui.o: App/src/imgui.cpp.o
-.PHONY : App/src/imgui.o
-
-# target to build an object file
-App/src/imgui.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/imgui.cpp.o
-.PHONY : App/src/imgui.cpp.o
-
-App/src/imgui.i: App/src/imgui.cpp.i
-.PHONY : App/src/imgui.i
-
-# target to preprocess a source file
-App/src/imgui.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/imgui.cpp.i
-.PHONY : App/src/imgui.cpp.i
-
-App/src/imgui.s: App/src/imgui.cpp.s
-.PHONY : App/src/imgui.s
-
-# target to generate assembly for a file
-App/src/imgui.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/imgui.cpp.s
-.PHONY : App/src/imgui.cpp.s
-
 Walnut/src/Application.o: Walnut/src/Application.cpp.o
 .PHONY : Walnut/src/Application.o
 
@@ -289,6 +228,54 @@ Walnut/src/Application.s: Walnut/src/Application.cpp.s
 Walnut/src/Application.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/Application.cpp.s
 .PHONY : Walnut/src/Application.cpp.s
+
+Walnut/src/ImGui/imgui_impl_glfw.o: Walnut/src/ImGui/imgui_impl_glfw.cpp.o
+.PHONY : Walnut/src/ImGui/imgui_impl_glfw.o
+
+# target to build an object file
+Walnut/src/ImGui/imgui_impl_glfw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/ImGui/imgui_impl_glfw.cpp.o
+.PHONY : Walnut/src/ImGui/imgui_impl_glfw.cpp.o
+
+Walnut/src/ImGui/imgui_impl_glfw.i: Walnut/src/ImGui/imgui_impl_glfw.cpp.i
+.PHONY : Walnut/src/ImGui/imgui_impl_glfw.i
+
+# target to preprocess a source file
+Walnut/src/ImGui/imgui_impl_glfw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/ImGui/imgui_impl_glfw.cpp.i
+.PHONY : Walnut/src/ImGui/imgui_impl_glfw.cpp.i
+
+Walnut/src/ImGui/imgui_impl_glfw.s: Walnut/src/ImGui/imgui_impl_glfw.cpp.s
+.PHONY : Walnut/src/ImGui/imgui_impl_glfw.s
+
+# target to generate assembly for a file
+Walnut/src/ImGui/imgui_impl_glfw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/ImGui/imgui_impl_glfw.cpp.s
+.PHONY : Walnut/src/ImGui/imgui_impl_glfw.cpp.s
+
+Walnut/src/ImGui/imgui_impl_opengl3.o: Walnut/src/ImGui/imgui_impl_opengl3.cpp.o
+.PHONY : Walnut/src/ImGui/imgui_impl_opengl3.o
+
+# target to build an object file
+Walnut/src/ImGui/imgui_impl_opengl3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/ImGui/imgui_impl_opengl3.cpp.o
+.PHONY : Walnut/src/ImGui/imgui_impl_opengl3.cpp.o
+
+Walnut/src/ImGui/imgui_impl_opengl3.i: Walnut/src/ImGui/imgui_impl_opengl3.cpp.i
+.PHONY : Walnut/src/ImGui/imgui_impl_opengl3.i
+
+# target to preprocess a source file
+Walnut/src/ImGui/imgui_impl_opengl3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/ImGui/imgui_impl_opengl3.cpp.i
+.PHONY : Walnut/src/ImGui/imgui_impl_opengl3.cpp.i
+
+Walnut/src/ImGui/imgui_impl_opengl3.s: Walnut/src/ImGui/imgui_impl_opengl3.cpp.s
+.PHONY : Walnut/src/ImGui/imgui_impl_opengl3.s
+
+# target to generate assembly for a file
+Walnut/src/ImGui/imgui_impl_opengl3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/ImGui/imgui_impl_opengl3.cpp.s
+.PHONY : Walnut/src/ImGui/imgui_impl_opengl3.cpp.s
 
 Walnut/src/Image.o: Walnut/src/Image.cpp.o
 .PHONY : Walnut/src/Image.o
@@ -386,54 +373,6 @@ Walnut/src/Shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/Shader.cpp.s
 .PHONY : Walnut/src/Shader.cpp.s
 
-Walnut/src/imgui_impl_glfw.o: Walnut/src/imgui_impl_glfw.cpp.o
-.PHONY : Walnut/src/imgui_impl_glfw.o
-
-# target to build an object file
-Walnut/src/imgui_impl_glfw.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/imgui_impl_glfw.cpp.o
-.PHONY : Walnut/src/imgui_impl_glfw.cpp.o
-
-Walnut/src/imgui_impl_glfw.i: Walnut/src/imgui_impl_glfw.cpp.i
-.PHONY : Walnut/src/imgui_impl_glfw.i
-
-# target to preprocess a source file
-Walnut/src/imgui_impl_glfw.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/imgui_impl_glfw.cpp.i
-.PHONY : Walnut/src/imgui_impl_glfw.cpp.i
-
-Walnut/src/imgui_impl_glfw.s: Walnut/src/imgui_impl_glfw.cpp.s
-.PHONY : Walnut/src/imgui_impl_glfw.s
-
-# target to generate assembly for a file
-Walnut/src/imgui_impl_glfw.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/imgui_impl_glfw.cpp.s
-.PHONY : Walnut/src/imgui_impl_glfw.cpp.s
-
-Walnut/src/imgui_impl_opengl3.o: Walnut/src/imgui_impl_opengl3.cpp.o
-.PHONY : Walnut/src/imgui_impl_opengl3.o
-
-# target to build an object file
-Walnut/src/imgui_impl_opengl3.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/imgui_impl_opengl3.cpp.o
-.PHONY : Walnut/src/imgui_impl_opengl3.cpp.o
-
-Walnut/src/imgui_impl_opengl3.i: Walnut/src/imgui_impl_opengl3.cpp.i
-.PHONY : Walnut/src/imgui_impl_opengl3.i
-
-# target to preprocess a source file
-Walnut/src/imgui_impl_opengl3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/imgui_impl_opengl3.cpp.i
-.PHONY : Walnut/src/imgui_impl_opengl3.cpp.i
-
-Walnut/src/imgui_impl_opengl3.s: Walnut/src/imgui_impl_opengl3.cpp.s
-.PHONY : Walnut/src/imgui_impl_opengl3.s
-
-# target to generate assembly for a file
-Walnut/src/imgui_impl_opengl3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/imgui_impl_opengl3.cpp.s
-.PHONY : Walnut/src/imgui_impl_opengl3.cpp.s
-
 vendor/glad/src/gl.o: vendor/glad/src/gl.c.o
 .PHONY : vendor/glad/src/gl.o
 
@@ -457,534 +396,6 @@ vendor/glad/src/gl.s: vendor/glad/src/gl.c.s
 vendor/glad/src/gl.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/vendor/glad/src/gl.c.s
 .PHONY : vendor/glad/src/gl.c.s
-
-vendor/glfw/src/context.o: vendor/glfw/src/context.c.o
-.PHONY : vendor/glfw/src/context.o
-
-# target to build an object file
-vendor/glfw/src/context.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/context.c.o
-.PHONY : vendor/glfw/src/context.c.o
-
-vendor/glfw/src/context.i: vendor/glfw/src/context.c.i
-.PHONY : vendor/glfw/src/context.i
-
-# target to preprocess a source file
-vendor/glfw/src/context.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/context.c.i
-.PHONY : vendor/glfw/src/context.c.i
-
-vendor/glfw/src/context.s: vendor/glfw/src/context.c.s
-.PHONY : vendor/glfw/src/context.s
-
-# target to generate assembly for a file
-vendor/glfw/src/context.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/context.c.s
-.PHONY : vendor/glfw/src/context.c.s
-
-vendor/glfw/src/egl_context.o: vendor/glfw/src/egl_context.c.o
-.PHONY : vendor/glfw/src/egl_context.o
-
-# target to build an object file
-vendor/glfw/src/egl_context.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/egl_context.c.o
-.PHONY : vendor/glfw/src/egl_context.c.o
-
-vendor/glfw/src/egl_context.i: vendor/glfw/src/egl_context.c.i
-.PHONY : vendor/glfw/src/egl_context.i
-
-# target to preprocess a source file
-vendor/glfw/src/egl_context.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/egl_context.c.i
-.PHONY : vendor/glfw/src/egl_context.c.i
-
-vendor/glfw/src/egl_context.s: vendor/glfw/src/egl_context.c.s
-.PHONY : vendor/glfw/src/egl_context.s
-
-# target to generate assembly for a file
-vendor/glfw/src/egl_context.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/egl_context.c.s
-.PHONY : vendor/glfw/src/egl_context.c.s
-
-vendor/glfw/src/glx_context.o: vendor/glfw/src/glx_context.c.o
-.PHONY : vendor/glfw/src/glx_context.o
-
-# target to build an object file
-vendor/glfw/src/glx_context.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/glx_context.c.o
-.PHONY : vendor/glfw/src/glx_context.c.o
-
-vendor/glfw/src/glx_context.i: vendor/glfw/src/glx_context.c.i
-.PHONY : vendor/glfw/src/glx_context.i
-
-# target to preprocess a source file
-vendor/glfw/src/glx_context.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/glx_context.c.i
-.PHONY : vendor/glfw/src/glx_context.c.i
-
-vendor/glfw/src/glx_context.s: vendor/glfw/src/glx_context.c.s
-.PHONY : vendor/glfw/src/glx_context.s
-
-# target to generate assembly for a file
-vendor/glfw/src/glx_context.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/glx_context.c.s
-.PHONY : vendor/glfw/src/glx_context.c.s
-
-vendor/glfw/src/init.o: vendor/glfw/src/init.c.o
-.PHONY : vendor/glfw/src/init.o
-
-# target to build an object file
-vendor/glfw/src/init.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/init.c.o
-.PHONY : vendor/glfw/src/init.c.o
-
-vendor/glfw/src/init.i: vendor/glfw/src/init.c.i
-.PHONY : vendor/glfw/src/init.i
-
-# target to preprocess a source file
-vendor/glfw/src/init.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/init.c.i
-.PHONY : vendor/glfw/src/init.c.i
-
-vendor/glfw/src/init.s: vendor/glfw/src/init.c.s
-.PHONY : vendor/glfw/src/init.s
-
-# target to generate assembly for a file
-vendor/glfw/src/init.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/init.c.s
-.PHONY : vendor/glfw/src/init.c.s
-
-vendor/glfw/src/input.o: vendor/glfw/src/input.c.o
-.PHONY : vendor/glfw/src/input.o
-
-# target to build an object file
-vendor/glfw/src/input.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/input.c.o
-.PHONY : vendor/glfw/src/input.c.o
-
-vendor/glfw/src/input.i: vendor/glfw/src/input.c.i
-.PHONY : vendor/glfw/src/input.i
-
-# target to preprocess a source file
-vendor/glfw/src/input.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/input.c.i
-.PHONY : vendor/glfw/src/input.c.i
-
-vendor/glfw/src/input.s: vendor/glfw/src/input.c.s
-.PHONY : vendor/glfw/src/input.s
-
-# target to generate assembly for a file
-vendor/glfw/src/input.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/input.c.s
-.PHONY : vendor/glfw/src/input.c.s
-
-vendor/glfw/src/linux_joystick.o: vendor/glfw/src/linux_joystick.c.o
-.PHONY : vendor/glfw/src/linux_joystick.o
-
-# target to build an object file
-vendor/glfw/src/linux_joystick.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/linux_joystick.c.o
-.PHONY : vendor/glfw/src/linux_joystick.c.o
-
-vendor/glfw/src/linux_joystick.i: vendor/glfw/src/linux_joystick.c.i
-.PHONY : vendor/glfw/src/linux_joystick.i
-
-# target to preprocess a source file
-vendor/glfw/src/linux_joystick.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/linux_joystick.c.i
-.PHONY : vendor/glfw/src/linux_joystick.c.i
-
-vendor/glfw/src/linux_joystick.s: vendor/glfw/src/linux_joystick.c.s
-.PHONY : vendor/glfw/src/linux_joystick.s
-
-# target to generate assembly for a file
-vendor/glfw/src/linux_joystick.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/linux_joystick.c.s
-.PHONY : vendor/glfw/src/linux_joystick.c.s
-
-vendor/glfw/src/monitor.o: vendor/glfw/src/monitor.c.o
-.PHONY : vendor/glfw/src/monitor.o
-
-# target to build an object file
-vendor/glfw/src/monitor.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/monitor.c.o
-.PHONY : vendor/glfw/src/monitor.c.o
-
-vendor/glfw/src/monitor.i: vendor/glfw/src/monitor.c.i
-.PHONY : vendor/glfw/src/monitor.i
-
-# target to preprocess a source file
-vendor/glfw/src/monitor.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/monitor.c.i
-.PHONY : vendor/glfw/src/monitor.c.i
-
-vendor/glfw/src/monitor.s: vendor/glfw/src/monitor.c.s
-.PHONY : vendor/glfw/src/monitor.s
-
-# target to generate assembly for a file
-vendor/glfw/src/monitor.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/monitor.c.s
-.PHONY : vendor/glfw/src/monitor.c.s
-
-vendor/glfw/src/null_init.o: vendor/glfw/src/null_init.c.o
-.PHONY : vendor/glfw/src/null_init.o
-
-# target to build an object file
-vendor/glfw/src/null_init.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/null_init.c.o
-.PHONY : vendor/glfw/src/null_init.c.o
-
-vendor/glfw/src/null_init.i: vendor/glfw/src/null_init.c.i
-.PHONY : vendor/glfw/src/null_init.i
-
-# target to preprocess a source file
-vendor/glfw/src/null_init.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/null_init.c.i
-.PHONY : vendor/glfw/src/null_init.c.i
-
-vendor/glfw/src/null_init.s: vendor/glfw/src/null_init.c.s
-.PHONY : vendor/glfw/src/null_init.s
-
-# target to generate assembly for a file
-vendor/glfw/src/null_init.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/null_init.c.s
-.PHONY : vendor/glfw/src/null_init.c.s
-
-vendor/glfw/src/null_joystick.o: vendor/glfw/src/null_joystick.c.o
-.PHONY : vendor/glfw/src/null_joystick.o
-
-# target to build an object file
-vendor/glfw/src/null_joystick.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/null_joystick.c.o
-.PHONY : vendor/glfw/src/null_joystick.c.o
-
-vendor/glfw/src/null_joystick.i: vendor/glfw/src/null_joystick.c.i
-.PHONY : vendor/glfw/src/null_joystick.i
-
-# target to preprocess a source file
-vendor/glfw/src/null_joystick.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/null_joystick.c.i
-.PHONY : vendor/glfw/src/null_joystick.c.i
-
-vendor/glfw/src/null_joystick.s: vendor/glfw/src/null_joystick.c.s
-.PHONY : vendor/glfw/src/null_joystick.s
-
-# target to generate assembly for a file
-vendor/glfw/src/null_joystick.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/null_joystick.c.s
-.PHONY : vendor/glfw/src/null_joystick.c.s
-
-vendor/glfw/src/null_monitor.o: vendor/glfw/src/null_monitor.c.o
-.PHONY : vendor/glfw/src/null_monitor.o
-
-# target to build an object file
-vendor/glfw/src/null_monitor.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/null_monitor.c.o
-.PHONY : vendor/glfw/src/null_monitor.c.o
-
-vendor/glfw/src/null_monitor.i: vendor/glfw/src/null_monitor.c.i
-.PHONY : vendor/glfw/src/null_monitor.i
-
-# target to preprocess a source file
-vendor/glfw/src/null_monitor.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/null_monitor.c.i
-.PHONY : vendor/glfw/src/null_monitor.c.i
-
-vendor/glfw/src/null_monitor.s: vendor/glfw/src/null_monitor.c.s
-.PHONY : vendor/glfw/src/null_monitor.s
-
-# target to generate assembly for a file
-vendor/glfw/src/null_monitor.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/null_monitor.c.s
-.PHONY : vendor/glfw/src/null_monitor.c.s
-
-vendor/glfw/src/null_window.o: vendor/glfw/src/null_window.c.o
-.PHONY : vendor/glfw/src/null_window.o
-
-# target to build an object file
-vendor/glfw/src/null_window.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/null_window.c.o
-.PHONY : vendor/glfw/src/null_window.c.o
-
-vendor/glfw/src/null_window.i: vendor/glfw/src/null_window.c.i
-.PHONY : vendor/glfw/src/null_window.i
-
-# target to preprocess a source file
-vendor/glfw/src/null_window.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/null_window.c.i
-.PHONY : vendor/glfw/src/null_window.c.i
-
-vendor/glfw/src/null_window.s: vendor/glfw/src/null_window.c.s
-.PHONY : vendor/glfw/src/null_window.s
-
-# target to generate assembly for a file
-vendor/glfw/src/null_window.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/null_window.c.s
-.PHONY : vendor/glfw/src/null_window.c.s
-
-vendor/glfw/src/osmesa_context.o: vendor/glfw/src/osmesa_context.c.o
-.PHONY : vendor/glfw/src/osmesa_context.o
-
-# target to build an object file
-vendor/glfw/src/osmesa_context.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/osmesa_context.c.o
-.PHONY : vendor/glfw/src/osmesa_context.c.o
-
-vendor/glfw/src/osmesa_context.i: vendor/glfw/src/osmesa_context.c.i
-.PHONY : vendor/glfw/src/osmesa_context.i
-
-# target to preprocess a source file
-vendor/glfw/src/osmesa_context.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/osmesa_context.c.i
-.PHONY : vendor/glfw/src/osmesa_context.c.i
-
-vendor/glfw/src/osmesa_context.s: vendor/glfw/src/osmesa_context.c.s
-.PHONY : vendor/glfw/src/osmesa_context.s
-
-# target to generate assembly for a file
-vendor/glfw/src/osmesa_context.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/osmesa_context.c.s
-.PHONY : vendor/glfw/src/osmesa_context.c.s
-
-vendor/glfw/src/platform.o: vendor/glfw/src/platform.c.o
-.PHONY : vendor/glfw/src/platform.o
-
-# target to build an object file
-vendor/glfw/src/platform.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/platform.c.o
-.PHONY : vendor/glfw/src/platform.c.o
-
-vendor/glfw/src/platform.i: vendor/glfw/src/platform.c.i
-.PHONY : vendor/glfw/src/platform.i
-
-# target to preprocess a source file
-vendor/glfw/src/platform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/platform.c.i
-.PHONY : vendor/glfw/src/platform.c.i
-
-vendor/glfw/src/platform.s: vendor/glfw/src/platform.c.s
-.PHONY : vendor/glfw/src/platform.s
-
-# target to generate assembly for a file
-vendor/glfw/src/platform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/platform.c.s
-.PHONY : vendor/glfw/src/platform.c.s
-
-vendor/glfw/src/posix_module.o: vendor/glfw/src/posix_module.c.o
-.PHONY : vendor/glfw/src/posix_module.o
-
-# target to build an object file
-vendor/glfw/src/posix_module.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/posix_module.c.o
-.PHONY : vendor/glfw/src/posix_module.c.o
-
-vendor/glfw/src/posix_module.i: vendor/glfw/src/posix_module.c.i
-.PHONY : vendor/glfw/src/posix_module.i
-
-# target to preprocess a source file
-vendor/glfw/src/posix_module.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/posix_module.c.i
-.PHONY : vendor/glfw/src/posix_module.c.i
-
-vendor/glfw/src/posix_module.s: vendor/glfw/src/posix_module.c.s
-.PHONY : vendor/glfw/src/posix_module.s
-
-# target to generate assembly for a file
-vendor/glfw/src/posix_module.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/posix_module.c.s
-.PHONY : vendor/glfw/src/posix_module.c.s
-
-vendor/glfw/src/posix_thread.o: vendor/glfw/src/posix_thread.c.o
-.PHONY : vendor/glfw/src/posix_thread.o
-
-# target to build an object file
-vendor/glfw/src/posix_thread.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/posix_thread.c.o
-.PHONY : vendor/glfw/src/posix_thread.c.o
-
-vendor/glfw/src/posix_thread.i: vendor/glfw/src/posix_thread.c.i
-.PHONY : vendor/glfw/src/posix_thread.i
-
-# target to preprocess a source file
-vendor/glfw/src/posix_thread.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/posix_thread.c.i
-.PHONY : vendor/glfw/src/posix_thread.c.i
-
-vendor/glfw/src/posix_thread.s: vendor/glfw/src/posix_thread.c.s
-.PHONY : vendor/glfw/src/posix_thread.s
-
-# target to generate assembly for a file
-vendor/glfw/src/posix_thread.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/posix_thread.c.s
-.PHONY : vendor/glfw/src/posix_thread.c.s
-
-vendor/glfw/src/posix_time.o: vendor/glfw/src/posix_time.c.o
-.PHONY : vendor/glfw/src/posix_time.o
-
-# target to build an object file
-vendor/glfw/src/posix_time.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/posix_time.c.o
-.PHONY : vendor/glfw/src/posix_time.c.o
-
-vendor/glfw/src/posix_time.i: vendor/glfw/src/posix_time.c.i
-.PHONY : vendor/glfw/src/posix_time.i
-
-# target to preprocess a source file
-vendor/glfw/src/posix_time.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/posix_time.c.i
-.PHONY : vendor/glfw/src/posix_time.c.i
-
-vendor/glfw/src/posix_time.s: vendor/glfw/src/posix_time.c.s
-.PHONY : vendor/glfw/src/posix_time.s
-
-# target to generate assembly for a file
-vendor/glfw/src/posix_time.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/posix_time.c.s
-.PHONY : vendor/glfw/src/posix_time.c.s
-
-vendor/glfw/src/vulkan.o: vendor/glfw/src/vulkan.c.o
-.PHONY : vendor/glfw/src/vulkan.o
-
-# target to build an object file
-vendor/glfw/src/vulkan.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/vulkan.c.o
-.PHONY : vendor/glfw/src/vulkan.c.o
-
-vendor/glfw/src/vulkan.i: vendor/glfw/src/vulkan.c.i
-.PHONY : vendor/glfw/src/vulkan.i
-
-# target to preprocess a source file
-vendor/glfw/src/vulkan.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/vulkan.c.i
-.PHONY : vendor/glfw/src/vulkan.c.i
-
-vendor/glfw/src/vulkan.s: vendor/glfw/src/vulkan.c.s
-.PHONY : vendor/glfw/src/vulkan.s
-
-# target to generate assembly for a file
-vendor/glfw/src/vulkan.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/vulkan.c.s
-.PHONY : vendor/glfw/src/vulkan.c.s
-
-vendor/glfw/src/window.o: vendor/glfw/src/window.c.o
-.PHONY : vendor/glfw/src/window.o
-
-# target to build an object file
-vendor/glfw/src/window.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/window.c.o
-.PHONY : vendor/glfw/src/window.c.o
-
-vendor/glfw/src/window.i: vendor/glfw/src/window.c.i
-.PHONY : vendor/glfw/src/window.i
-
-# target to preprocess a source file
-vendor/glfw/src/window.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/window.c.i
-.PHONY : vendor/glfw/src/window.c.i
-
-vendor/glfw/src/window.s: vendor/glfw/src/window.c.s
-.PHONY : vendor/glfw/src/window.s
-
-# target to generate assembly for a file
-vendor/glfw/src/window.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/window.c.s
-.PHONY : vendor/glfw/src/window.c.s
-
-vendor/glfw/src/x11_init.o: vendor/glfw/src/x11_init.c.o
-.PHONY : vendor/glfw/src/x11_init.o
-
-# target to build an object file
-vendor/glfw/src/x11_init.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/x11_init.c.o
-.PHONY : vendor/glfw/src/x11_init.c.o
-
-vendor/glfw/src/x11_init.i: vendor/glfw/src/x11_init.c.i
-.PHONY : vendor/glfw/src/x11_init.i
-
-# target to preprocess a source file
-vendor/glfw/src/x11_init.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/x11_init.c.i
-.PHONY : vendor/glfw/src/x11_init.c.i
-
-vendor/glfw/src/x11_init.s: vendor/glfw/src/x11_init.c.s
-.PHONY : vendor/glfw/src/x11_init.s
-
-# target to generate assembly for a file
-vendor/glfw/src/x11_init.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/x11_init.c.s
-.PHONY : vendor/glfw/src/x11_init.c.s
-
-vendor/glfw/src/x11_monitor.o: vendor/glfw/src/x11_monitor.c.o
-.PHONY : vendor/glfw/src/x11_monitor.o
-
-# target to build an object file
-vendor/glfw/src/x11_monitor.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/x11_monitor.c.o
-.PHONY : vendor/glfw/src/x11_monitor.c.o
-
-vendor/glfw/src/x11_monitor.i: vendor/glfw/src/x11_monitor.c.i
-.PHONY : vendor/glfw/src/x11_monitor.i
-
-# target to preprocess a source file
-vendor/glfw/src/x11_monitor.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/x11_monitor.c.i
-.PHONY : vendor/glfw/src/x11_monitor.c.i
-
-vendor/glfw/src/x11_monitor.s: vendor/glfw/src/x11_monitor.c.s
-.PHONY : vendor/glfw/src/x11_monitor.s
-
-# target to generate assembly for a file
-vendor/glfw/src/x11_monitor.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/x11_monitor.c.s
-.PHONY : vendor/glfw/src/x11_monitor.c.s
-
-vendor/glfw/src/x11_window.o: vendor/glfw/src/x11_window.c.o
-.PHONY : vendor/glfw/src/x11_window.o
-
-# target to build an object file
-vendor/glfw/src/x11_window.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/x11_window.c.o
-.PHONY : vendor/glfw/src/x11_window.c.o
-
-vendor/glfw/src/x11_window.i: vendor/glfw/src/x11_window.c.i
-.PHONY : vendor/glfw/src/x11_window.i
-
-# target to preprocess a source file
-vendor/glfw/src/x11_window.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/x11_window.c.i
-.PHONY : vendor/glfw/src/x11_window.c.i
-
-vendor/glfw/src/x11_window.s: vendor/glfw/src/x11_window.c.s
-.PHONY : vendor/glfw/src/x11_window.s
-
-# target to generate assembly for a file
-vendor/glfw/src/x11_window.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/x11_window.c.s
-.PHONY : vendor/glfw/src/x11_window.c.s
-
-vendor/glfw/src/xkb_unicode.o: vendor/glfw/src/xkb_unicode.c.o
-.PHONY : vendor/glfw/src/xkb_unicode.o
-
-# target to build an object file
-vendor/glfw/src/xkb_unicode.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/xkb_unicode.c.o
-.PHONY : vendor/glfw/src/xkb_unicode.c.o
-
-vendor/glfw/src/xkb_unicode.i: vendor/glfw/src/xkb_unicode.c.i
-.PHONY : vendor/glfw/src/xkb_unicode.i
-
-# target to preprocess a source file
-vendor/glfw/src/xkb_unicode.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/xkb_unicode.c.i
-.PHONY : vendor/glfw/src/xkb_unicode.c.i
-
-vendor/glfw/src/xkb_unicode.s: vendor/glfw/src/xkb_unicode.c.s
-.PHONY : vendor/glfw/src/xkb_unicode.s
-
-# target to generate assembly for a file
-vendor/glfw/src/xkb_unicode.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GLFW.dir/build.make CMakeFiles/GLFW.dir/vendor/glfw/src/xkb_unicode.c.s
-.PHONY : vendor/glfw/src/xkb_unicode.c.s
 
 vendor/imgui/imgui.o: vendor/imgui/imgui.cpp.o
 .PHONY : vendor/imgui/imgui.o
@@ -1138,7 +549,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... GLFW"
 	@echo "... ImGui"
 	@echo "... Walnut"
 	@echo "... WalnutApp"
@@ -1147,15 +557,15 @@ help:
 	@echo "... App/src/App.o"
 	@echo "... App/src/App.i"
 	@echo "... App/src/App.s"
-	@echo "... App/src/Main.o"
-	@echo "... App/src/Main.i"
-	@echo "... App/src/Main.s"
-	@echo "... App/src/imgui.o"
-	@echo "... App/src/imgui.i"
-	@echo "... App/src/imgui.s"
 	@echo "... Walnut/src/Application.o"
 	@echo "... Walnut/src/Application.i"
 	@echo "... Walnut/src/Application.s"
+	@echo "... Walnut/src/ImGui/imgui_impl_glfw.o"
+	@echo "... Walnut/src/ImGui/imgui_impl_glfw.i"
+	@echo "... Walnut/src/ImGui/imgui_impl_glfw.s"
+	@echo "... Walnut/src/ImGui/imgui_impl_opengl3.o"
+	@echo "... Walnut/src/ImGui/imgui_impl_opengl3.i"
+	@echo "... Walnut/src/ImGui/imgui_impl_opengl3.s"
 	@echo "... Walnut/src/Image.o"
 	@echo "... Walnut/src/Image.i"
 	@echo "... Walnut/src/Image.s"
@@ -1168,81 +578,9 @@ help:
 	@echo "... Walnut/src/Shader.o"
 	@echo "... Walnut/src/Shader.i"
 	@echo "... Walnut/src/Shader.s"
-	@echo "... Walnut/src/imgui_impl_glfw.o"
-	@echo "... Walnut/src/imgui_impl_glfw.i"
-	@echo "... Walnut/src/imgui_impl_glfw.s"
-	@echo "... Walnut/src/imgui_impl_opengl3.o"
-	@echo "... Walnut/src/imgui_impl_opengl3.i"
-	@echo "... Walnut/src/imgui_impl_opengl3.s"
 	@echo "... vendor/glad/src/gl.o"
 	@echo "... vendor/glad/src/gl.i"
 	@echo "... vendor/glad/src/gl.s"
-	@echo "... vendor/glfw/src/context.o"
-	@echo "... vendor/glfw/src/context.i"
-	@echo "... vendor/glfw/src/context.s"
-	@echo "... vendor/glfw/src/egl_context.o"
-	@echo "... vendor/glfw/src/egl_context.i"
-	@echo "... vendor/glfw/src/egl_context.s"
-	@echo "... vendor/glfw/src/glx_context.o"
-	@echo "... vendor/glfw/src/glx_context.i"
-	@echo "... vendor/glfw/src/glx_context.s"
-	@echo "... vendor/glfw/src/init.o"
-	@echo "... vendor/glfw/src/init.i"
-	@echo "... vendor/glfw/src/init.s"
-	@echo "... vendor/glfw/src/input.o"
-	@echo "... vendor/glfw/src/input.i"
-	@echo "... vendor/glfw/src/input.s"
-	@echo "... vendor/glfw/src/linux_joystick.o"
-	@echo "... vendor/glfw/src/linux_joystick.i"
-	@echo "... vendor/glfw/src/linux_joystick.s"
-	@echo "... vendor/glfw/src/monitor.o"
-	@echo "... vendor/glfw/src/monitor.i"
-	@echo "... vendor/glfw/src/monitor.s"
-	@echo "... vendor/glfw/src/null_init.o"
-	@echo "... vendor/glfw/src/null_init.i"
-	@echo "... vendor/glfw/src/null_init.s"
-	@echo "... vendor/glfw/src/null_joystick.o"
-	@echo "... vendor/glfw/src/null_joystick.i"
-	@echo "... vendor/glfw/src/null_joystick.s"
-	@echo "... vendor/glfw/src/null_monitor.o"
-	@echo "... vendor/glfw/src/null_monitor.i"
-	@echo "... vendor/glfw/src/null_monitor.s"
-	@echo "... vendor/glfw/src/null_window.o"
-	@echo "... vendor/glfw/src/null_window.i"
-	@echo "... vendor/glfw/src/null_window.s"
-	@echo "... vendor/glfw/src/osmesa_context.o"
-	@echo "... vendor/glfw/src/osmesa_context.i"
-	@echo "... vendor/glfw/src/osmesa_context.s"
-	@echo "... vendor/glfw/src/platform.o"
-	@echo "... vendor/glfw/src/platform.i"
-	@echo "... vendor/glfw/src/platform.s"
-	@echo "... vendor/glfw/src/posix_module.o"
-	@echo "... vendor/glfw/src/posix_module.i"
-	@echo "... vendor/glfw/src/posix_module.s"
-	@echo "... vendor/glfw/src/posix_thread.o"
-	@echo "... vendor/glfw/src/posix_thread.i"
-	@echo "... vendor/glfw/src/posix_thread.s"
-	@echo "... vendor/glfw/src/posix_time.o"
-	@echo "... vendor/glfw/src/posix_time.i"
-	@echo "... vendor/glfw/src/posix_time.s"
-	@echo "... vendor/glfw/src/vulkan.o"
-	@echo "... vendor/glfw/src/vulkan.i"
-	@echo "... vendor/glfw/src/vulkan.s"
-	@echo "... vendor/glfw/src/window.o"
-	@echo "... vendor/glfw/src/window.i"
-	@echo "... vendor/glfw/src/window.s"
-	@echo "... vendor/glfw/src/x11_init.o"
-	@echo "... vendor/glfw/src/x11_init.i"
-	@echo "... vendor/glfw/src/x11_init.s"
-	@echo "... vendor/glfw/src/x11_monitor.o"
-	@echo "... vendor/glfw/src/x11_monitor.i"
-	@echo "... vendor/glfw/src/x11_monitor.s"
-	@echo "... vendor/glfw/src/x11_window.o"
-	@echo "... vendor/glfw/src/x11_window.i"
-	@echo "... vendor/glfw/src/x11_window.s"
-	@echo "... vendor/glfw/src/xkb_unicode.o"
-	@echo "... vendor/glfw/src/xkb_unicode.i"
-	@echo "... vendor/glfw/src/xkb_unicode.s"
 	@echo "... vendor/imgui/imgui.o"
 	@echo "... vendor/imgui/imgui.i"
 	@echo "... vendor/imgui/imgui.s"

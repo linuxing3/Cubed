@@ -1,14 +1,11 @@
 ﻿add_executable("WalnutApp"
   "App/src/App.cpp"
-  "App/src/Main.cpp"
-  "App/src/imgui.cpp"
 )
 if(CMAKE_BUILD_TYPE STREQUAL Debug)
   add_dependencies("WalnutApp"
     "Walnut"
     "ImGui"
     "glad"
-    "GLFW"
   )
   set_target_properties("WalnutApp" PROPERTIES
     OUTPUT_NAME "WalnutApp"
@@ -23,7 +20,6 @@ target_include_directories("WalnutApp" PRIVATE
   $<$<CONFIG:Debug>:/share/sources/glfw-app/vendor/stb>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/vendor/imgui>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/vendor/imgui/backends>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/vendor/glfw/include>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/vendor/glm>
 )
 target_compile_definitions("WalnutApp" PRIVATE
@@ -35,7 +31,7 @@ target_link_libraries("WalnutApp"
   $<$<CONFIG:Debug>:Walnut>
   $<$<CONFIG:Debug>:ImGui>
   $<$<CONFIG:Debug>:glad>
-  $<$<CONFIG:Debug>:GLFW>
+  $<$<CONFIG:Debug>:glfw>
   $<$<CONFIG:Debug>:dl>
   $<$<CONFIG:Debug>:pthread>
   $<$<CONFIG:Debug>:X11>
@@ -63,7 +59,6 @@ if(CMAKE_BUILD_TYPE STREQUAL Release)
     "Walnut"
     "ImGui"
     "glad"
-    "GLFW"
   )
   set_target_properties("WalnutApp" PROPERTIES
     OUTPUT_NAME "WalnutApp"
@@ -78,7 +73,6 @@ target_include_directories("WalnutApp" PRIVATE
   $<$<CONFIG:Release>:/share/sources/glfw-app/vendor/stb>
   $<$<CONFIG:Release>:/share/sources/glfw-app/vendor/imgui>
   $<$<CONFIG:Release>:/share/sources/glfw-app/vendor/imgui/backends>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/vendor/glfw/include>
   $<$<CONFIG:Release>:/share/sources/glfw-app/vendor/glm>
 )
 target_compile_definitions("WalnutApp" PRIVATE
@@ -90,7 +84,7 @@ target_link_libraries("WalnutApp"
   $<$<CONFIG:Release>:Walnut>
   $<$<CONFIG:Release>:ImGui>
   $<$<CONFIG:Release>:glad>
-  $<$<CONFIG:Release>:GLFW>
+  $<$<CONFIG:Release>:glfw>
   $<$<CONFIG:Release>:dl>
   $<$<CONFIG:Release>:pthread>
   $<$<CONFIG:Release>:X11>
@@ -120,7 +114,6 @@ if(CMAKE_BUILD_TYPE STREQUAL Dist)
     "Walnut"
     "ImGui"
     "glad"
-    "GLFW"
   )
   set_target_properties("WalnutApp" PROPERTIES
     OUTPUT_NAME "WalnutApp"
@@ -135,7 +128,6 @@ target_include_directories("WalnutApp" PRIVATE
   $<$<CONFIG:Dist>:/share/sources/glfw-app/vendor/stb>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/vendor/imgui>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/vendor/imgui/backends>
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/vendor/glfw/include>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/vendor/glm>
 )
 target_compile_definitions("WalnutApp" PRIVATE
@@ -147,7 +139,7 @@ target_link_libraries("WalnutApp"
   $<$<CONFIG:Dist>:Walnut>
   $<$<CONFIG:Dist>:ImGui>
   $<$<CONFIG:Dist>:glad>
-  $<$<CONFIG:Dist>:GLFW>
+  $<$<CONFIG:Dist>:glfw>
   $<$<CONFIG:Dist>:dl>
   $<$<CONFIG:Dist>:pthread>
   $<$<CONFIG:Dist>:X11>

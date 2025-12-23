@@ -17,15 +17,17 @@ project "Walnut"
       "../vendor/stb",
       "../vendor/imgui",
       "../vendor/imgui/backends",
-      "../vendor/glfw/include",
+      -- "../vendor/glfw/include",
       "../vendor/glm",
    }
 
    links
    {
        "ImGui",
-       "GLFW",
+       "glfw",
        "glad",
+       "X11",
+       "GL",
        "stb"
    }
 

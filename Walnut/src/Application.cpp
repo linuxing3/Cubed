@@ -1,4 +1,6 @@
 #include "glad/gl.h"
+#define GLFW_INCLUDE_GLEXT
+#include <GLFW/glfw3.h> // Will drag system OpenGL headers
 
 #include "Application.h"
 
@@ -9,8 +11,6 @@
 
 #include <stdio.h>  // printf, fprintf
 #include <stdlib.h> // abort
-
-#include <GLFW/glfw3.h>
 
 #include <iostream>
 
@@ -155,51 +155,9 @@ void Application::Run() {
     ImGui::NewFrame();
 
     {
-      static ImGuiDockNodeFlags dockspace_flags = ImGuiDockNodeFlags_None;
-
-      ImGuiWindowFlags window_flags = ImGuiWindowFlags_NoDocking;
-      if (m_MenubarCallback)
-        window_flags |= ImGuiWindowFlags_MenuBar;
-
-      const ImGuiViewport *viewport = ImGui::GetMainViewport();
-      ImGui::SetNextWindowPos(viewport->WorkPos);
-      ImGui::SetNextWindowSize(viewport->WorkSize);
-      ImGui::SetNextWindowViewport(viewport->ID);
-      ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, 0.0f);
-      ImGui::PushStyleVar(ImGuiStyleVar_WindowBorderSize, 0.0f);
-      window_flags |= ImGuiWindowFlags_NoTitleBar |
-                      ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize |
-                      ImGuiWindowFlags_NoMove;
-      window_flags |=
-          ImGuiWindowFlags_NoBringToFrontOnFocus | ImGuiWindowFlags_NoNavFocus;
-
-      if (dockspace_flags & ImGuiDockNodeFlags_PassthruCentralNode)
-        window_flags |= ImGuiWindowFlags_NoBackground;
-
-      ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0.0f, 0.0f));
-      ImGui::Begin("DockSpace Demo", nullptr, window_flags);
-      ImGui::PopStyleVar();
-
-      ImGui::PopStyleVar(2);
-
-      // Submit the DockSpace
-      ImGuiIO &io = ImGui::GetIO();
-      if (io.ConfigFlags & ImGuiConfigFlags_DockingEnable) {
-        ImGuiID dockspace_id = ImGui::GetID("AppDockspace");
-        ImGui::DockSpace(dockspace_id, ImVec2(0.0f, 0.0f), dockspace_flags);
-      }
-
-      if (m_MenubarCallback) {
-        if (ImGui::BeginMenuBar()) {
-          m_MenubarCallback();
-          ImGui::EndMenuBar();
-        }
-      }
 
       for (auto &layer : m_LayerStack)
         layer->OnUIRender();
-
-      ImGui::End();
     }
 
     // ImGui Rendering
@@ -246,5 +204,7 @@ float Application::GetTime() { return (float)glfwGetTime(); }
 void Application::SubmitResourceFree(std::function<void()> &&func) {
   s_ResourceFreeQueue[s_CurrentFrameIndex].emplace_back(func);
 }
+// if (dockspace_flags & ImGuiDockNodeFlags_PassthruCentralNode)
+//   window_flags |= ImGuiWindowFlags_NoBackground;
 
 } // namespace Walnut

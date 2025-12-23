@@ -28,7 +28,6 @@ set(CMAKE_C_FLAGS_DIST "")
 set(CMAKE_CXX_FLAGS_DIST "")
 
 project("WalnutApp")
-include(vendor/glfw/GLFW.cmake)
 include(vendor/imgui/ImGui.cmake)
 include(Walnut/Walnut.cmake)
 include(App/WalnutApp.cmake)

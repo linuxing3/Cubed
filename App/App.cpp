@@ -10,7 +10,7 @@ public:
 		ImGui::Button("Button");
 		ImGui::End();
 
-		ImGui::ShowDemoWindow();
+		// ImGui::ShowDemoWindow();
 	}
 };
 
