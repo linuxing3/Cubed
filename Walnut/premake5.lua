@@ -12,19 +12,21 @@ project "Walnut"
 
    includedirs
    {
+      "src",
       "../vendor/glad/include",
       "../vendor/stb",
       "../vendor/imgui",
       "../vendor/imgui/backends",
       "../vendor/glfw/include",
-      "%{IncludeDir.glm}",
+      "../vendor/glm",
    }
 
    links
    {
        "ImGui",
        "GLFW",
-       "glad"
+       "glad",
+       "stb"
    }
 
    targetdir ("../bin/" .. outputdir .. "/%{prj.name}")

@@ -1,8 +1,7 @@
 ﻿add_executable("WalnutApp"
-      "vendor/stb/stb_image.cpp"
-      "vendor/stb/stb_image.h"
-    "App/src/Main.cpp"
-    "App/src/main.cpp"
+  "App/src/App.cpp"
+  "App/src/Main.cpp"
+  "App/src/imgui.cpp"
 )
 if(CMAKE_BUILD_TYPE STREQUAL Debug)
   add_dependencies("WalnutApp"

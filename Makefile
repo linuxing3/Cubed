@@ -181,6 +181,43 @@ glad/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/build
 .PHONY : glad/fast
 
+#=============================================================================
+# Target rules for targets named stb
+
+# Build rule for target.
+stb: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stb
+.PHONY : stb
+
+# fast build rule for target.
+stb/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stb.dir/build.make CMakeFiles/stb.dir/build
+.PHONY : stb/fast
+
+App/src/App.o: App/src/App.cpp.o
+.PHONY : App/src/App.o
+
+# target to build an object file
+App/src/App.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/App.cpp.o
+.PHONY : App/src/App.cpp.o
+
+App/src/App.i: App/src/App.cpp.i
+.PHONY : App/src/App.i
+
+# target to preprocess a source file
+App/src/App.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/App.cpp.i
+.PHONY : App/src/App.cpp.i
+
+App/src/App.s: App/src/App.cpp.s
+.PHONY : App/src/App.s
+
+# target to generate assembly for a file
+App/src/App.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/App.cpp.s
+.PHONY : App/src/App.cpp.s
+
 App/src/Main.o: App/src/Main.cpp.o
 .PHONY : App/src/Main.o
 
@@ -205,29 +242,53 @@ App/src/Main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/Main.cpp.s
 .PHONY : App/src/Main.cpp.s
 
-App/src/main.o: App/src/main.cpp.o
-.PHONY : App/src/main.o
+App/src/imgui.o: App/src/imgui.cpp.o
+.PHONY : App/src/imgui.o
 
 # target to build an object file
-App/src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/main.cpp.o
-.PHONY : App/src/main.cpp.o
+App/src/imgui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/imgui.cpp.o
+.PHONY : App/src/imgui.cpp.o
 
-App/src/main.i: App/src/main.cpp.i
-.PHONY : App/src/main.i
+App/src/imgui.i: App/src/imgui.cpp.i
+.PHONY : App/src/imgui.i
 
 # target to preprocess a source file
-App/src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/main.cpp.i
-.PHONY : App/src/main.cpp.i
+App/src/imgui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/imgui.cpp.i
+.PHONY : App/src/imgui.cpp.i
 
-App/src/main.s: App/src/main.cpp.s
-.PHONY : App/src/main.s
+App/src/imgui.s: App/src/imgui.cpp.s
+.PHONY : App/src/imgui.s
 
 # target to generate assembly for a file
-App/src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/main.cpp.s
-.PHONY : App/src/main.cpp.s
+App/src/imgui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/imgui.cpp.s
+.PHONY : App/src/imgui.cpp.s
+
+Walnut/src/Application.o: Walnut/src/Application.cpp.o
+.PHONY : Walnut/src/Application.o
+
+# target to build an object file
+Walnut/src/Application.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/Application.cpp.o
+.PHONY : Walnut/src/Application.cpp.o
+
+Walnut/src/Application.i: Walnut/src/Application.cpp.i
+.PHONY : Walnut/src/Application.i
+
+# target to preprocess a source file
+Walnut/src/Application.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/Application.cpp.i
+.PHONY : Walnut/src/Application.cpp.i
+
+Walnut/src/Application.s: Walnut/src/Application.cpp.s
+.PHONY : Walnut/src/Application.s
+
+# target to generate assembly for a file
+Walnut/src/Application.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/Application.cpp.s
+.PHONY : Walnut/src/Application.cpp.s
 
 Walnut/src/Image.o: Walnut/src/Image.cpp.o
 .PHONY : Walnut/src/Image.o
@@ -253,29 +314,53 @@ Walnut/src/Image.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/Image.cpp.s
 .PHONY : Walnut/src/Image.cpp.s
 
-Walnut/src/Renderer.o: Walnut/src/Renderer.cpp.o
-.PHONY : Walnut/src/Renderer.o
+Walnut/src/Input/Input.o: Walnut/src/Input/Input.cpp.o
+.PHONY : Walnut/src/Input/Input.o
 
 # target to build an object file
-Walnut/src/Renderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/Renderer.cpp.o
-.PHONY : Walnut/src/Renderer.cpp.o
+Walnut/src/Input/Input.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/Input/Input.cpp.o
+.PHONY : Walnut/src/Input/Input.cpp.o
 
-Walnut/src/Renderer.i: Walnut/src/Renderer.cpp.i
-.PHONY : Walnut/src/Renderer.i
+Walnut/src/Input/Input.i: Walnut/src/Input/Input.cpp.i
+.PHONY : Walnut/src/Input/Input.i
 
 # target to preprocess a source file
-Walnut/src/Renderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/Renderer.cpp.i
-.PHONY : Walnut/src/Renderer.cpp.i
+Walnut/src/Input/Input.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/Input/Input.cpp.i
+.PHONY : Walnut/src/Input/Input.cpp.i
 
-Walnut/src/Renderer.s: Walnut/src/Renderer.cpp.s
-.PHONY : Walnut/src/Renderer.s
+Walnut/src/Input/Input.s: Walnut/src/Input/Input.cpp.s
+.PHONY : Walnut/src/Input/Input.s
 
 # target to generate assembly for a file
-Walnut/src/Renderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/Renderer.cpp.s
-.PHONY : Walnut/src/Renderer.cpp.s
+Walnut/src/Input/Input.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/Input/Input.cpp.s
+.PHONY : Walnut/src/Input/Input.cpp.s
+
+Walnut/src/Random.o: Walnut/src/Random.cpp.o
+.PHONY : Walnut/src/Random.o
+
+# target to build an object file
+Walnut/src/Random.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/Random.cpp.o
+.PHONY : Walnut/src/Random.cpp.o
+
+Walnut/src/Random.i: Walnut/src/Random.cpp.i
+.PHONY : Walnut/src/Random.i
+
+# target to preprocess a source file
+Walnut/src/Random.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/Random.cpp.i
+.PHONY : Walnut/src/Random.cpp.i
+
+Walnut/src/Random.s: Walnut/src/Random.cpp.s
+.PHONY : Walnut/src/Random.s
+
+# target to generate assembly for a file
+Walnut/src/Random.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/src/Random.cpp.s
+.PHONY : Walnut/src/Random.cpp.s
 
 Walnut/src/Shader.o: Walnut/src/Shader.cpp.o
 .PHONY : Walnut/src/Shader.o
@@ -1026,7 +1111,7 @@ vendor/stb/stb_image.o: vendor/stb/stb_image.cpp.o
 
 # target to build an object file
 vendor/stb/stb_image.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/vendor/stb/stb_image.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stb.dir/build.make CMakeFiles/stb.dir/vendor/stb/stb_image.cpp.o
 .PHONY : vendor/stb/stb_image.cpp.o
 
 vendor/stb/stb_image.i: vendor/stb/stb_image.cpp.i
@@ -1034,7 +1119,7 @@ vendor/stb/stb_image.i: vendor/stb/stb_image.cpp.i
 
 # target to preprocess a source file
 vendor/stb/stb_image.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/vendor/stb/stb_image.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stb.dir/build.make CMakeFiles/stb.dir/vendor/stb/stb_image.cpp.i
 .PHONY : vendor/stb/stb_image.cpp.i
 
 vendor/stb/stb_image.s: vendor/stb/stb_image.cpp.s
@@ -1042,7 +1127,7 @@ vendor/stb/stb_image.s: vendor/stb/stb_image.cpp.s
 
 # target to generate assembly for a file
 vendor/stb/stb_image.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/vendor/stb/stb_image.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stb.dir/build.make CMakeFiles/stb.dir/vendor/stb/stb_image.cpp.s
 .PHONY : vendor/stb/stb_image.cpp.s
 
 # Help Target
@@ -1058,18 +1143,28 @@ help:
 	@echo "... Walnut"
 	@echo "... WalnutApp"
 	@echo "... glad"
+	@echo "... stb"
+	@echo "... App/src/App.o"
+	@echo "... App/src/App.i"
+	@echo "... App/src/App.s"
 	@echo "... App/src/Main.o"
 	@echo "... App/src/Main.i"
 	@echo "... App/src/Main.s"
-	@echo "... App/src/main.o"
-	@echo "... App/src/main.i"
-	@echo "... App/src/main.s"
+	@echo "... App/src/imgui.o"
+	@echo "... App/src/imgui.i"
+	@echo "... App/src/imgui.s"
+	@echo "... Walnut/src/Application.o"
+	@echo "... Walnut/src/Application.i"
+	@echo "... Walnut/src/Application.s"
 	@echo "... Walnut/src/Image.o"
 	@echo "... Walnut/src/Image.i"
 	@echo "... Walnut/src/Image.s"
-	@echo "... Walnut/src/Renderer.o"
-	@echo "... Walnut/src/Renderer.i"
-	@echo "... Walnut/src/Renderer.s"
+	@echo "... Walnut/src/Input/Input.o"
+	@echo "... Walnut/src/Input/Input.i"
+	@echo "... Walnut/src/Input/Input.s"
+	@echo "... Walnut/src/Random.o"
+	@echo "... Walnut/src/Random.i"
+	@echo "... Walnut/src/Random.s"
 	@echo "... Walnut/src/Shader.o"
 	@echo "... Walnut/src/Shader.i"
 	@echo "... Walnut/src/Shader.s"

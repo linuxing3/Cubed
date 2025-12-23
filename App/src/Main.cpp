@@ -10,6 +10,9 @@
 #include "Image.h"
 #include "Shader.h"
 
+// Emedded font
+#include "ImGui/Roboto-Regular.embed"
+
 static uint32_t s_ComputeShader = -1;
 static const std::filesystem::path s_ComputeShaderPath = "Shaders/Compute.glsl";
 
@@ -26,7 +29,7 @@ static void KeyCallback(GLFWwindow *window, int key, int scancode, int action,
     s_ComputeShader = ReloadComputeShader(s_ComputeShader, s_ComputeShaderPath);
 }
 
-int main() {
+int test_compute() {
   glfwSetErrorCallback(ErrorCallback);
 
   if (!glfwInit())
@@ -101,9 +104,17 @@ int main() {
     style.Colors[ImGuiCol_WindowBg].w = 1.0f;
   }
 
+  ImFontConfig fontConfig;
+  fontConfig.FontDataOwnedByAtlas = false;
+  ImFont *robotoFont = io.Fonts->AddFontFromMemoryTTF(
+      (void *)g_RobotoRegular, sizeof(g_RobotoRegular), 20.0f, &fontConfig);
+  io.FontDefault = robotoFont;
+
   // Setup Platform/Renderer backends
   ImGui_ImplGlfw_InitForOpenGL(window, true);
   ImGui_ImplOpenGL3_Init(glsl_version);
+  bool show_demo_window = true;
+  ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 
   // Compute Shaders
   s_ComputeShader = CreateComputeShader(s_ComputeShaderPath);
@@ -116,15 +127,21 @@ int main() {
   Walnut::Image image(width, height);
 
   while (!glfwWindowShouldClose(window)) {
-    glfwGetFramebufferSize(window, &width, &height);
 
-    // Resize texture
+    // --------------------- Resize texture -----------------------------
+    glfwGetFramebufferSize(window, &width, &height);
     if (width != image.GetTexture().Width ||
         height != image.GetTexture().Height) {
       image.Resize(width, height);
     }
 
-    // Compute
+    // ------------------- ImGui Frame starts ----------------------------
+    ImGui_ImplOpenGL3_NewFrame();
+    ImGui_ImplGlfw_NewFrame();
+    ImGui::NewFrame();
+    ImGui::ShowDemoWindow(&show_demo_window);
+
+    // ------------------- Start Compute in Shader -----------------------
     {
       glUseProgram(s_ComputeShader);
       glBindImageTexture(0, image.GetFramebuffer().ColorAttachment.Handle, 0,
@@ -142,16 +159,44 @@ int main() {
       glMemoryBarrier(GL_SHADER_IMAGE_ACCESS_BARRIER_BIT);
     }
 
-    // Blit
+    // ------------------- Rendering starts ----------------------------
+    // Clear Screen
+    {
+      // int display_w, display_h;
+      // glfwGetFramebufferSize(window, &display_w, &display_h);
+      // glViewport(0, 0, display_w, display_h);
+      // glClearColor(clear_color.x * clear_color.w, clear_color.y *
+      // clear_color.w,
+      //              clear_color.z * clear_color.w, clear_color.w);
+      // glClear(GL_COLOR_BUFFER_BIT);
+    }
+
+    // Background Rendering
     {
       image.BlitFramebufferToSwapchain(image.GetFramebuffer());
     }
 
+    // ImGui Rendering
+    {
+      ImGui::Render();
+      ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+      if (io.ConfigFlags & ImGuiConfigFlags_ViewportsEnable) {
+        GLFWwindow *backup_current_context = glfwGetCurrentContext();
+        ImGui::UpdatePlatformWindows();
+        ImGui::RenderPlatformWindowsDefault();
+        glfwMakeContextCurrent(backup_current_context);
+      }
+    }
+
+    // --------------------- Present to screen ------------------------
     glfwSwapBuffers(window);
     glfwPollEvents();
+    if (glfwGetWindowAttrib(window, GLFW_ICONIFIED) != 0) {
+      ImGui_ImplGlfw_Sleep(10);
+      continue;
+    }
   }
 
   glfwDestroyWindow(window);
-
   glfwTerminate();
 }

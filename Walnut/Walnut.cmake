@@ -1,10 +1,18 @@
 ﻿add_library("Walnut" STATIC
+  "Walnut/src/Application.cpp"
+  "Walnut/src/Application.h"
+  "Walnut/src/EntryPoint.h"
   "Walnut/src/Image.cpp"
   "Walnut/src/Image.h"
-  "Walnut/src/Renderer.cpp"
-  "Walnut/src/Renderer.h"
+    "Walnut/src/Input/Input.cpp"
+    "Walnut/src/Input/Input.h"
+    "Walnut/src/Input/KeyCodes.h"
+  "Walnut/src/Layer.h"
+  "Walnut/src/Random.cpp"
+  "Walnut/src/Random.h"
   "Walnut/src/Shader.cpp"
   "Walnut/src/Shader.h"
+  "Walnut/src/Timer.h"
   "Walnut/src/imgui_impl_glfw.cpp"
   "Walnut/src/imgui_impl_glfw.h"
   "Walnut/src/imgui_impl_opengl3.cpp"
@@ -15,6 +23,7 @@ if(CMAKE_BUILD_TYPE STREQUAL Debug)
     "ImGui"
     "GLFW"
     "glad"
+    "stb"
   )
   set_target_properties("Walnut" PROPERTIES
     OUTPUT_NAME "Walnut"
@@ -24,12 +33,13 @@ if(CMAKE_BUILD_TYPE STREQUAL Debug)
   )
 endif()
 target_include_directories("Walnut" PRIVATE
+  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/src>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/vendor/glad/include>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/vendor/stb>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/vendor/imgui>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/vendor/imgui/backends>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/vendor/glfw/include>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glm>
+  $<$<CONFIG:Debug>:/share/sources/glfw-app/vendor/glm>
 )
 target_compile_definitions("Walnut" PRIVATE
   $<$<CONFIG:Debug>:WL_DEBUG>
@@ -40,6 +50,7 @@ target_link_libraries("Walnut"
   $<$<CONFIG:Debug>:ImGui>
   $<$<CONFIG:Debug>:GLFW>
   $<$<CONFIG:Debug>:glad>
+  $<$<CONFIG:Debug>:stb>
 )
 target_compile_options("Walnut" PRIVATE
   $<$<AND:$<CONFIG:Debug>,$<COMPILE_LANGUAGE:C>>:-g>
@@ -60,6 +71,7 @@ if(CMAKE_BUILD_TYPE STREQUAL Release)
     "ImGui"
     "GLFW"
     "glad"
+    "stb"
   )
   set_target_properties("Walnut" PROPERTIES
     OUTPUT_NAME "Walnut"
@@ -69,12 +81,13 @@ if(CMAKE_BUILD_TYPE STREQUAL Release)
   )
 endif()
 target_include_directories("Walnut" PRIVATE
+  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/src>
   $<$<CONFIG:Release>:/share/sources/glfw-app/vendor/glad/include>
   $<$<CONFIG:Release>:/share/sources/glfw-app/vendor/stb>
   $<$<CONFIG:Release>:/share/sources/glfw-app/vendor/imgui>
   $<$<CONFIG:Release>:/share/sources/glfw-app/vendor/imgui/backends>
   $<$<CONFIG:Release>:/share/sources/glfw-app/vendor/glfw/include>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glm>
+  $<$<CONFIG:Release>:/share/sources/glfw-app/vendor/glm>
 )
 target_compile_definitions("Walnut" PRIVATE
   $<$<CONFIG:Release>:WL_RELEASE>
@@ -85,6 +98,7 @@ target_link_libraries("Walnut"
   $<$<CONFIG:Release>:ImGui>
   $<$<CONFIG:Release>:GLFW>
   $<$<CONFIG:Release>:glad>
+  $<$<CONFIG:Release>:stb>
 )
 target_compile_options("Walnut" PRIVATE
   $<$<AND:$<CONFIG:Release>,$<COMPILE_LANGUAGE:C>>:-O2>
@@ -107,6 +121,7 @@ if(CMAKE_BUILD_TYPE STREQUAL Dist)
     "ImGui"
     "GLFW"
     "glad"
+    "stb"
   )
   set_target_properties("Walnut" PROPERTIES
     OUTPUT_NAME "Walnut"
@@ -116,12 +131,13 @@ if(CMAKE_BUILD_TYPE STREQUAL Dist)
   )
 endif()
 target_include_directories("Walnut" PRIVATE
+  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/src>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/vendor/glad/include>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/vendor/stb>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/vendor/imgui>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/vendor/imgui/backends>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/vendor/glfw/include>
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/glm>
+  $<$<CONFIG:Dist>:/share/sources/glfw-app/vendor/glm>
 )
 target_compile_definitions("Walnut" PRIVATE
   $<$<CONFIG:Dist>:WL_DIST>
@@ -132,6 +148,7 @@ target_link_libraries("Walnut"
   $<$<CONFIG:Dist>:ImGui>
   $<$<CONFIG:Dist>:GLFW>
   $<$<CONFIG:Dist>:glad>
+  $<$<CONFIG:Dist>:stb>
 )
 target_compile_options("Walnut" PRIVATE
   $<$<AND:$<CONFIG:Dist>,$<COMPILE_LANGUAGE:C>>:-O2>

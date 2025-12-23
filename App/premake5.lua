@@ -5,7 +5,7 @@ cppdialect "C++17"
 targetdir "bin/%{cfg.buildcfg}"
 staticruntime "off"
 
-files { "src/**.h", "src/**.cpp", "../vendor/stb/stb_image.cpp", "../vendor/stb/stb_image.h" }
+files { "src/**.h", "src/**.cpp"}
 
 includedirs
 {
