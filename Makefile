@@ -181,29 +181,77 @@ stb/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stb.dir/build.make CMakeFiles/stb.dir/build
 .PHONY : stb/fast
 
-App/src/App.o: App/src/App.cpp.o
-.PHONY : App/src/App.o
+App/src/Camera.o: App/src/Camera.cpp.o
+.PHONY : App/src/Camera.o
 
 # target to build an object file
-App/src/App.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/App.cpp.o
-.PHONY : App/src/App.cpp.o
+App/src/Camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/Camera.cpp.o
+.PHONY : App/src/Camera.cpp.o
 
-App/src/App.i: App/src/App.cpp.i
-.PHONY : App/src/App.i
+App/src/Camera.i: App/src/Camera.cpp.i
+.PHONY : App/src/Camera.i
 
 # target to preprocess a source file
-App/src/App.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/App.cpp.i
-.PHONY : App/src/App.cpp.i
+App/src/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/Camera.cpp.i
+.PHONY : App/src/Camera.cpp.i
 
-App/src/App.s: App/src/App.cpp.s
-.PHONY : App/src/App.s
+App/src/Camera.s: App/src/Camera.cpp.s
+.PHONY : App/src/Camera.s
 
 # target to generate assembly for a file
-App/src/App.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/App.cpp.s
-.PHONY : App/src/App.cpp.s
+App/src/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/Camera.cpp.s
+.PHONY : App/src/Camera.cpp.s
+
+App/src/Renderer.o: App/src/Renderer.cpp.o
+.PHONY : App/src/Renderer.o
+
+# target to build an object file
+App/src/Renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/Renderer.cpp.o
+.PHONY : App/src/Renderer.cpp.o
+
+App/src/Renderer.i: App/src/Renderer.cpp.i
+.PHONY : App/src/Renderer.i
+
+# target to preprocess a source file
+App/src/Renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/Renderer.cpp.i
+.PHONY : App/src/Renderer.cpp.i
+
+App/src/Renderer.s: App/src/Renderer.cpp.s
+.PHONY : App/src/Renderer.s
+
+# target to generate assembly for a file
+App/src/Renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/Renderer.cpp.s
+.PHONY : App/src/Renderer.cpp.s
+
+App/src/WalnutApp.o: App/src/WalnutApp.cpp.o
+.PHONY : App/src/WalnutApp.o
+
+# target to build an object file
+App/src/WalnutApp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/WalnutApp.cpp.o
+.PHONY : App/src/WalnutApp.cpp.o
+
+App/src/WalnutApp.i: App/src/WalnutApp.cpp.i
+.PHONY : App/src/WalnutApp.i
+
+# target to preprocess a source file
+App/src/WalnutApp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/WalnutApp.cpp.i
+.PHONY : App/src/WalnutApp.cpp.i
+
+App/src/WalnutApp.s: App/src/WalnutApp.cpp.s
+.PHONY : App/src/WalnutApp.s
+
+# target to generate assembly for a file
+App/src/WalnutApp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/App/src/WalnutApp.cpp.s
+.PHONY : App/src/WalnutApp.cpp.s
 
 Walnut/src/Application.o: Walnut/src/Application.cpp.o
 .PHONY : Walnut/src/Application.o
@@ -554,9 +602,15 @@ help:
 	@echo "... WalnutApp"
 	@echo "... glad"
 	@echo "... stb"
-	@echo "... App/src/App.o"
-	@echo "... App/src/App.i"
-	@echo "... App/src/App.s"
+	@echo "... App/src/Camera.o"
+	@echo "... App/src/Camera.i"
+	@echo "... App/src/Camera.s"
+	@echo "... App/src/Renderer.o"
+	@echo "... App/src/Renderer.i"
+	@echo "... App/src/Renderer.s"
+	@echo "... App/src/WalnutApp.o"
+	@echo "... App/src/WalnutApp.i"
+	@echo "... App/src/WalnutApp.s"
 	@echo "... Walnut/src/Application.o"
 	@echo "... Walnut/src/Application.i"
 	@echo "... Walnut/src/Application.s"

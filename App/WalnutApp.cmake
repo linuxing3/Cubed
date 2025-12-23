@@ -1,5 +1,11 @@
 ﻿add_executable("WalnutApp"
-  "App/src/App.cpp"
+  "App/src/Camera.cpp"
+  "App/src/Camera.h"
+  "App/src/Ray.h"
+  "App/src/Renderer.cpp"
+  "App/src/Renderer.h"
+  "App/src/Scene.h"
+  "App/src/WalnutApp.cpp"
 )
 if(CMAKE_BUILD_TYPE STREQUAL Debug)
   add_dependencies("WalnutApp"

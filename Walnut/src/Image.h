@@ -1,6 +1,7 @@
 #pragma once
 
 #include <glad/gl.h>
+#include <iostream>
 #include <memory>
 #define GLFW_INCLUDE_NONE
 #include <GLFW/glfw3.h>
@@ -22,8 +23,6 @@ struct Framebuffer {
 class Image {
 
 private:
-  uint32_t m_Width = 0;
-  uint32_t m_Height = 0;
   Texture m_Texture;
   Framebuffer m_frameBuffer;
 
@@ -44,8 +43,8 @@ public:
   Image() = default;
 
 public:
-  uint32_t GetWidth() { return m_Width; };
-  uint32_t GetHeight() { return m_Height; };
+  int GetWidth() { return m_Texture.Width; };
+  int GetHeight() { return m_Texture.Height; };
   Texture GetTexture() { return m_Texture; };
   Framebuffer GetFramebuffer() { return m_frameBuffer; };
 
@@ -55,9 +54,11 @@ public:
   void SetData(const Texture texture) {
     AttachTextureToFramebuffer(m_frameBuffer, texture);
   }
+  void SetData(const void *data, size_t data_size);
 
   void Resize(int width, int height) {
-    if (width != m_Width || height != m_Height) {
+    if (width != m_Texture.Width || height != m_Texture.Height) {
+      std::cout << "resizing " << std::endl;
       glDeleteTextures(1, &m_Texture.Handle);
       m_Texture = AllocateMemory(width, height);
       SetData(m_Texture);

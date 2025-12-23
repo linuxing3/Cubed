@@ -3,6 +3,7 @@
 #include <iostream>
 
 #include "stb_image.h"
+#include <glad/gl.h>
 
 namespace Walnut {
 
@@ -100,5 +101,35 @@ void Image::BlitFramebufferToSwapchain(const Framebuffer framebuffer) {
                     0, 0, framebuffer.ColorAttachment.Width,
                     framebuffer.ColorAttachment.Height, // Destination rect
                     GL_COLOR_BUFFER_BIT, GL_NEAREST);
+}
+void Image::SetData(const void *data, size_t data_size) {
+
+  int image_width = 0;
+  int image_height = 0;
+  unsigned char *image_data =
+      stbi_load_from_memory((const unsigned char *)data, (int)data_size,
+                            &image_width, &image_height, NULL, 4);
+
+  m_Texture.Width = image_width;
+  m_Texture.Height = image_height;
+
+  // Create a OpenGL texture identifier
+  glGenTextures(1, &m_Texture.Handle);
+  glBindTexture(GL_TEXTURE_2D, m_Texture.Handle);
+
+  // Setup filtering parameters for display
+  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+  // Upload pixels into texture
+  glPixelStorei(GL_UNPACK_ROW_LENGTH, 0);
+  glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA32F, image_width, image_height, 0,
+               GL_RGBA32F, GL_UNSIGNED_BYTE, image_data);
+  stbi_image_free(image_data);
+
+  m_Texture.Width = image_width;
+  m_Texture.Height = image_height;
+
+  SetData(m_Texture);
 }
 } // namespace Walnut

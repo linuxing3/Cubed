@@ -5,6 +5,8 @@ cppdialect "C++17"
 targetdir "bin/%{cfg.buildcfg}"
 staticruntime "off"
 
+-- buildoptions {"-stdlib=libc++"}
+
 files { "src/**.h", "src/**.cpp"}
 
 includedirs

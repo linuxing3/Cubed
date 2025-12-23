@@ -12,6 +12,7 @@ namespace Walnut {
 
 		virtual void OnUpdate(float ts) {}
 		virtual void OnUIRender() {}
+		virtual void OnPresent() {}
 	};
 
 }

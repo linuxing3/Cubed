@@ -149,13 +149,22 @@ void Application::Run() {
     layer->OnDetach();
 
   while (!glfwWindowShouldClose(m_WindowHandle)) {
+    // ------------------- Clear starts ----------------------------
+    // {
+    //   ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
+    //   int display_w, display_h;
+    //   glfwGetFramebufferSize(m_WindowHandle, &display_w, &display_h);
+    //   glViewport(0, 0, display_w, display_h);
+    //   glClearColor(clear_color.x * clear_color.w, clear_color.y * clear_color.w,
+    //                clear_color.z * clear_color.w, clear_color.w);
+    //   glClear(GL_COLOR_BUFFER_BIT);
+    // }
     // ------------------- ImGui Frame starts ----------------------------
     ImGui_ImplOpenGL3_NewFrame();
     ImGui_ImplGlfw_NewFrame();
     ImGui::NewFrame();
 
     {
-
       for (auto &layer : m_LayerStack)
         layer->OnUIRender();
     }
@@ -164,14 +173,6 @@ void Application::Run() {
     {
       ImGui::Render();
       ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
-
-      ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
-      int display_w, display_h;
-      glfwGetFramebufferSize(m_WindowHandle, &display_w, &display_h);
-      glViewport(0, 0, display_w, display_h);
-      glClearColor(clear_color.x * clear_color.w, clear_color.y * clear_color.w,
-                   clear_color.z * clear_color.w, clear_color.w);
-      glClear(GL_COLOR_BUFFER_BIT);
 
       ImGuiIO &io = ImGui::GetIO();
       (void)io;
@@ -183,6 +184,11 @@ void Application::Run() {
       }
     }
 
+    // {
+    //   for (auto &layer : m_LayerStack)
+    //     layer->OnPresent();
+    // }
+
     // --------------------- Present to screen ------------------------
     glfwSwapBuffers(m_WindowHandle);
     glfwPollEvents();
@@ -190,10 +196,15 @@ void Application::Run() {
       ImGui_ImplGlfw_Sleep(10);
       continue;
     }
+
     float time = GetTime();
     m_FrameTime = time - m_LastFrameTime;
     m_TimeStep = glm::min<float>(m_FrameTime, 0.0333f);
     m_LastFrameTime = time;
+    {
+      for (auto &layer : m_LayerStack)
+        layer->OnUpdate(m_LastFrameTime);
+    }
   }
 }
 
