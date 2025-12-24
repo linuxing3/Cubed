@@ -1,6 +1,7 @@
 ﻿add_executable("WalnutApp"
   "App/src/Camera.cpp"
   "App/src/Camera.h"
+  "App/src/ComputerLayer.h"
   "App/src/Ray.h"
   "App/src/Renderer.cpp"
   "App/src/Renderer.h"
@@ -21,6 +22,7 @@ if(CMAKE_BUILD_TYPE STREQUAL Debug)
   )
 endif()
 target_include_directories("WalnutApp" PRIVATE
+  $<$<CONFIG:Debug>:/share/sources/glfw-app/App/src>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/src>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/vendor/glad/include>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/vendor/stb>
@@ -74,6 +76,7 @@ if(CMAKE_BUILD_TYPE STREQUAL Release)
   )
 endif()
 target_include_directories("WalnutApp" PRIVATE
+  $<$<CONFIG:Release>:/share/sources/glfw-app/App/src>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/src>
   $<$<CONFIG:Release>:/share/sources/glfw-app/vendor/glad/include>
   $<$<CONFIG:Release>:/share/sources/glfw-app/vendor/stb>
@@ -129,6 +132,7 @@ if(CMAKE_BUILD_TYPE STREQUAL Dist)
   )
 endif()
 target_include_directories("WalnutApp" PRIVATE
+  $<$<CONFIG:Dist>:/share/sources/glfw-app/App/src>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/src>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/vendor/glad/include>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/vendor/stb>

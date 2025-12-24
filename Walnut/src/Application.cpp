@@ -184,27 +184,20 @@ void Application::Run() {
       }
     }
 
-    // {
-    //   for (auto &layer : m_LayerStack)
-    //     layer->OnPresent();
-    // }
+    {
+      for (auto &layer : m_LayerStack)
+        layer->OnPresent();
+    }
 
     // --------------------- Present to screen ------------------------
     glfwSwapBuffers(m_WindowHandle);
     glfwPollEvents();
-    if (glfwGetWindowAttrib(m_WindowHandle, GLFW_ICONIFIED) != 0) {
-      ImGui_ImplGlfw_Sleep(10);
-      continue;
-    }
 
+    // ---------------------- Update clock ----------------------------
     float time = GetTime();
     m_FrameTime = time - m_LastFrameTime;
     m_TimeStep = glm::min<float>(m_FrameTime, 0.0333f);
     m_LastFrameTime = time;
-    // {
-    //   for (auto &layer : m_LayerStack)
-    //     layer->OnUpdate(m_LastFrameTime);
-    // }
   }
 }
 

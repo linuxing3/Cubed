@@ -11,6 +11,7 @@ files { "src/**.h", "src/**.cpp"}
 
 includedirs
 {
+    "../App/src",
     "../Walnut/src",
     "../vendor/glad/include",
     "../vendor/stb",
