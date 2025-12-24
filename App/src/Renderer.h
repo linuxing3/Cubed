@@ -20,6 +20,7 @@ public:
 
   void OnResize(uint32_t width, uint32_t height);
   void Render(const Scene &scene, const Camera &camera);
+  void Compute();
 
   std::shared_ptr<Walnut::Image> GetFinalImage() const { return m_FinalImage; }
 

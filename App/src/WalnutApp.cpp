@@ -119,32 +119,13 @@ public:
     m_ViewportWidth = ImGui::GetContentRegionAvail().x;
     m_ViewportHeight = ImGui::GetContentRegionAvail().y;
 
-    ImGui::Text("Window size = %d x %d", m_ViewportWidth, m_ViewportHeight);
+    // ImGui::Text("Window size = %d x %d", m_ViewportWidth, m_ViewportHeight);
 
     std::shared_ptr<Walnut::Image> image = m_Renderer.GetFinalImage();
     if (image) {
-      glUseProgram(m_Renderer.GetComputeShader());
-      glBindImageTexture(0, image->GetFramebuffer().ColorAttachment.Handle,
-                         0, GL_FALSE, 0, GL_WRITE_ONLY, GL_RGBA32F);
-
-      const GLuint workGroupSizeX = 16;
-      const GLuint workGroupSizeY = 16;
-
-      GLuint numGroupsX =
-          (image->GetWidth() + workGroupSizeX - 1) / workGroupSizeX;
-      GLuint numGroupsY =
-          (image->GetHeight() + workGroupSizeY - 1) / workGroupSizeY;
-
-      glDispatchCompute(numGroupsX, numGroupsY, 1);
-
-      // Ensure all writes to the image are complete
-      glMemoryBarrier(GL_SHADER_IMAGE_ACCESS_BARRIER_BIT);
-    }
-
-    if (image) {
-      ImGui::Text("Image pointer = %x", image->GetTexture().Handle);
-      ImGui::Text("Image size = %d x %d", image->GetWidth(),
-                  image->GetHeight());
+      // ImGui::Text("Image pointer = %x", image->GetTexture().Handle);
+      // ImGui::Text("Image size = %d x %d", image->GetWidth(),
+      //             image->GetHeight());
       ImGui::Image((ImTextureID)image->GetTexture().Handle,
                    {(float)image->GetWidth(), (float)image->GetHeight()},
                    ImVec2(0, 1), ImVec2(1, 0));
@@ -160,7 +141,10 @@ public:
     Timer timer;
 
     m_Renderer.OnResize(m_ViewportWidth, m_ViewportHeight);
+
     m_Camera.OnResize(m_ViewportWidth, m_ViewportHeight);
+
+    m_Renderer.Compute();
     m_Renderer.Render(m_Scene, m_Camera);
 
     m_LastRenderTime = timer.ElapsedMillis();

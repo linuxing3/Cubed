@@ -107,6 +107,28 @@ void Renderer::Render(const Scene &scene, const Camera &camera) {
     m_FrameIndex = 1;
 }
 
+void Renderer::Compute() {
+
+  if (m_FinalImage) {
+    glUseProgram(m_ComputeShader);
+    glBindImageTexture(0, m_FinalImage->GetFramebuffer().ColorAttachment.Handle, 0,
+                       GL_FALSE, 0, GL_WRITE_ONLY, GL_RGBA32F);
+
+    const GLuint workGroupSizeX = 16;
+    const GLuint workGroupSizeY = 16;
+
+    GLuint numGroupsX =
+        (m_FinalImage->GetWidth() + workGroupSizeX - 1) / workGroupSizeX;
+    GLuint numGroupsY =
+        (m_FinalImage->GetHeight() + workGroupSizeY - 1) / workGroupSizeY;
+
+    glDispatchCompute(numGroupsX, numGroupsY, 1);
+
+    // Ensure all writes to the image are complete
+    glMemoryBarrier(GL_SHADER_IMAGE_ACCESS_BARRIER_BIT);
+  }
+}
+
 glm::vec4 Renderer::PerPixel(uint32_t x, uint32_t y) {
   Ray ray;
   ray.Origin = m_ActiveCamera->GetPosition();
