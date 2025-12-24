@@ -32,7 +32,7 @@ public:
 
 public:
   Image(const std::filesystem::path &path) {
-    m_Texture = LoadTexture(path);
+    m_Texture = AllocateAndSetupDataFromFile(path);
     m_frameBuffer = CreateFramebufferWithTexture(m_Texture);
   };
   Image(uint32_t width, uint32_t height) {
@@ -49,12 +49,16 @@ public:
   Framebuffer GetFramebuffer() { return m_frameBuffer; };
 
 public:
-  Texture AllocateMemory(int width, int height);
+  Texture AllocateMemory(int width, int height, GLenum format = GL_RGBA32F);
+  Texture AllocateAndSetupDataFromFile(const std::filesystem::path &path);
+  Texture AllocateAndSetupDataFromMemory(int width, int height,
+                               GLenum format = GL_RGBA32F, const void *data = nullptr);
 
   void SetData(const Texture texture) {
     AttachTextureToFramebuffer(m_frameBuffer, texture);
   }
-  void SetData(const void *data, size_t data_size);
+  void SetData(int width, int height, GLenum format = GL_RGBA32F,
+               const void *data = nullptr);
 
   void Resize(int width, int height) {
     if (width != m_Texture.Width || height != m_Texture.Height) {
@@ -65,8 +69,6 @@ public:
     }
   }
 
-  // helpers
-  Texture LoadTexture(const std::filesystem::path &path);
   Framebuffer CreateFramebufferWithTexture(const Texture texture);
   bool AttachTextureToFramebuffer(Framebuffer &framebuffer,
                                   const Texture texture);

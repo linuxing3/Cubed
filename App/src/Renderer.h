@@ -20,7 +20,6 @@ public:
 
   void OnResize(uint32_t width, uint32_t height);
   void Render(const Scene &scene, const Camera &camera);
-  void Compute();
 
   std::shared_ptr<Walnut::Image> GetFinalImage() const { return m_FinalImage; }
 
@@ -37,6 +36,8 @@ private:
     int ObjectIndex;
   };
 
+  void Compute();
+  void Tracing();
   glm::vec4 PerPixel(uint32_t x, uint32_t y); // RayGen
 
   HitPayload TraceRay(const Ray &ray);

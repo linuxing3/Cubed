@@ -69,6 +69,31 @@ void Renderer::OnResize(uint32_t width, uint32_t height) {
     m_ImageVerticalIter[i] = i;
 }
 
+void Renderer::Tracing() {
+
+  // ------------------- Start Image Pixel refill -----------------------
+  for (uint32_t y = 0; y < m_FinalImage->GetHeight(); y++) {
+    for (uint32_t x = 0; x < m_FinalImage->GetWidth(); x++) {
+      glm::vec4 color = PerPixel(x, y);
+      m_AccumulationData[x + y * m_FinalImage->GetWidth()] += color;
+
+      glm::vec4 accumulatedColor =
+          m_AccumulationData[x + y * m_FinalImage->GetWidth()];
+      accumulatedColor /= (float)m_FrameIndex;
+
+      accumulatedColor =
+          glm::clamp(accumulatedColor, glm::vec4(0.0f), glm::vec4(1.0f));
+      m_ImageData[x + y * m_FinalImage->GetWidth()] =
+          Utils::ConvertToRGBA(accumulatedColor);
+    }
+  }
+
+  m_FinalImage->SetData((int)m_FinalImage->GetWidth(),
+                        (int)m_FinalImage->GetHeight(), GL_RGBA,
+                        m_ImageData);
+
+}
+
 void Renderer::Render(const Scene &scene, const Camera &camera) {
   m_ActiveScene = &scene;
   m_ActiveCamera = &camera;
@@ -78,28 +103,8 @@ void Renderer::Render(const Scene &scene, const Camera &camera) {
            m_FinalImage->GetWidth() * m_FinalImage->GetHeight() *
                sizeof(glm::vec4));
 
-  // for (uint32_t y = 0; y < m_FinalImage->GetHeight(); y++) {
-  //   for (uint32_t x = 0; x < m_FinalImage->GetWidth(); x++) {
-  //     glm::vec4 color = PerPixel(x, y);
-  //     m_AccumulationData[x + y * m_FinalImage->GetWidth()] += color;
-
-  //     glm::vec4 accumulatedColor =
-  //         m_AccumulationData[x + y * m_FinalImage->GetWidth()];
-  //     accumulatedColor /= (float)m_FrameIndex;
-
-  //     accumulatedColor =
-  //         glm::clamp(accumulatedColor, glm::vec4(0.0f), glm::vec4(1.0f));
-  //     m_ImageData[x + y * m_FinalImage->GetWidth()] =
-  //         Utils::ConvertToRGBA(accumulatedColor);
-  //   }
-  // }
-
-  // size_t data_size = (int)m_FinalImage->GetWidth() *
-  //                    (int)m_FinalImage->GetHeight() *
-  //                    Utils::BytesPerPixel(GL_RGBA32F);
-  // m_FinalImage->SetData(m_ImageData, data_size);
-
-  // ------------------- Start Compute in Shader -----------------------
+  // Compute();
+  Tracing();
 
   if (m_Settings.Accumulate)
     m_FrameIndex++;
@@ -111,8 +116,8 @@ void Renderer::Compute() {
 
   if (m_FinalImage) {
     glUseProgram(m_ComputeShader);
-    glBindImageTexture(0, m_FinalImage->GetFramebuffer().ColorAttachment.Handle, 0,
-                       GL_FALSE, 0, GL_WRITE_ONLY, GL_RGBA32F);
+    glBindImageTexture(0, m_FinalImage->GetFramebuffer().ColorAttachment.Handle,
+                       0, GL_FALSE, 0, GL_WRITE_ONLY, GL_RGBA32F);
 
     const GLuint workGroupSizeX = 16;
     const GLuint workGroupSizeY = 16;

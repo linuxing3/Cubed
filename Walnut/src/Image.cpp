@@ -7,14 +7,14 @@
 
 namespace Walnut {
 
-Texture Image::AllocateMemory(int width, int height) {
+Texture Image::AllocateMemory(int width, int height, GLenum format) {
   Texture result;
   result.Width = width;
   result.Height = height;
 
   glCreateTextures(GL_TEXTURE_2D, 1, &result.Handle);
 
-  glTextureStorage2D(result.Handle, 1, GL_RGBA32F, width, height);
+  glTextureStorage2D(result.Handle, 1, format, width, height);
 
   glTextureParameteri(result.Handle, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
   glTextureParameteri(result.Handle, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
@@ -25,7 +25,7 @@ Texture Image::AllocateMemory(int width, int height) {
   return result;
 }
 
-Texture Image::LoadTexture(const std::filesystem::path &path) {
+Texture Image::AllocateAndSetupDataFromFile(const std::filesystem::path &path) {
   int width, height, channels;
   std::string filepath = path.string();
   unsigned char *data =
@@ -40,6 +40,18 @@ Texture Image::LoadTexture(const std::filesystem::path &path) {
                   : channels == 3 ? GL_RGB
                   : channels == 1 ? GL_RED
                                   : 0;
+
+  Texture result = AllocateAndSetupDataFromMemory(width, height, format, data);
+  stbi_image_free(data);
+
+  return result;
+}
+
+Texture Image::AllocateAndSetupDataFromMemory(int width, int height,
+                                              GLenum format, const void *data) {
+  if (!data) {
+    return {};
+  }
 
   Texture result;
   result.Width = width;
@@ -60,9 +72,21 @@ Texture Image::LoadTexture(const std::filesystem::path &path) {
   glTextureParameteri(result.Handle, GL_TEXTURE_WRAP_T, GL_REPEAT);
 
   glGenerateTextureMipmap(result.Handle);
-  stbi_image_free(data);
 
   return result;
+}
+
+void Image::SetData(int width, int height, GLenum format, const void *data) {
+
+  if (!data)
+    return;
+
+  if (width != m_Texture.Width || height != m_Texture.Height) {
+    std::cout << "resizing " << std::endl;
+    glDeleteTextures(1, &m_Texture.Handle);
+  }
+
+  m_Texture = AllocateAndSetupDataFromMemory(width, height, format, data);
 }
 
 Framebuffer Image::CreateFramebufferWithTexture(const Texture texture) {
@@ -102,34 +126,5 @@ void Image::BlitFramebufferToSwapchain(const Framebuffer framebuffer) {
                     framebuffer.ColorAttachment.Height, // Destination rect
                     GL_COLOR_BUFFER_BIT, GL_NEAREST);
 }
-void Image::SetData(const void *data, size_t data_size) {
 
-  int image_width = 0;
-  int image_height = 0;
-  unsigned char *image_data =
-      stbi_load_from_memory((const unsigned char *)data, (int)data_size,
-                            &image_width, &image_height, NULL, 4);
-
-  m_Texture.Width = image_width;
-  m_Texture.Height = image_height;
-
-  // Create a OpenGL texture identifier
-  glGenTextures(1, &m_Texture.Handle);
-  glBindTexture(GL_TEXTURE_2D, m_Texture.Handle);
-
-  // Setup filtering parameters for display
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-
-  // Upload pixels into texture
-  glPixelStorei(GL_UNPACK_ROW_LENGTH, 0);
-  glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA32F, image_width, image_height, 0,
-               GL_RGBA32F, GL_UNSIGNED_BYTE, image_data);
-  stbi_image_free(image_data);
-
-  m_Texture.Width = image_width;
-  m_Texture.Height = image_height;
-
-  SetData(m_Texture);
-}
 } // namespace Walnut

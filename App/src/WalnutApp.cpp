@@ -144,7 +144,6 @@ public:
 
     m_Camera.OnResize(m_ViewportWidth, m_ViewportHeight);
 
-    m_Renderer.Compute();
     m_Renderer.Render(m_Scene, m_Camera);
 
     m_LastRenderTime = timer.ElapsedMillis();
