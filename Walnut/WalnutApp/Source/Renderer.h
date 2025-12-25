@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Image.h"
+#include "GUI/Walnut/Image.h"
 
 #include "Camera.h"
 #include "Ray.h"

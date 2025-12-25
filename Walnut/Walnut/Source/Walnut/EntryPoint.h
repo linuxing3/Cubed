@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Application.h"
+#include "GUI/Walnut/Application.h"
 
 extern Walnut::Application* Walnut::CreateApplication(int argc, char** argv);
 bool g_ApplicationRunning = true;

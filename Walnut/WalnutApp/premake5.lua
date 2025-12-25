@@ -7,18 +7,18 @@ staticruntime "off"
 
 -- buildoptions {"-stdlib=libc++"}
 
-files { "src/**.h", "src/**.cpp"}
+files { "Source/**.h", "Source/**.cpp"}
 
 includedirs
 {
-    "../App/src",
-    "../Walnut/src",
-    "../vendor/glad/include",
+    "Source",
+    "../Walnut/Source",
+    "../Walnut/Platform",
     "../vendor",
+    "../vendor/glm",
+    "../vendor/glad/include",
     "../vendor/imgui",
     "../vendor/imgui/backends",
-    -- "../vendor/glfw/include",
-    "../vendor/glm",
 }
 
 links

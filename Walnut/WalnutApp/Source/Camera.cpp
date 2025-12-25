@@ -5,7 +5,7 @@
 #include <glm/gtc/quaternion.hpp>
 #include <glm/gtx/quaternion.hpp>
 
-#include "Input/Input.h"
+#include "GUI/Walnut/Input/Input.h"
 
 using namespace Walnut;
 

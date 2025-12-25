@@ -1,11 +1,14 @@
 #pragma once
 
+#include "Walnut/Layer.h"
+#include "Walnut/Timer.h"
+
 #include "Camera.h"
-#include "Layer.h"
 #include "Renderer.h"
 #include "Scene.h"
-#include "Timer.h"
+
 #include "glm/gtc/type_ptr.hpp"
+
 #include "imgui.h"
 
 using namespace Walnut;

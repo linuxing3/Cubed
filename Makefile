@@ -156,6 +156,19 @@ Walnut/fast:
 .PHONY : Walnut/fast
 
 #=============================================================================
+# Target rules for targets named WalnutApp
+
+# Build rule for target.
+WalnutApp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 WalnutApp
+.PHONY : WalnutApp
+
+# fast build rule for target.
+WalnutApp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/build
+.PHONY : WalnutApp/fast
+
+#=============================================================================
 # Target rules for targets named glad
 
 # Build rule for target.
@@ -625,6 +638,78 @@ Walnut/Walnut/Source/Walnut/Utils/StringUtils.s: Walnut/Walnut/Source/Walnut/Uti
 Walnut/Walnut/Source/Walnut/Utils/StringUtils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Utils/StringUtils.cpp.s
 .PHONY : Walnut/Walnut/Source/Walnut/Utils/StringUtils.cpp.s
+
+Walnut/WalnutApp/Source/Camera.o: Walnut/WalnutApp/Source/Camera.cpp.o
+.PHONY : Walnut/WalnutApp/Source/Camera.o
+
+# target to build an object file
+Walnut/WalnutApp/Source/Camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/Camera.cpp.o
+.PHONY : Walnut/WalnutApp/Source/Camera.cpp.o
+
+Walnut/WalnutApp/Source/Camera.i: Walnut/WalnutApp/Source/Camera.cpp.i
+.PHONY : Walnut/WalnutApp/Source/Camera.i
+
+# target to preprocess a source file
+Walnut/WalnutApp/Source/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/Camera.cpp.i
+.PHONY : Walnut/WalnutApp/Source/Camera.cpp.i
+
+Walnut/WalnutApp/Source/Camera.s: Walnut/WalnutApp/Source/Camera.cpp.s
+.PHONY : Walnut/WalnutApp/Source/Camera.s
+
+# target to generate assembly for a file
+Walnut/WalnutApp/Source/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/Camera.cpp.s
+.PHONY : Walnut/WalnutApp/Source/Camera.cpp.s
+
+Walnut/WalnutApp/Source/Renderer.o: Walnut/WalnutApp/Source/Renderer.cpp.o
+.PHONY : Walnut/WalnutApp/Source/Renderer.o
+
+# target to build an object file
+Walnut/WalnutApp/Source/Renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/Renderer.cpp.o
+.PHONY : Walnut/WalnutApp/Source/Renderer.cpp.o
+
+Walnut/WalnutApp/Source/Renderer.i: Walnut/WalnutApp/Source/Renderer.cpp.i
+.PHONY : Walnut/WalnutApp/Source/Renderer.i
+
+# target to preprocess a source file
+Walnut/WalnutApp/Source/Renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/Renderer.cpp.i
+.PHONY : Walnut/WalnutApp/Source/Renderer.cpp.i
+
+Walnut/WalnutApp/Source/Renderer.s: Walnut/WalnutApp/Source/Renderer.cpp.s
+.PHONY : Walnut/WalnutApp/Source/Renderer.s
+
+# target to generate assembly for a file
+Walnut/WalnutApp/Source/Renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/Renderer.cpp.s
+.PHONY : Walnut/WalnutApp/Source/Renderer.cpp.s
+
+Walnut/WalnutApp/Source/WalnutApp.o: Walnut/WalnutApp/Source/WalnutApp.cpp.o
+.PHONY : Walnut/WalnutApp/Source/WalnutApp.o
+
+# target to build an object file
+Walnut/WalnutApp/Source/WalnutApp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/WalnutApp.cpp.o
+.PHONY : Walnut/WalnutApp/Source/WalnutApp.cpp.o
+
+Walnut/WalnutApp/Source/WalnutApp.i: Walnut/WalnutApp/Source/WalnutApp.cpp.i
+.PHONY : Walnut/WalnutApp/Source/WalnutApp.i
+
+# target to preprocess a source file
+Walnut/WalnutApp/Source/WalnutApp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/WalnutApp.cpp.i
+.PHONY : Walnut/WalnutApp/Source/WalnutApp.cpp.i
+
+Walnut/WalnutApp/Source/WalnutApp.s: Walnut/WalnutApp/Source/WalnutApp.cpp.s
+.PHONY : Walnut/WalnutApp/Source/WalnutApp.s
+
+# target to generate assembly for a file
+Walnut/WalnutApp/Source/WalnutApp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/WalnutApp.cpp.s
+.PHONY : Walnut/WalnutApp/Source/WalnutApp.cpp.s
 
 Walnut/vendor/glad/src/gl.o: Walnut/vendor/glad/src/gl.c.o
 .PHONY : Walnut/vendor/glad/src/gl.o
@@ -1549,6 +1634,7 @@ help:
 	@echo "... ImGui"
 	@echo "... Walnut"
 	@echo "... Walnut-Networking"
+	@echo "... WalnutApp"
 	@echo "... glad"
 	@echo "... stb"
 	@echo "... yaml-cpp"
@@ -1606,6 +1692,15 @@ help:
 	@echo "... Walnut/Walnut/Source/Walnut/Utils/StringUtils.o"
 	@echo "... Walnut/Walnut/Source/Walnut/Utils/StringUtils.i"
 	@echo "... Walnut/Walnut/Source/Walnut/Utils/StringUtils.s"
+	@echo "... Walnut/WalnutApp/Source/Camera.o"
+	@echo "... Walnut/WalnutApp/Source/Camera.i"
+	@echo "... Walnut/WalnutApp/Source/Camera.s"
+	@echo "... Walnut/WalnutApp/Source/Renderer.o"
+	@echo "... Walnut/WalnutApp/Source/Renderer.i"
+	@echo "... Walnut/WalnutApp/Source/Renderer.s"
+	@echo "... Walnut/WalnutApp/Source/WalnutApp.o"
+	@echo "... Walnut/WalnutApp/Source/WalnutApp.i"
+	@echo "... Walnut/WalnutApp/Source/WalnutApp.s"
 	@echo "... Walnut/vendor/glad/src/gl.o"
 	@echo "... Walnut/vendor/glad/src/gl.i"
 	@echo "... Walnut/vendor/glad/src/gl.s"

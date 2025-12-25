@@ -1,12 +1,13 @@
 #include "Renderer.h"
 
-#include "Image.h"
-#include "Random.h"
-#include "Shader.h"
+#include "GUI/Walnut/Image.h"
+
+#include "Walnut/Random.h"
+#include "Walnut/Shader.h"
 #include <cstdint>
 #include <glad/gl.h>
 
-#include "stb/stb_image.h"
+#include "stb_image/stb_image.h"
 
 #include <cstring>
 #include <iostream>

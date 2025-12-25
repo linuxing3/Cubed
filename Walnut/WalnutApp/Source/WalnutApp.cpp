@@ -1,5 +1,5 @@
-#include "Application.h"
-#include "EntryPoint.h"
+#include "GUI/Walnut/Application.h"
+#include "Walnut/EntryPoint.h"
 #include "ComputerLayer.h"
 
 Walnut::Application *Walnut::CreateApplication(int argc, char **argv) {
