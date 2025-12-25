@@ -29,6 +29,7 @@ set(CMAKE_CXX_FLAGS_DIST "")
 
 project("WalnutApp")
 include(Walnut/Walnut-Modules/Walnut-Networking/Walnut-Networking.cmake)
+include(Cubed-Client/Cubed-Client.cmake)
 include(Walnut/vendor/imgui/ImGui.cmake)
 include(Walnut/Walnut/Walnut.cmake)
 include(Walnut/WalnutApp/WalnutApp.cmake)

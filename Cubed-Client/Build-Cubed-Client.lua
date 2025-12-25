@@ -11,15 +11,14 @@ project "Cubed-Client"
    {
       "../Cubed-Common/Source",
 
-      "../Walnut/vendor/imgui",
-      "../Walnut/vendor/glfw/include",
+      "../Walnut/vendor/glad/include",
       "../Walnut/vendor/glm",
+      "../Walnut/vendor/imgui",
+      -- "../Walnut/vendor/glfw/include",
       "../Walnut/vendor/spdlog/include",
       
       "../Walnut/Walnut/Source",
-      "../Walnut/Walnut/Platform/GUI",
-
-      "%{IncludeDir.VulkanSDK}",
+      "../Walnut/Walnut/Platform",
 
       -- Walnut-Networking
       "../Walnut/Walnut-Modules/Walnut-Networking/Source",
@@ -28,18 +27,39 @@ project "Cubed-Client"
 
     links
     {
-        "Cubed-Common",
-        "Walnut"
+        -- "Cubed-Common",
+        "glad",
+        "ImGui",
+        "glfw",
+        "X11",
+        "xcb",
+        "Xau",
+        "Xdmcp",
+        "pthread",
+        "pthread",
+        "Walnut",
+        "GL",
+        "rt",
+        "m",
+        "dl",
     }
 
    targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
    objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
 
+   filter "system:linux"
+      systemversion "latest"
+      -- libdirs { "../Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/bin/Linux" }
+      -- links { "GameNetworkingSockets"}
+      postbuildcommands 
+      {
+        '{COPY} "../Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/bin/Linux/GameNetworkingSockets.so" "%{cfg.targetdir}"',
+      }
+
    filter "system:windows"
       systemversion "latest"
       defines { "WL_PLATFORM_WINDOWS" }
       buildoptions { "/utf-8" }
-
       postbuildcommands 
       {
         '{COPY} "../%{WalnutNetworkingBinDir}/GameNetworkingSockets.dll" "%{cfg.targetdir}"',

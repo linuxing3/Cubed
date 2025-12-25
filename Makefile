@@ -130,6 +130,19 @@ Walnut-Networking/fast:
 .PHONY : Walnut-Networking/fast
 
 #=============================================================================
+# Target rules for targets named Cubed-Client
+
+# Build rule for target.
+Cubed-Client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Cubed-Client
+.PHONY : Cubed-Client
+
+# fast build rule for target.
+Cubed-Client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Client.dir/build.make CMakeFiles/Cubed-Client.dir/build
+.PHONY : Cubed-Client/fast
+
+#=============================================================================
 # Target rules for targets named ImGui
 
 # Build rule for target.
@@ -206,6 +219,78 @@ yaml-cpp: cmake_check_build_system
 yaml-cpp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/yaml-cpp.dir/build.make CMakeFiles/yaml-cpp.dir/build
 .PHONY : yaml-cpp/fast
+
+Cubed-Client/Source/ClientLayer.o: Cubed-Client/Source/ClientLayer.cpp.o
+.PHONY : Cubed-Client/Source/ClientLayer.o
+
+# target to build an object file
+Cubed-Client/Source/ClientLayer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Client.dir/build.make CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/ClientLayer.cpp.o
+.PHONY : Cubed-Client/Source/ClientLayer.cpp.o
+
+Cubed-Client/Source/ClientLayer.i: Cubed-Client/Source/ClientLayer.cpp.i
+.PHONY : Cubed-Client/Source/ClientLayer.i
+
+# target to preprocess a source file
+Cubed-Client/Source/ClientLayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Client.dir/build.make CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/ClientLayer.cpp.i
+.PHONY : Cubed-Client/Source/ClientLayer.cpp.i
+
+Cubed-Client/Source/ClientLayer.s: Cubed-Client/Source/ClientLayer.cpp.s
+.PHONY : Cubed-Client/Source/ClientLayer.s
+
+# target to generate assembly for a file
+Cubed-Client/Source/ClientLayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Client.dir/build.make CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/ClientLayer.cpp.s
+.PHONY : Cubed-Client/Source/ClientLayer.cpp.s
+
+Cubed-Client/Source/CubedApp.o: Cubed-Client/Source/CubedApp.cpp.o
+.PHONY : Cubed-Client/Source/CubedApp.o
+
+# target to build an object file
+Cubed-Client/Source/CubedApp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Client.dir/build.make CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/CubedApp.cpp.o
+.PHONY : Cubed-Client/Source/CubedApp.cpp.o
+
+Cubed-Client/Source/CubedApp.i: Cubed-Client/Source/CubedApp.cpp.i
+.PHONY : Cubed-Client/Source/CubedApp.i
+
+# target to preprocess a source file
+Cubed-Client/Source/CubedApp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Client.dir/build.make CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/CubedApp.cpp.i
+.PHONY : Cubed-Client/Source/CubedApp.cpp.i
+
+Cubed-Client/Source/CubedApp.s: Cubed-Client/Source/CubedApp.cpp.s
+.PHONY : Cubed-Client/Source/CubedApp.s
+
+# target to generate assembly for a file
+Cubed-Client/Source/CubedApp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Client.dir/build.make CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/CubedApp.cpp.s
+.PHONY : Cubed-Client/Source/CubedApp.cpp.s
+
+Cubed-Client/Source/Renderer/Renderer.o: Cubed-Client/Source/Renderer/Renderer.cpp.o
+.PHONY : Cubed-Client/Source/Renderer/Renderer.o
+
+# target to build an object file
+Cubed-Client/Source/Renderer/Renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Client.dir/build.make CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/Renderer/Renderer.cpp.o
+.PHONY : Cubed-Client/Source/Renderer/Renderer.cpp.o
+
+Cubed-Client/Source/Renderer/Renderer.i: Cubed-Client/Source/Renderer/Renderer.cpp.i
+.PHONY : Cubed-Client/Source/Renderer/Renderer.i
+
+# target to preprocess a source file
+Cubed-Client/Source/Renderer/Renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Client.dir/build.make CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/Renderer/Renderer.cpp.i
+.PHONY : Cubed-Client/Source/Renderer/Renderer.cpp.i
+
+Cubed-Client/Source/Renderer/Renderer.s: Cubed-Client/Source/Renderer/Renderer.cpp.s
+.PHONY : Cubed-Client/Source/Renderer/Renderer.s
+
+# target to generate assembly for a file
+Cubed-Client/Source/Renderer/Renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Client.dir/build.make CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/Renderer/Renderer.cpp.s
+.PHONY : Cubed-Client/Source/Renderer/Renderer.cpp.s
 
 Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.o: Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.o
 .PHONY : Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.o
@@ -1631,6 +1716,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Cubed-Client"
 	@echo "... ImGui"
 	@echo "... Walnut"
 	@echo "... Walnut-Networking"
@@ -1638,6 +1724,15 @@ help:
 	@echo "... glad"
 	@echo "... stb"
 	@echo "... yaml-cpp"
+	@echo "... Cubed-Client/Source/ClientLayer.o"
+	@echo "... Cubed-Client/Source/ClientLayer.i"
+	@echo "... Cubed-Client/Source/ClientLayer.s"
+	@echo "... Cubed-Client/Source/CubedApp.o"
+	@echo "... Cubed-Client/Source/CubedApp.i"
+	@echo "... Cubed-Client/Source/CubedApp.s"
+	@echo "... Cubed-Client/Source/Renderer/Renderer.o"
+	@echo "... Cubed-Client/Source/Renderer/Renderer.i"
+	@echo "... Cubed-Client/Source/Renderer/Renderer.s"
 	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.o"
 	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.i"
 	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.s"

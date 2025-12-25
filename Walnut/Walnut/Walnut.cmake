@@ -69,8 +69,16 @@ target_link_libraries("Walnut"
   $<$<CONFIG:Debug>:yaml-cpp>
   $<$<CONFIG:Debug>:stb>
   $<$<CONFIG:Debug>:glfw>
-  $<$<CONFIG:Debug>:X11>
   $<$<CONFIG:Debug>:GL>
+  $<$<CONFIG:Debug>:X11>
+  $<$<CONFIG:Debug>:xcb>
+  $<$<CONFIG:Debug>:Xau>
+  $<$<CONFIG:Debug>:Xdmcp>
+  $<$<CONFIG:Debug>:pthread>
+  $<$<CONFIG:Debug>:rt>
+  $<$<CONFIG:Debug>:m>
+  $<$<CONFIG:Debug>:stdc++fs>
+  $<$<CONFIG:Debug>:dl>
 )
 target_compile_options("Walnut" PRIVATE
   $<$<AND:$<CONFIG:Debug>,$<COMPILE_LANGUAGE:C>>:-g>
@@ -122,8 +130,16 @@ target_link_libraries("Walnut"
   $<$<CONFIG:Release>:yaml-cpp>
   $<$<CONFIG:Release>:stb>
   $<$<CONFIG:Release>:glfw>
-  $<$<CONFIG:Release>:X11>
   $<$<CONFIG:Release>:GL>
+  $<$<CONFIG:Release>:X11>
+  $<$<CONFIG:Release>:xcb>
+  $<$<CONFIG:Release>:Xau>
+  $<$<CONFIG:Release>:Xdmcp>
+  $<$<CONFIG:Release>:pthread>
+  $<$<CONFIG:Release>:rt>
+  $<$<CONFIG:Release>:m>
+  $<$<CONFIG:Release>:stdc++fs>
+  $<$<CONFIG:Release>:dl>
 )
 target_compile_options("Walnut" PRIVATE
   $<$<AND:$<CONFIG:Release>,$<COMPILE_LANGUAGE:C>>:-O2>
@@ -177,8 +193,16 @@ target_link_libraries("Walnut"
   $<$<CONFIG:Dist>:yaml-cpp>
   $<$<CONFIG:Dist>:stb>
   $<$<CONFIG:Dist>:glfw>
-  $<$<CONFIG:Dist>:X11>
   $<$<CONFIG:Dist>:GL>
+  $<$<CONFIG:Dist>:X11>
+  $<$<CONFIG:Dist>:xcb>
+  $<$<CONFIG:Dist>:Xau>
+  $<$<CONFIG:Dist>:Xdmcp>
+  $<$<CONFIG:Dist>:pthread>
+  $<$<CONFIG:Dist>:rt>
+  $<$<CONFIG:Dist>:m>
+  $<$<CONFIG:Dist>:stdc++fs>
+  $<$<CONFIG:Dist>:dl>
 )
 target_compile_options("Walnut" PRIVATE
   $<$<AND:$<CONFIG:Dist>,$<COMPILE_LANGUAGE:C>>:-O2>

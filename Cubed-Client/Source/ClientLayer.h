@@ -1,13 +1,17 @@
 #pragma once
 
-#include "Walnut/Application.h"
+#include "GUI/Walnut/Application.h"
 #include "Walnut/Layer.h"
+#include "Walnut/Core/Buffer.h"
 
-#include "Walnut/Networking/Client.h"
+// #include "Walnut/Networking/Client.h"
 
 #include <glm/glm.hpp>
 
 #include "Renderer/Renderer.h"
+
+#include <mutex>
+#include <map>
 
 namespace Cubed {
 
@@ -18,7 +22,7 @@ namespace Cubed {
 		virtual void OnDetach() override;
 
 		virtual void OnUpdate(float ts) override;
-		virtual void OnRender() override;
+		virtual void OnRender();
 		virtual void OnUIRender() override;
 	private:
 		void OnDataReceived(const Walnut::Buffer buffer);
@@ -30,7 +34,7 @@ namespace Cubed {
 
 		std::string m_ServerAddress;
 
-		Walnut::Client m_Client;
+		// Walnut::Client m_Client;
 		uint32_t m_PlayerID = 0;
 
 		struct PlayerData
@@ -40,7 +44,7 @@ namespace Cubed {
 		};
 
 		std::mutex m_PlayerDataMutex;
-		std::map<uint32_t, PlayerData> m_PlayerData;
+		// std::map<uint32_t, PlayerData> m_PlayerData;
 	};
 
 }

@@ -337,6 +337,24 @@
 },
 {
   "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Cubed-Common/Source -I/share/sources/glfw-app/Walnut/vendor/glad/include -I/share/sources/glfw-app/Walnut/vendor/glm -I/share/sources/glfw-app/Walnut/vendor/imgui -I/share/sources/glfw-app/Walnut/vendor/spdlog/include -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/Walnut/Platform -I/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source -I/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include -std=c++17 -g -std=c++17 -o CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/ClientLayer.cpp.o -c /share/sources/glfw-app/Cubed-Client/Source/ClientLayer.cpp",
+  "file": "/share/sources/glfw-app/Cubed-Client/Source/ClientLayer.cpp",
+  "output": "CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/ClientLayer.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Cubed-Common/Source -I/share/sources/glfw-app/Walnut/vendor/glad/include -I/share/sources/glfw-app/Walnut/vendor/glm -I/share/sources/glfw-app/Walnut/vendor/imgui -I/share/sources/glfw-app/Walnut/vendor/spdlog/include -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/Walnut/Platform -I/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source -I/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include -std=c++17 -g -std=c++17 -o CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/CubedApp.cpp.o -c /share/sources/glfw-app/Cubed-Client/Source/CubedApp.cpp",
+  "file": "/share/sources/glfw-app/Cubed-Client/Source/CubedApp.cpp",
+  "output": "CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/CubedApp.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Cubed-Common/Source -I/share/sources/glfw-app/Walnut/vendor/glad/include -I/share/sources/glfw-app/Walnut/vendor/glm -I/share/sources/glfw-app/Walnut/vendor/imgui -I/share/sources/glfw-app/Walnut/vendor/spdlog/include -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/Walnut/Platform -I/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source -I/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include -std=c++17 -g -std=c++17 -o CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/Renderer/Renderer.cpp.o -c /share/sources/glfw-app/Cubed-Client/Source/Renderer/Renderer.cpp",
+  "file": "/share/sources/glfw-app/Cubed-Client/Source/Renderer/Renderer.cpp",
+  "output": "CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/Renderer/Renderer.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
   "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Walnut/WalnutApp/Source -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/Walnut/Platform -I/share/sources/glfw-app/Walnut/vendor -I/share/sources/glfw-app/Walnut/vendor/glm -I/share/sources/glfw-app/Walnut/vendor/glad/include -I/share/sources/glfw-app/Walnut/vendor/imgui -I/share/sources/glfw-app/Walnut/vendor/imgui/backends -std=c++17 -g -std=c++17 -o CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/Camera.cpp.o -c /share/sources/glfw-app/Walnut/WalnutApp/Source/Camera.cpp",
   "file": "/share/sources/glfw-app/Walnut/WalnutApp/Source/Camera.cpp",
   "output": "CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/Camera.cpp.o"

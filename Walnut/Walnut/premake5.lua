@@ -21,20 +21,31 @@ project "Walnut"
       "../vendor/glm",
       "../vendor/imgui",
       "../vendor/imgui/backends",
+      -- "../vendor/glfw/include",
       "../vendor/glad/include",
       "../vendor/spdlog/include",
       "../vendor/yaml-cpp/include",
    }
 
+   includedirs (extra_includedirs)
+
    links
    {
-       "imgui",
+       "ImGui",
        "glfw",
        "glad",
-       "X11",
        "GL",
+       "X11",
+       "xcb",
+       "Xau",
+       "Xdmcp",
+       "pthread",
+       "rt",
+       "m",
+       "stdc++fs",
        "yaml-cpp",
-       "stb"
+       "stb",
+       "dl",
    }
 
    targetdir ("../bin/" .. outputdir .. "/%{prj.name}")

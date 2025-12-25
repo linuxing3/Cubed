@@ -136,7 +136,8 @@ namespace Walnut {
 		if (detail.Enabled && detail.LevelFilter <= level)
 		{
 			auto logger = (type == Type::Core) ? GetCoreLogger() : GetClientLogger();
-			std::string formatted = format(format, std::forward<Args>(args)...);
+			// std::string formatted = format(format, std::forward<Args>(args)...);
+			std::string formatted = "";
 			switch (level)
 			{
 			case Level::Trace:

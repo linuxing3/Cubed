@@ -1,5 +1,5 @@
+#define GLFW_INCLUDE_NONE
 #include "glad/gl.h"
-#define GLFW_INCLUDE_GLEXT
 #include <GLFW/glfw3.h> // Will drag system OpenGL headers
 
 #include "Application.h"
@@ -71,8 +71,15 @@ void Application::Init() {
   glfwSetKeyCallback(m_WindowHandle, KeyCallback);
 
   glfwMakeContextCurrent(m_WindowHandle);
+
   // LOAD GL
   gladLoadGL(glfwGetProcAddress);
+  // Enable depth test
+  glEnable(GL_DEPTH_TEST);
+  // Accept fragment if it is closer to the camera than the former one
+  glDepthFunc(GL_LESS);
+
+
   glfwSwapInterval(1);
 
   // Init Imgui
@@ -146,11 +153,11 @@ void Application::Run() {
   m_Running = true;
 
   for (auto &layer : m_LayerStack)
-    layer->OnDetach();
+    layer->OnAttach();
 
   while (!glfwWindowShouldClose(m_WindowHandle)) {
     // ------------------- Clear starts ----------------------------
-    {
+    // {
       ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
       int display_w, display_h;
       glfwGetFramebufferSize(m_WindowHandle, &display_w, &display_h);
@@ -158,7 +165,7 @@ void Application::Run() {
       glClearColor(clear_color.x * clear_color.w, clear_color.y * clear_color.w,
                    clear_color.z * clear_color.w, clear_color.w);
       glClear(GL_COLOR_BUFFER_BIT);
-    }
+    // }
     // ------------------- ImGui Frame starts ----------------------------
     ImGui_ImplOpenGL3_NewFrame();
     ImGui_ImplGlfw_NewFrame();

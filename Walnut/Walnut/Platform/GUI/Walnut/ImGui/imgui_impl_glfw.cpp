@@ -146,7 +146,7 @@
 #elif GLFW_HAS_X11
 #ifndef GLFW_EXPOSE_NATIVE_X11      // for glfwGetX11Display(), glfwGetX11Window() on Freedesktop (Linux, BSD, etc.)
 #define GLFW_EXPOSE_NATIVE_X11
-#include <X11/Xatom.h>
+#include "X11/Xatom.h"
 #endif
 #include <GLFW/glfw3native.h>
 #undef Status                   // X11 headers are leaking this.
