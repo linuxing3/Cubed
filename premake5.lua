@@ -9,7 +9,5 @@ workspace "WalnutApp"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
-include "vendor"
+-- include "vendor"
 include "Walnut"
-include "App"
-

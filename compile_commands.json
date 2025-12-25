@@ -1,104 +1,338 @@
 [
 {
   "directory": "/share/sources/glfw-app",
-  "command": "/usr/bin/c++   -std=c++11 -fPIC -fPIC -g -std=c++11 -o CMakeFiles/ImGui.dir/vendor/imgui/imgui.cpp.o -c /share/sources/glfw-app/vendor/imgui/imgui.cpp",
-  "file": "/share/sources/glfw-app/vendor/imgui/imgui.cpp",
-  "output": "CMakeFiles/ImGui.dir/vendor/imgui/imgui.cpp.o"
+  "command": "/usr/bin/c++ -DWL_DEBUG -DWL_PLATFORM_LINUX -I/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source -I/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/vendor/imgui -I/share/sources/glfw-app/Walnut/vendor/glfw/include -I/share/sources/glfw-app/Walnut/vendor/glm -I/share/sources/glfw-app/Walnut/vendor/spdlog/include -I/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.o -c /share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp",
+  "file": "/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp",
+  "output": "CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.o"
 },
 {
   "directory": "/share/sources/glfw-app",
-  "command": "/usr/bin/c++   -std=c++11 -fPIC -fPIC -g -std=c++11 -o CMakeFiles/ImGui.dir/vendor/imgui/imgui_demo.cpp.o -c /share/sources/glfw-app/vendor/imgui/imgui_demo.cpp",
-  "file": "/share/sources/glfw-app/vendor/imgui/imgui_demo.cpp",
-  "output": "CMakeFiles/ImGui.dir/vendor/imgui/imgui_demo.cpp.o"
+  "command": "/usr/bin/c++ -DWL_DEBUG -DWL_PLATFORM_LINUX -I/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source -I/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/vendor/imgui -I/share/sources/glfw-app/Walnut/vendor/glfw/include -I/share/sources/glfw-app/Walnut/vendor/glm -I/share/sources/glfw-app/Walnut/vendor/spdlog/include -I/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.o -c /share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp",
+  "file": "/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp",
+  "output": "CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.o"
 },
 {
   "directory": "/share/sources/glfw-app",
-  "command": "/usr/bin/c++   -std=c++11 -fPIC -fPIC -g -std=c++11 -o CMakeFiles/ImGui.dir/vendor/imgui/imgui_draw.cpp.o -c /share/sources/glfw-app/vendor/imgui/imgui_draw.cpp",
-  "file": "/share/sources/glfw-app/vendor/imgui/imgui_draw.cpp",
-  "output": "CMakeFiles/ImGui.dir/vendor/imgui/imgui_draw.cpp.o"
+  "command": "/usr/bin/c++ -DWL_DEBUG -DWL_PLATFORM_LINUX -I/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source -I/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/vendor/imgui -I/share/sources/glfw-app/Walnut/vendor/glfw/include -I/share/sources/glfw-app/Walnut/vendor/glm -I/share/sources/glfw-app/Walnut/vendor/spdlog/include -I/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.o -c /share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp",
+  "file": "/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp",
+  "output": "CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.o"
 },
 {
   "directory": "/share/sources/glfw-app",
-  "command": "/usr/bin/c++   -std=c++11 -fPIC -fPIC -g -std=c++11 -o CMakeFiles/ImGui.dir/vendor/imgui/imgui_tables.cpp.o -c /share/sources/glfw-app/vendor/imgui/imgui_tables.cpp",
-  "file": "/share/sources/glfw-app/vendor/imgui/imgui_tables.cpp",
-  "output": "CMakeFiles/ImGui.dir/vendor/imgui/imgui_tables.cpp.o"
+  "command": "/usr/bin/c++ -DWL_DEBUG -DWL_PLATFORM_LINUX -I/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source -I/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/vendor/imgui -I/share/sources/glfw-app/Walnut/vendor/glfw/include -I/share/sources/glfw-app/Walnut/vendor/glm -I/share/sources/glfw-app/Walnut/vendor/spdlog/include -I/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.o -c /share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp",
+  "file": "/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp",
+  "output": "CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.o"
 },
 {
   "directory": "/share/sources/glfw-app",
-  "command": "/usr/bin/c++   -std=c++11 -fPIC -fPIC -g -std=c++11 -o CMakeFiles/ImGui.dir/vendor/imgui/imgui_widgets.cpp.o -c /share/sources/glfw-app/vendor/imgui/imgui_widgets.cpp",
-  "file": "/share/sources/glfw-app/vendor/imgui/imgui_widgets.cpp",
-  "output": "CMakeFiles/ImGui.dir/vendor/imgui/imgui_widgets.cpp.o"
+  "command": "/usr/bin/c++   -std=c++11 -fPIC -fPIC -g -std=c++11 -o CMakeFiles/ImGui.dir/Walnut/vendor/imgui/imgui.cpp.o -c /share/sources/glfw-app/Walnut/vendor/imgui/imgui.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/imgui/imgui.cpp",
+  "output": "CMakeFiles/ImGui.dir/Walnut/vendor/imgui/imgui.cpp.o"
 },
 {
   "directory": "/share/sources/glfw-app",
-  "command": "/usr/bin/cc  -I/share/sources/glfw-app/vendor/glad/include -w -o CMakeFiles/glad.dir/vendor/glad/src/gl.c.o -c /share/sources/glfw-app/vendor/glad/src/gl.c",
-  "file": "/share/sources/glfw-app/vendor/glad/src/gl.c",
-  "output": "CMakeFiles/glad.dir/vendor/glad/src/gl.c.o"
+  "command": "/usr/bin/c++   -std=c++11 -fPIC -fPIC -g -std=c++11 -o CMakeFiles/ImGui.dir/Walnut/vendor/imgui/imgui_demo.cpp.o -c /share/sources/glfw-app/Walnut/vendor/imgui/imgui_demo.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/imgui/imgui_demo.cpp",
+  "output": "CMakeFiles/ImGui.dir/Walnut/vendor/imgui/imgui_demo.cpp.o"
 },
 {
   "directory": "/share/sources/glfw-app",
-  "command": "/usr/bin/c++  -I/share/sources/glfw-app/vendor/stb -std=c++11 -fPIC -fPIC -g -std=c++11 -o CMakeFiles/stb.dir/vendor/stb/stb_image.cpp.o -c /share/sources/glfw-app/vendor/stb/stb_image.cpp",
-  "file": "/share/sources/glfw-app/vendor/stb/stb_image.cpp",
-  "output": "CMakeFiles/stb.dir/vendor/stb/stb_image.cpp.o"
+  "command": "/usr/bin/c++   -std=c++11 -fPIC -fPIC -g -std=c++11 -o CMakeFiles/ImGui.dir/Walnut/vendor/imgui/imgui_draw.cpp.o -c /share/sources/glfw-app/Walnut/vendor/imgui/imgui_draw.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/imgui/imgui_draw.cpp",
+  "output": "CMakeFiles/ImGui.dir/Walnut/vendor/imgui/imgui_draw.cpp.o"
 },
 {
   "directory": "/share/sources/glfw-app",
-  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Walnut/src -I/share/sources/glfw-app/vendor/glad/include -I/share/sources/glfw-app/vendor/stb -I/share/sources/glfw-app/vendor/imgui -I/share/sources/glfw-app/vendor/imgui/backends -I/share/sources/glfw-app/vendor/glm -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/src/Application.cpp.o -c /share/sources/glfw-app/Walnut/src/Application.cpp",
-  "file": "/share/sources/glfw-app/Walnut/src/Application.cpp",
-  "output": "CMakeFiles/Walnut.dir/Walnut/src/Application.cpp.o"
+  "command": "/usr/bin/c++   -std=c++11 -fPIC -fPIC -g -std=c++11 -o CMakeFiles/ImGui.dir/Walnut/vendor/imgui/imgui_tables.cpp.o -c /share/sources/glfw-app/Walnut/vendor/imgui/imgui_tables.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/imgui/imgui_tables.cpp",
+  "output": "CMakeFiles/ImGui.dir/Walnut/vendor/imgui/imgui_tables.cpp.o"
 },
 {
   "directory": "/share/sources/glfw-app",
-  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Walnut/src -I/share/sources/glfw-app/vendor/glad/include -I/share/sources/glfw-app/vendor/stb -I/share/sources/glfw-app/vendor/imgui -I/share/sources/glfw-app/vendor/imgui/backends -I/share/sources/glfw-app/vendor/glm -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/src/ImGui/imgui_impl_glfw.cpp.o -c /share/sources/glfw-app/Walnut/src/ImGui/imgui_impl_glfw.cpp",
-  "file": "/share/sources/glfw-app/Walnut/src/ImGui/imgui_impl_glfw.cpp",
-  "output": "CMakeFiles/Walnut.dir/Walnut/src/ImGui/imgui_impl_glfw.cpp.o"
+  "command": "/usr/bin/c++   -std=c++11 -fPIC -fPIC -g -std=c++11 -o CMakeFiles/ImGui.dir/Walnut/vendor/imgui/imgui_widgets.cpp.o -c /share/sources/glfw-app/Walnut/vendor/imgui/imgui_widgets.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/imgui/imgui_widgets.cpp",
+  "output": "CMakeFiles/ImGui.dir/Walnut/vendor/imgui/imgui_widgets.cpp.o"
 },
 {
   "directory": "/share/sources/glfw-app",
-  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Walnut/src -I/share/sources/glfw-app/vendor/glad/include -I/share/sources/glfw-app/vendor/stb -I/share/sources/glfw-app/vendor/imgui -I/share/sources/glfw-app/vendor/imgui/backends -I/share/sources/glfw-app/vendor/glm -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/src/ImGui/imgui_impl_opengl3.cpp.o -c /share/sources/glfw-app/Walnut/src/ImGui/imgui_impl_opengl3.cpp",
-  "file": "/share/sources/glfw-app/Walnut/src/ImGui/imgui_impl_opengl3.cpp",
-  "output": "CMakeFiles/Walnut.dir/Walnut/src/ImGui/imgui_impl_opengl3.cpp.o"
+  "command": "/usr/bin/cc  -I/share/sources/glfw-app/Walnut/vendor/glad/include -w -o CMakeFiles/glad.dir/Walnut/vendor/glad/src/gl.c.o -c /share/sources/glfw-app/Walnut/vendor/glad/src/gl.c",
+  "file": "/share/sources/glfw-app/Walnut/vendor/glad/src/gl.c",
+  "output": "CMakeFiles/glad.dir/Walnut/vendor/glad/src/gl.c.o"
 },
 {
   "directory": "/share/sources/glfw-app",
-  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Walnut/src -I/share/sources/glfw-app/vendor/glad/include -I/share/sources/glfw-app/vendor/stb -I/share/sources/glfw-app/vendor/imgui -I/share/sources/glfw-app/vendor/imgui/backends -I/share/sources/glfw-app/vendor/glm -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/src/Image.cpp.o -c /share/sources/glfw-app/Walnut/src/Image.cpp",
-  "file": "/share/sources/glfw-app/Walnut/src/Image.cpp",
-  "output": "CMakeFiles/Walnut.dir/Walnut/src/Image.cpp.o"
+  "command": "/usr/bin/c++  -I/share/sources/glfw-app/Walnut/vendor/stb_image -std=c++11 -fPIC -fPIC -g -std=c++11 -o CMakeFiles/stb.dir/Walnut/vendor/stb_image/stb_image.cpp.o -c /share/sources/glfw-app/Walnut/vendor/stb_image/stb_image.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/stb_image/stb_image.cpp",
+  "output": "CMakeFiles/stb.dir/Walnut/vendor/stb_image/stb_image.cpp.o"
 },
 {
   "directory": "/share/sources/glfw-app",
-  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Walnut/src -I/share/sources/glfw-app/vendor/glad/include -I/share/sources/glfw-app/vendor/stb -I/share/sources/glfw-app/vendor/imgui -I/share/sources/glfw-app/vendor/imgui/backends -I/share/sources/glfw-app/vendor/glm -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/src/Input/Input.cpp.o -c /share/sources/glfw-app/Walnut/src/Input/Input.cpp",
-  "file": "/share/sources/glfw-app/Walnut/src/Input/Input.cpp",
-  "output": "CMakeFiles/Walnut.dir/Walnut/src/Input/Input.cpp.o"
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/binary.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/binary.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/binary.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/binary.cpp.o"
 },
 {
   "directory": "/share/sources/glfw-app",
-  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Walnut/src -I/share/sources/glfw-app/vendor/glad/include -I/share/sources/glfw-app/vendor/stb -I/share/sources/glfw-app/vendor/imgui -I/share/sources/glfw-app/vendor/imgui/backends -I/share/sources/glfw-app/vendor/glm -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/src/Random.cpp.o -c /share/sources/glfw-app/Walnut/src/Random.cpp",
-  "file": "/share/sources/glfw-app/Walnut/src/Random.cpp",
-  "output": "CMakeFiles/Walnut.dir/Walnut/src/Random.cpp.o"
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/contrib/graphbuilder.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/contrib/graphbuilder.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/contrib/graphbuilder.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/contrib/graphbuilder.cpp.o"
 },
 {
   "directory": "/share/sources/glfw-app",
-  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Walnut/src -I/share/sources/glfw-app/vendor/glad/include -I/share/sources/glfw-app/vendor/stb -I/share/sources/glfw-app/vendor/imgui -I/share/sources/glfw-app/vendor/imgui/backends -I/share/sources/glfw-app/vendor/glm -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/src/Shader.cpp.o -c /share/sources/glfw-app/Walnut/src/Shader.cpp",
-  "file": "/share/sources/glfw-app/Walnut/src/Shader.cpp",
-  "output": "CMakeFiles/Walnut.dir/Walnut/src/Shader.cpp.o"
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/contrib/graphbuilderadapter.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/contrib/graphbuilderadapter.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/contrib/graphbuilderadapter.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/contrib/graphbuilderadapter.cpp.o"
 },
 {
   "directory": "/share/sources/glfw-app",
-  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/App/src -I/share/sources/glfw-app/Walnut/src -I/share/sources/glfw-app/vendor/glad/include -I/share/sources/glfw-app/vendor/stb -I/share/sources/glfw-app/vendor/imgui -I/share/sources/glfw-app/vendor/imgui/backends -I/share/sources/glfw-app/vendor/glm -std=c++17 -g -std=c++17 -o CMakeFiles/WalnutApp.dir/App/src/Camera.cpp.o -c /share/sources/glfw-app/App/src/Camera.cpp",
-  "file": "/share/sources/glfw-app/App/src/Camera.cpp",
-  "output": "CMakeFiles/WalnutApp.dir/App/src/Camera.cpp.o"
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/convert.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/convert.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/convert.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/convert.cpp.o"
 },
 {
   "directory": "/share/sources/glfw-app",
-  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/App/src -I/share/sources/glfw-app/Walnut/src -I/share/sources/glfw-app/vendor/glad/include -I/share/sources/glfw-app/vendor/stb -I/share/sources/glfw-app/vendor/imgui -I/share/sources/glfw-app/vendor/imgui/backends -I/share/sources/glfw-app/vendor/glm -std=c++17 -g -std=c++17 -o CMakeFiles/WalnutApp.dir/App/src/Renderer.cpp.o -c /share/sources/glfw-app/App/src/Renderer.cpp",
-  "file": "/share/sources/glfw-app/App/src/Renderer.cpp",
-  "output": "CMakeFiles/WalnutApp.dir/App/src/Renderer.cpp.o"
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/depthguard.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/depthguard.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/depthguard.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/depthguard.cpp.o"
 },
 {
   "directory": "/share/sources/glfw-app",
-  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/App/src -I/share/sources/glfw-app/Walnut/src -I/share/sources/glfw-app/vendor/glad/include -I/share/sources/glfw-app/vendor/stb -I/share/sources/glfw-app/vendor/imgui -I/share/sources/glfw-app/vendor/imgui/backends -I/share/sources/glfw-app/vendor/glm -std=c++17 -g -std=c++17 -o CMakeFiles/WalnutApp.dir/App/src/WalnutApp.cpp.o -c /share/sources/glfw-app/App/src/WalnutApp.cpp",
-  "file": "/share/sources/glfw-app/App/src/WalnutApp.cpp",
-  "output": "CMakeFiles/WalnutApp.dir/App/src/WalnutApp.cpp.o"
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/directives.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/directives.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/directives.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/directives.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/emit.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/emit.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/emit.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/emit.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/emitfromevents.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/emitfromevents.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/emitfromevents.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/emitfromevents.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/emitter.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/emitter.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/emitter.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/emitter.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/emitterstate.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/emitterstate.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/emitterstate.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/emitterstate.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/emitterutils.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/emitterutils.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/emitterutils.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/emitterutils.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/exceptions.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/exceptions.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/exceptions.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/exceptions.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/exp.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/exp.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/exp.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/exp.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/memory.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/memory.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/memory.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/memory.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/node.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/node.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/node.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/node.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/node_data.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/node_data.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/node_data.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/node_data.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/nodebuilder.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/nodebuilder.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/nodebuilder.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/nodebuilder.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/nodeevents.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/nodeevents.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/nodeevents.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/nodeevents.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/null.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/null.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/null.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/null.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/ostream_wrapper.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/ostream_wrapper.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/ostream_wrapper.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/ostream_wrapper.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/parse.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/parse.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/parse.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/parse.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/parser.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/parser.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/parser.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/parser.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/regex_yaml.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/regex_yaml.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/regex_yaml.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/regex_yaml.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/scanner.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/scanner.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/scanner.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/scanner.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/scanscalar.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/scanscalar.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/scanscalar.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/scanscalar.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/scantag.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/scantag.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/scantag.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/scantag.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/scantoken.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/scantoken.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/scantoken.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/scantoken.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/simplekey.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/simplekey.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/simplekey.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/simplekey.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/singledocparser.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/singledocparser.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/singledocparser.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/singledocparser.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/stream.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/stream.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/stream.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/stream.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DYAML_CPP_STATIC_DEFINE -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -fPIC -fPIC -g -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/tag.cpp.o -c /share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/tag.cpp",
+  "file": "/share/sources/glfw-app/Walnut/vendor/yaml-cpp/src/tag.cpp",
+  "output": "CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/tag.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/Walnut/Platform -I/share/sources/glfw-app/Walnut/vendor -I/share/sources/glfw-app/Walnut/vendor/glm -I/share/sources/glfw-app/Walnut/vendor/imgui -I/share/sources/glfw-app/Walnut/vendor/imgui/backends -I/share/sources/glfw-app/Walnut/vendor/glad/include -I/share/sources/glfw-app/Walnut/vendor/spdlog/include -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Platform/GUI/Walnut/Application.cpp.o -c /share/sources/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/Application.cpp",
+  "file": "/share/sources/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/Application.cpp",
+  "output": "CMakeFiles/Walnut.dir/Walnut/Walnut/Platform/GUI/Walnut/Application.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/Walnut/Platform -I/share/sources/glfw-app/Walnut/vendor -I/share/sources/glfw-app/Walnut/vendor/glm -I/share/sources/glfw-app/Walnut/vendor/imgui -I/share/sources/glfw-app/Walnut/vendor/imgui/backends -I/share/sources/glfw-app/Walnut/vendor/glad/include -I/share/sources/glfw-app/Walnut/vendor/spdlog/include -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Platform/GUI/Walnut/ImGui/ImGuiTheme.cpp.o -c /share/sources/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/ImGui/ImGuiTheme.cpp",
+  "file": "/share/sources/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/ImGui/ImGuiTheme.cpp",
+  "output": "CMakeFiles/Walnut.dir/Walnut/Walnut/Platform/GUI/Walnut/ImGui/ImGuiTheme.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/Walnut/Platform -I/share/sources/glfw-app/Walnut/vendor -I/share/sources/glfw-app/Walnut/vendor/glm -I/share/sources/glfw-app/Walnut/vendor/imgui -I/share/sources/glfw-app/Walnut/vendor/imgui/backends -I/share/sources/glfw-app/Walnut/vendor/glad/include -I/share/sources/glfw-app/Walnut/vendor/spdlog/include -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Platform/GUI/Walnut/ImGui/imgui_impl_glfw.cpp.o -c /share/sources/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/ImGui/imgui_impl_glfw.cpp",
+  "file": "/share/sources/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/ImGui/imgui_impl_glfw.cpp",
+  "output": "CMakeFiles/Walnut.dir/Walnut/Walnut/Platform/GUI/Walnut/ImGui/imgui_impl_glfw.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/Walnut/Platform -I/share/sources/glfw-app/Walnut/vendor -I/share/sources/glfw-app/Walnut/vendor/glm -I/share/sources/glfw-app/Walnut/vendor/imgui -I/share/sources/glfw-app/Walnut/vendor/imgui/backends -I/share/sources/glfw-app/Walnut/vendor/glad/include -I/share/sources/glfw-app/Walnut/vendor/spdlog/include -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Platform/GUI/Walnut/ImGui/imgui_impl_opengl3.cpp.o -c /share/sources/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/ImGui/imgui_impl_opengl3.cpp",
+  "file": "/share/sources/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/ImGui/imgui_impl_opengl3.cpp",
+  "output": "CMakeFiles/Walnut.dir/Walnut/Walnut/Platform/GUI/Walnut/ImGui/imgui_impl_opengl3.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/Walnut/Platform -I/share/sources/glfw-app/Walnut/vendor -I/share/sources/glfw-app/Walnut/vendor/glm -I/share/sources/glfw-app/Walnut/vendor/imgui -I/share/sources/glfw-app/Walnut/vendor/imgui/backends -I/share/sources/glfw-app/Walnut/vendor/glad/include -I/share/sources/glfw-app/Walnut/vendor/spdlog/include -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Platform/GUI/Walnut/Image.cpp.o -c /share/sources/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/Image.cpp",
+  "file": "/share/sources/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/Image.cpp",
+  "output": "CMakeFiles/Walnut.dir/Walnut/Walnut/Platform/GUI/Walnut/Image.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/Walnut/Platform -I/share/sources/glfw-app/Walnut/vendor -I/share/sources/glfw-app/Walnut/vendor/glm -I/share/sources/glfw-app/Walnut/vendor/imgui -I/share/sources/glfw-app/Walnut/vendor/imgui/backends -I/share/sources/glfw-app/Walnut/vendor/glad/include -I/share/sources/glfw-app/Walnut/vendor/spdlog/include -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Platform/GUI/Walnut/Input/Input.cpp.o -c /share/sources/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/Input/Input.cpp",
+  "file": "/share/sources/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/Input/Input.cpp",
+  "output": "CMakeFiles/Walnut.dir/Walnut/Walnut/Platform/GUI/Walnut/Input/Input.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/Walnut/Platform -I/share/sources/glfw-app/Walnut/vendor -I/share/sources/glfw-app/Walnut/vendor/glm -I/share/sources/glfw-app/Walnut/vendor/imgui -I/share/sources/glfw-app/Walnut/vendor/imgui/backends -I/share/sources/glfw-app/Walnut/vendor/glad/include -I/share/sources/glfw-app/Walnut/vendor/spdlog/include -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Core/Log.cpp.o -c /share/sources/glfw-app/Walnut/Walnut/Source/Walnut/Core/Log.cpp",
+  "file": "/share/sources/glfw-app/Walnut/Walnut/Source/Walnut/Core/Log.cpp",
+  "output": "CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Core/Log.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/Walnut/Platform -I/share/sources/glfw-app/Walnut/vendor -I/share/sources/glfw-app/Walnut/vendor/glm -I/share/sources/glfw-app/Walnut/vendor/imgui -I/share/sources/glfw-app/Walnut/vendor/imgui/backends -I/share/sources/glfw-app/Walnut/vendor/glad/include -I/share/sources/glfw-app/Walnut/vendor/spdlog/include -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Random.cpp.o -c /share/sources/glfw-app/Walnut/Walnut/Source/Walnut/Random.cpp",
+  "file": "/share/sources/glfw-app/Walnut/Walnut/Source/Walnut/Random.cpp",
+  "output": "CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Random.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/Walnut/Platform -I/share/sources/glfw-app/Walnut/vendor -I/share/sources/glfw-app/Walnut/vendor/glm -I/share/sources/glfw-app/Walnut/vendor/imgui -I/share/sources/glfw-app/Walnut/vendor/imgui/backends -I/share/sources/glfw-app/Walnut/vendor/glad/include -I/share/sources/glfw-app/Walnut/vendor/spdlog/include -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Serialization/BufferStream.cpp.o -c /share/sources/glfw-app/Walnut/Walnut/Source/Walnut/Serialization/BufferStream.cpp",
+  "file": "/share/sources/glfw-app/Walnut/Walnut/Source/Walnut/Serialization/BufferStream.cpp",
+  "output": "CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Serialization/BufferStream.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/Walnut/Platform -I/share/sources/glfw-app/Walnut/vendor -I/share/sources/glfw-app/Walnut/vendor/glm -I/share/sources/glfw-app/Walnut/vendor/imgui -I/share/sources/glfw-app/Walnut/vendor/imgui/backends -I/share/sources/glfw-app/Walnut/vendor/glad/include -I/share/sources/glfw-app/Walnut/vendor/spdlog/include -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Serialization/FileStream.cpp.o -c /share/sources/glfw-app/Walnut/Walnut/Source/Walnut/Serialization/FileStream.cpp",
+  "file": "/share/sources/glfw-app/Walnut/Walnut/Source/Walnut/Serialization/FileStream.cpp",
+  "output": "CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Serialization/FileStream.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/Walnut/Platform -I/share/sources/glfw-app/Walnut/vendor -I/share/sources/glfw-app/Walnut/vendor/glm -I/share/sources/glfw-app/Walnut/vendor/imgui -I/share/sources/glfw-app/Walnut/vendor/imgui/backends -I/share/sources/glfw-app/Walnut/vendor/glad/include -I/share/sources/glfw-app/Walnut/vendor/spdlog/include -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Serialization/StreamReader.cpp.o -c /share/sources/glfw-app/Walnut/Walnut/Source/Walnut/Serialization/StreamReader.cpp",
+  "file": "/share/sources/glfw-app/Walnut/Walnut/Source/Walnut/Serialization/StreamReader.cpp",
+  "output": "CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Serialization/StreamReader.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/Walnut/Platform -I/share/sources/glfw-app/Walnut/vendor -I/share/sources/glfw-app/Walnut/vendor/glm -I/share/sources/glfw-app/Walnut/vendor/imgui -I/share/sources/glfw-app/Walnut/vendor/imgui/backends -I/share/sources/glfw-app/Walnut/vendor/glad/include -I/share/sources/glfw-app/Walnut/vendor/spdlog/include -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Serialization/StreamWriter.cpp.o -c /share/sources/glfw-app/Walnut/Walnut/Source/Walnut/Serialization/StreamWriter.cpp",
+  "file": "/share/sources/glfw-app/Walnut/Walnut/Source/Walnut/Serialization/StreamWriter.cpp",
+  "output": "CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Serialization/StreamWriter.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/Walnut/Platform -I/share/sources/glfw-app/Walnut/vendor -I/share/sources/glfw-app/Walnut/vendor/glm -I/share/sources/glfw-app/Walnut/vendor/imgui -I/share/sources/glfw-app/Walnut/vendor/imgui/backends -I/share/sources/glfw-app/Walnut/vendor/glad/include -I/share/sources/glfw-app/Walnut/vendor/spdlog/include -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Shader.cpp.o -c /share/sources/glfw-app/Walnut/Walnut/Source/Walnut/Shader.cpp",
+  "file": "/share/sources/glfw-app/Walnut/Walnut/Source/Walnut/Shader.cpp",
+  "output": "CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Shader.cpp.o"
+},
+{
+  "directory": "/share/sources/glfw-app",
+  "command": "/usr/bin/c++ -DWL_DEBUG -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/Walnut/Platform -I/share/sources/glfw-app/Walnut/vendor -I/share/sources/glfw-app/Walnut/vendor/glm -I/share/sources/glfw-app/Walnut/vendor/imgui -I/share/sources/glfw-app/Walnut/vendor/imgui/backends -I/share/sources/glfw-app/Walnut/vendor/glad/include -I/share/sources/glfw-app/Walnut/vendor/spdlog/include -I/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include -std=c++17 -g -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Utils/StringUtils.cpp.o -c /share/sources/glfw-app/Walnut/Walnut/Source/Walnut/Utils/StringUtils.cpp",
+  "file": "/share/sources/glfw-app/Walnut/Walnut/Source/Walnut/Utils/StringUtils.cpp",
+  "output": "CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Utils/StringUtils.cpp.o"
 }
 ]
