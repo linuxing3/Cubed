@@ -39,6 +39,8 @@
 if(CMAKE_BUILD_TYPE STREQUAL Debug)
   add_dependencies("Walnut"
     "ImGui"
+    "rlImGui"
+    "raylib"
     "glad"
     "yaml-cpp"
     "stb"
@@ -56,28 +58,28 @@ target_include_directories("Walnut" PRIVATE
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glm>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/imgui>
+  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/rlImGui/raylib-master/src>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/imgui/backends>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/raylib/include>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glfw/include>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glad/include>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/spdlog/include>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include>
 )
 target_compile_definitions("Walnut" PRIVATE
+  $<$<CONFIG:Debug>:DEBUG>
+  $<$<CONFIG:Debug>:_GLFW_X11>
+  $<$<CONFIG:Debug>:_GNU_SOURCE>
   $<$<CONFIG:Debug>:WL_DEBUG>
 )
 target_link_directories("Walnut" PRIVATE
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glfw/lib>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/raylib/lib>
 )
 target_link_libraries("Walnut"
   $<$<CONFIG:Debug>:ImGui>
+  $<$<CONFIG:Debug>:rlImGui>
+  $<$<CONFIG:Debug>:raylib>
   $<$<CONFIG:Debug>:glad>
   $<$<CONFIG:Debug>:yaml-cpp>
   $<$<CONFIG:Debug>:stb>
-  $<$<CONFIG:Debug>:rlImGui>
-  $<$<CONFIG:Debug>:raylib>
-  $<$<CONFIG:Debug>:glfw3>
+  $<$<CONFIG:Debug>:glfw>
   $<$<CONFIG:Debug>:GL>
   $<$<CONFIG:Debug>:X11>
   $<$<CONFIG:Debug>:xcb>
@@ -106,6 +108,8 @@ endif()
 if(CMAKE_BUILD_TYPE STREQUAL Release)
   add_dependencies("Walnut"
     "ImGui"
+    "rlImGui"
+    "raylib"
     "glad"
     "yaml-cpp"
     "stb"
@@ -123,28 +127,28 @@ target_include_directories("Walnut" PRIVATE
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glm>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/imgui>
+  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/rlImGui/raylib-master/src>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/imgui/backends>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/raylib/include>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glfw/include>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glad/include>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/spdlog/include>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include>
 )
 target_compile_definitions("Walnut" PRIVATE
+  $<$<CONFIG:Release>:NDEBUG>
+  $<$<CONFIG:Release>:_GLFW_X11>
+  $<$<CONFIG:Release>:_GNU_SOURCE>
   $<$<CONFIG:Release>:WL_RELEASE>
 )
 target_link_directories("Walnut" PRIVATE
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glfw/lib>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/raylib/lib>
 )
 target_link_libraries("Walnut"
   $<$<CONFIG:Release>:ImGui>
+  $<$<CONFIG:Release>:rlImGui>
+  $<$<CONFIG:Release>:raylib>
   $<$<CONFIG:Release>:glad>
   $<$<CONFIG:Release>:yaml-cpp>
   $<$<CONFIG:Release>:stb>
-  $<$<CONFIG:Release>:rlImGui>
-  $<$<CONFIG:Release>:raylib>
-  $<$<CONFIG:Release>:glfw3>
+  $<$<CONFIG:Release>:glfw>
   $<$<CONFIG:Release>:GL>
   $<$<CONFIG:Release>:X11>
   $<$<CONFIG:Release>:xcb>
@@ -164,73 +168,6 @@ target_compile_options("Walnut" PRIVATE
   $<$<AND:$<CONFIG:Release>,$<COMPILE_LANGUAGE:CXX>>:-std=c++17>
 )
 if(CMAKE_BUILD_TYPE STREQUAL Release)
-  set_target_properties("Walnut" PROPERTIES
-    CXX_STANDARD 17
-    CXX_STANDARD_REQUIRED YES
-    CXX_EXTENSIONS NO
-    POSITION_INDEPENDENT_CODE False
-    INTERPROCEDURAL_OPTIMIZATION False
-  )
-endif()
-if(CMAKE_BUILD_TYPE STREQUAL Dist)
-  add_dependencies("Walnut"
-    "ImGui"
-    "glad"
-    "yaml-cpp"
-    "stb"
-  )
-  set_target_properties("Walnut" PROPERTIES
-    OUTPUT_NAME "Walnut"
-    ARCHIVE_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Dist-linux-ARM64/Walnut"
-    LIBRARY_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Dist-linux-ARM64/Walnut"
-    RUNTIME_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Dist-linux-ARM64/Walnut"
-  )
-endif()
-target_include_directories("Walnut" PRIVATE
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/Walnut/Source>
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/Walnut/Platform>
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor>
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/glm>
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/imgui>
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/imgui/backends>
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/raylib/include>
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/glfw/include>
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/glad/include>
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/spdlog/include>
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include>
-)
-target_compile_definitions("Walnut" PRIVATE
-  $<$<CONFIG:Dist>:WL_DIST>
-)
-target_link_directories("Walnut" PRIVATE
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/glfw/lib>
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/raylib/lib>
-)
-target_link_libraries("Walnut"
-  $<$<CONFIG:Dist>:ImGui>
-  $<$<CONFIG:Dist>:glad>
-  $<$<CONFIG:Dist>:yaml-cpp>
-  $<$<CONFIG:Dist>:stb>
-  $<$<CONFIG:Dist>:rlImGui>
-  $<$<CONFIG:Dist>:raylib>
-  $<$<CONFIG:Dist>:glfw3>
-  $<$<CONFIG:Dist>:GL>
-  $<$<CONFIG:Dist>:X11>
-  $<$<CONFIG:Dist>:xcb>
-  $<$<CONFIG:Dist>:Xau>
-  $<$<CONFIG:Dist>:Xdmcp>
-  $<$<CONFIG:Dist>:pthread>
-  $<$<CONFIG:Dist>:rt>
-  $<$<CONFIG:Dist>:m>
-  $<$<CONFIG:Dist>:stdc++fs>
-  $<$<CONFIG:Dist>:dl>
-)
-target_compile_options("Walnut" PRIVATE
-  $<$<AND:$<CONFIG:Dist>,$<COMPILE_LANGUAGE:C>>:-O2>
-  $<$<AND:$<CONFIG:Dist>,$<COMPILE_LANGUAGE:CXX>>:-O2>
-  $<$<AND:$<CONFIG:Dist>,$<COMPILE_LANGUAGE:CXX>>:-std=c++17>
-)
-if(CMAKE_BUILD_TYPE STREQUAL Dist)
   set_target_properties("Walnut" PROPERTIES
     CXX_STANDARD 17
     CXX_STANDARD_REQUIRED YES

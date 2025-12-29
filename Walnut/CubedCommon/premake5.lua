@@ -10,7 +10,6 @@ project "Cubed-Common"
    includedirs
    {
       "../Walnut/vendor/imgui",
-      "../Walnut/vendor/glfw/include",
       "../Walnut/vendor/glm",
 
       "../Walnut/Walnut/Source",

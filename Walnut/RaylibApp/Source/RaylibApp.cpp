@@ -1,7 +1,7 @@
 #include "GUI/Raylib/Application.h"
 #include "Raylib/EntryPoint.h"
 #include "Walnut/Layer.h"
-#include "raylib_imgui/imgui.h"
+#include "rlImGui/imgui-master/imgui.h"
 
 class ExampleLayer : public Walnut::Layer {
 public:

@@ -10,7 +10,8 @@ staticruntime "off"
 files { "Source/**.h", "Source/**.cpp"}
 
 defines{
-    "RAYLIB_APP"
+    "RAYLIB_APP",
+    "IMGUI_HAS_DOCK"
 }
 
 includedirs
@@ -19,18 +20,12 @@ includedirs
     "../Walnut/Source",
     "../Walnut/Platform",
     "../vendor",
-    "../vendor/raylib/include",
 }
 
--- includedirs (extra_includedirs)
-libdirs {
-      "../vendor/glfw/lib",
-      "../vendor/raylib/lib"
-}
 links
 {
     "Walnut",
-    "glfw3",
+    "glfw",
     "rlImGui",
     "raylib",
 }

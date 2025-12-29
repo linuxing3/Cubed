@@ -13,9 +13,9 @@
 #include "GUI/Raylib/Application.h"
 
 #include "raylib.h"
-#include "raylib_imgui/imgui.h"
 #include "raymath.h"
-#include "rlImGui.h" // include the API header
+#include "rlImGui/imgui-master/imgui.h"
+#include "rlImGui/rlImGui.h" // include the API header
 
 // DPI scaling functions
 float ScaleToDPIF(float value) { return GetWindowScaleDPI().x * value; }
@@ -47,8 +47,8 @@ Application &Application::Get() { return *s_Instance; }
 void Application::Init() {
   // Initialization
   //--------------------------------------------------------------------------------------
-  int screenWidth = 1280;
-  int screenHeight = 800;
+  int screenWidth = m_Specification.Width;
+  int screenHeight = m_Specification.Height;
 
   // do not set the FLAG_WINDOW_HIGHDPI flag, that scales a low res framebuffer
   // up to the native resolution. use the native resolution and scale your

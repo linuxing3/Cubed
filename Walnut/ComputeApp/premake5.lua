@@ -17,21 +17,20 @@ includedirs
     "../vendor",
     "../vendor/glm",
     "../vendor/glad/include",
-    "../vendor/glfw/include",
     "../vendor/imgui",
     "../vendor/imgui/backends",
 }
 
 -- includedirs (extra_includedirs)
 libdirs {
-  "../vendor/glfw/lib"
+  -- "../vendor/glfw/lib"
 }
 links
 {
     "Walnut",
     "ImGui",
     "glad",
-    "glfw3",
+    "glfw",
     "stb",
     "dl",
     "pthread",

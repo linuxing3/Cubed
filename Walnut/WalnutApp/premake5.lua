@@ -17,7 +17,6 @@ includedirs
     "../vendor",
     "../vendor/glm",
     "../vendor/glad/include",
-    "../vendor/glfw/include",
     "../vendor/imgui",
     "../vendor/imgui/backends",
 }
@@ -31,7 +30,7 @@ links
     "Walnut",
     "ImGui",
     "glad",
-    "glfw3",
+    -- "glfw3",
     "stb",
     "dl",
     "pthread",

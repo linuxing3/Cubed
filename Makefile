@@ -117,71 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ComputeApp
-
-# Build rule for target.
-ComputeApp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ComputeApp
-.PHONY : ComputeApp
-
-# fast build rule for target.
-ComputeApp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputeApp.dir/build.make CMakeFiles/ComputeApp.dir/build
-.PHONY : ComputeApp/fast
-
-#=============================================================================
-# Target rules for targets named Walnut-Networking
-
-# Build rule for target.
-Walnut-Networking: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Walnut-Networking
-.PHONY : Walnut-Networking
-
-# fast build rule for target.
-Walnut-Networking/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/build
-.PHONY : Walnut-Networking/fast
-
-#=============================================================================
-# Target rules for targets named Cubed-Client
-
-# Build rule for target.
-Cubed-Client: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Cubed-Client
-.PHONY : Cubed-Client
-
-# fast build rule for target.
-Cubed-Client/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Client.dir/build.make CMakeFiles/Cubed-Client.dir/build
-.PHONY : Cubed-Client/fast
-
-#=============================================================================
-# Target rules for targets named Cubed-Common
-
-# Build rule for target.
-Cubed-Common: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Cubed-Common
-.PHONY : Cubed-Common
-
-# fast build rule for target.
-Cubed-Common/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Common.dir/build.make CMakeFiles/Cubed-Common.dir/build
-.PHONY : Cubed-Common/fast
-
-#=============================================================================
-# Target rules for targets named ImGui
-
-# Build rule for target.
-ImGui: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ImGui
-.PHONY : ImGui
-
-# fast build rule for target.
-ImGui/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImGui.dir/build.make CMakeFiles/ImGui.dir/build
-.PHONY : ImGui/fast
-
-#=============================================================================
 # Target rules for targets named RaylibApp
 
 # Build rule for target.
@@ -208,17 +143,82 @@ Walnut/fast:
 .PHONY : Walnut/fast
 
 #=============================================================================
-# Target rules for targets named WalnutApp
+# Target rules for targets named asset_browser
 
 # Build rule for target.
-WalnutApp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 WalnutApp
-.PHONY : WalnutApp
+asset_browser: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asset_browser
+.PHONY : asset_browser
 
 # fast build rule for target.
-WalnutApp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/build
-.PHONY : WalnutApp/fast
+asset_browser/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asset_browser.dir/build.make CMakeFiles/asset_browser.dir/build
+.PHONY : asset_browser/fast
+
+#=============================================================================
+# Target rules for targets named docking_example
+
+# Build rule for target.
+docking_example: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docking_example
+.PHONY : docking_example
+
+# fast build rule for target.
+docking_example/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/docking_example.dir/build.make CMakeFiles/docking_example.dir/build
+.PHONY : docking_example/fast
+
+#=============================================================================
+# Target rules for targets named editor
+
+# Build rule for target.
+editor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 editor
+.PHONY : editor
+
+# fast build rule for target.
+editor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/editor.dir/build.make CMakeFiles/editor.dir/build
+.PHONY : editor/fast
+
+#=============================================================================
+# Target rules for targets named imgui_style_example
+
+# Build rule for target.
+imgui_style_example: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui_style_example
+.PHONY : imgui_style_example
+
+# fast build rule for target.
+imgui_style_example/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui_style_example.dir/build.make CMakeFiles/imgui_style_example.dir/build
+.PHONY : imgui_style_example/fast
+
+#=============================================================================
+# Target rules for targets named simple
+
+# Build rule for target.
+simple: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simple
+.PHONY : simple
+
+# fast build rule for target.
+simple/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple.dir/build.make CMakeFiles/simple.dir/build
+.PHONY : simple/fast
+
+#=============================================================================
+# Target rules for targets named ImGui
+
+# Build rule for target.
+ImGui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ImGui
+.PHONY : ImGui
+
+# fast build rule for target.
+ImGui/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImGui.dir/build.make CMakeFiles/ImGui.dir/build
+.PHONY : ImGui/fast
 
 #=============================================================================
 # Target rules for targets named glad
@@ -232,6 +232,32 @@ glad: cmake_check_build_system
 glad/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/build
 .PHONY : glad/fast
+
+#=============================================================================
+# Target rules for targets named raylib
+
+# Build rule for target.
+raylib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 raylib
+.PHONY : raylib
+
+# fast build rule for target.
+raylib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/build
+.PHONY : raylib/fast
+
+#=============================================================================
+# Target rules for targets named rlImGui
+
+# Build rule for target.
+rlImGui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rlImGui
+.PHONY : rlImGui
+
+# fast build rule for target.
+rlImGui/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlImGui.dir/build.make CMakeFiles/rlImGui.dir/build
+.PHONY : rlImGui/fast
 
 #=============================================================================
 # Target rules for targets named stb
@@ -259,126 +285,6 @@ yaml-cpp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/yaml-cpp.dir/build.make CMakeFiles/yaml-cpp.dir/build
 .PHONY : yaml-cpp/fast
 
-Cubed-Client/Source/ClientLayer.o: Cubed-Client/Source/ClientLayer.cpp.o
-.PHONY : Cubed-Client/Source/ClientLayer.o
-
-# target to build an object file
-Cubed-Client/Source/ClientLayer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Client.dir/build.make CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/ClientLayer.cpp.o
-.PHONY : Cubed-Client/Source/ClientLayer.cpp.o
-
-Cubed-Client/Source/ClientLayer.i: Cubed-Client/Source/ClientLayer.cpp.i
-.PHONY : Cubed-Client/Source/ClientLayer.i
-
-# target to preprocess a source file
-Cubed-Client/Source/ClientLayer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Client.dir/build.make CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/ClientLayer.cpp.i
-.PHONY : Cubed-Client/Source/ClientLayer.cpp.i
-
-Cubed-Client/Source/ClientLayer.s: Cubed-Client/Source/ClientLayer.cpp.s
-.PHONY : Cubed-Client/Source/ClientLayer.s
-
-# target to generate assembly for a file
-Cubed-Client/Source/ClientLayer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Client.dir/build.make CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/ClientLayer.cpp.s
-.PHONY : Cubed-Client/Source/ClientLayer.cpp.s
-
-Cubed-Client/Source/CubedApp.o: Cubed-Client/Source/CubedApp.cpp.o
-.PHONY : Cubed-Client/Source/CubedApp.o
-
-# target to build an object file
-Cubed-Client/Source/CubedApp.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Client.dir/build.make CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/CubedApp.cpp.o
-.PHONY : Cubed-Client/Source/CubedApp.cpp.o
-
-Cubed-Client/Source/CubedApp.i: Cubed-Client/Source/CubedApp.cpp.i
-.PHONY : Cubed-Client/Source/CubedApp.i
-
-# target to preprocess a source file
-Cubed-Client/Source/CubedApp.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Client.dir/build.make CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/CubedApp.cpp.i
-.PHONY : Cubed-Client/Source/CubedApp.cpp.i
-
-Cubed-Client/Source/CubedApp.s: Cubed-Client/Source/CubedApp.cpp.s
-.PHONY : Cubed-Client/Source/CubedApp.s
-
-# target to generate assembly for a file
-Cubed-Client/Source/CubedApp.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Client.dir/build.make CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/CubedApp.cpp.s
-.PHONY : Cubed-Client/Source/CubedApp.cpp.s
-
-Cubed-Client/Source/Renderer/Renderer.o: Cubed-Client/Source/Renderer/Renderer.cpp.o
-.PHONY : Cubed-Client/Source/Renderer/Renderer.o
-
-# target to build an object file
-Cubed-Client/Source/Renderer/Renderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Client.dir/build.make CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/Renderer/Renderer.cpp.o
-.PHONY : Cubed-Client/Source/Renderer/Renderer.cpp.o
-
-Cubed-Client/Source/Renderer/Renderer.i: Cubed-Client/Source/Renderer/Renderer.cpp.i
-.PHONY : Cubed-Client/Source/Renderer/Renderer.i
-
-# target to preprocess a source file
-Cubed-Client/Source/Renderer/Renderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Client.dir/build.make CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/Renderer/Renderer.cpp.i
-.PHONY : Cubed-Client/Source/Renderer/Renderer.cpp.i
-
-Cubed-Client/Source/Renderer/Renderer.s: Cubed-Client/Source/Renderer/Renderer.cpp.s
-.PHONY : Cubed-Client/Source/Renderer/Renderer.s
-
-# target to generate assembly for a file
-Cubed-Client/Source/Renderer/Renderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Client.dir/build.make CMakeFiles/Cubed-Client.dir/Cubed-Client/Source/Renderer/Renderer.cpp.s
-.PHONY : Cubed-Client/Source/Renderer/Renderer.cpp.s
-
-Cubed-Common/Source/ServerPacket.o: Cubed-Common/Source/ServerPacket.cpp.o
-.PHONY : Cubed-Common/Source/ServerPacket.o
-
-# target to build an object file
-Cubed-Common/Source/ServerPacket.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Common.dir/build.make CMakeFiles/Cubed-Common.dir/Cubed-Common/Source/ServerPacket.cpp.o
-.PHONY : Cubed-Common/Source/ServerPacket.cpp.o
-
-Cubed-Common/Source/ServerPacket.i: Cubed-Common/Source/ServerPacket.cpp.i
-.PHONY : Cubed-Common/Source/ServerPacket.i
-
-# target to preprocess a source file
-Cubed-Common/Source/ServerPacket.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Common.dir/build.make CMakeFiles/Cubed-Common.dir/Cubed-Common/Source/ServerPacket.cpp.i
-.PHONY : Cubed-Common/Source/ServerPacket.cpp.i
-
-Cubed-Common/Source/ServerPacket.s: Cubed-Common/Source/ServerPacket.cpp.s
-.PHONY : Cubed-Common/Source/ServerPacket.s
-
-# target to generate assembly for a file
-Cubed-Common/Source/ServerPacket.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cubed-Common.dir/build.make CMakeFiles/Cubed-Common.dir/Cubed-Common/Source/ServerPacket.cpp.s
-.PHONY : Cubed-Common/Source/ServerPacket.cpp.s
-
-Walnut/ComputeApp/Source/Main.o: Walnut/ComputeApp/Source/Main.cpp.o
-.PHONY : Walnut/ComputeApp/Source/Main.o
-
-# target to build an object file
-Walnut/ComputeApp/Source/Main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputeApp.dir/build.make CMakeFiles/ComputeApp.dir/Walnut/ComputeApp/Source/Main.cpp.o
-.PHONY : Walnut/ComputeApp/Source/Main.cpp.o
-
-Walnut/ComputeApp/Source/Main.i: Walnut/ComputeApp/Source/Main.cpp.i
-.PHONY : Walnut/ComputeApp/Source/Main.i
-
-# target to preprocess a source file
-Walnut/ComputeApp/Source/Main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputeApp.dir/build.make CMakeFiles/ComputeApp.dir/Walnut/ComputeApp/Source/Main.cpp.i
-.PHONY : Walnut/ComputeApp/Source/Main.cpp.i
-
-Walnut/ComputeApp/Source/Main.s: Walnut/ComputeApp/Source/Main.cpp.s
-.PHONY : Walnut/ComputeApp/Source/Main.s
-
-# target to generate assembly for a file
-Walnut/ComputeApp/Source/Main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputeApp.dir/build.make CMakeFiles/ComputeApp.dir/Walnut/ComputeApp/Source/Main.cpp.s
-.PHONY : Walnut/ComputeApp/Source/Main.cpp.s
-
 Walnut/RaylibApp/Source/RaylibApp.o: Walnut/RaylibApp/Source/RaylibApp.cpp.o
 .PHONY : Walnut/RaylibApp/Source/RaylibApp.o
 
@@ -402,102 +308,6 @@ Walnut/RaylibApp/Source/RaylibApp.s: Walnut/RaylibApp/Source/RaylibApp.cpp.s
 Walnut/RaylibApp/Source/RaylibApp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RaylibApp.dir/build.make CMakeFiles/RaylibApp.dir/Walnut/RaylibApp/Source/RaylibApp.cpp.s
 .PHONY : Walnut/RaylibApp/Source/RaylibApp.cpp.s
-
-Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.o: Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.o
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.o
-
-# target to build an object file
-Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.o
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.o
-
-Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.i: Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.i
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.i
-
-# target to preprocess a source file
-Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.i
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.i
-
-Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.s: Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.s
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.s
-
-# target to generate assembly for a file
-Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.s
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.s
-
-Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.o: Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.o
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.o
-
-# target to build an object file
-Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.o
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.o
-
-Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.i: Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.i
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.i
-
-# target to preprocess a source file
-Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.i
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.i
-
-Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.s: Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.s
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.s
-
-# target to generate assembly for a file
-Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.s
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.s
-
-Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.o: Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.o
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.o
-
-# target to build an object file
-Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.o
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.o
-
-Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.i: Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.i
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.i
-
-# target to preprocess a source file
-Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.i
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.i
-
-Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.s: Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.s
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.s
-
-# target to generate assembly for a file
-Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.s
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.s
-
-Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.o: Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.o
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.o
-
-# target to build an object file
-Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.o
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.o
-
-Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.i: Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.i
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.i
-
-# target to preprocess a source file
-Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.i
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.i
-
-Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.s: Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.s
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.s
-
-# target to generate assembly for a file
-Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.s
-.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.s
 
 Walnut/Walnut/Platform/GUI/Raylib/Application.o: Walnut/Walnut/Platform/GUI/Raylib/Application.cpp.o
 .PHONY : Walnut/Walnut/Platform/GUI/Raylib/Application.o
@@ -859,78 +669,6 @@ Walnut/Walnut/Source/Walnut/Utils/StringUtils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Utils/StringUtils.cpp.s
 .PHONY : Walnut/Walnut/Source/Walnut/Utils/StringUtils.cpp.s
 
-Walnut/WalnutApp/Source/Camera.o: Walnut/WalnutApp/Source/Camera.cpp.o
-.PHONY : Walnut/WalnutApp/Source/Camera.o
-
-# target to build an object file
-Walnut/WalnutApp/Source/Camera.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/Camera.cpp.o
-.PHONY : Walnut/WalnutApp/Source/Camera.cpp.o
-
-Walnut/WalnutApp/Source/Camera.i: Walnut/WalnutApp/Source/Camera.cpp.i
-.PHONY : Walnut/WalnutApp/Source/Camera.i
-
-# target to preprocess a source file
-Walnut/WalnutApp/Source/Camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/Camera.cpp.i
-.PHONY : Walnut/WalnutApp/Source/Camera.cpp.i
-
-Walnut/WalnutApp/Source/Camera.s: Walnut/WalnutApp/Source/Camera.cpp.s
-.PHONY : Walnut/WalnutApp/Source/Camera.s
-
-# target to generate assembly for a file
-Walnut/WalnutApp/Source/Camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/Camera.cpp.s
-.PHONY : Walnut/WalnutApp/Source/Camera.cpp.s
-
-Walnut/WalnutApp/Source/Renderer.o: Walnut/WalnutApp/Source/Renderer.cpp.o
-.PHONY : Walnut/WalnutApp/Source/Renderer.o
-
-# target to build an object file
-Walnut/WalnutApp/Source/Renderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/Renderer.cpp.o
-.PHONY : Walnut/WalnutApp/Source/Renderer.cpp.o
-
-Walnut/WalnutApp/Source/Renderer.i: Walnut/WalnutApp/Source/Renderer.cpp.i
-.PHONY : Walnut/WalnutApp/Source/Renderer.i
-
-# target to preprocess a source file
-Walnut/WalnutApp/Source/Renderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/Renderer.cpp.i
-.PHONY : Walnut/WalnutApp/Source/Renderer.cpp.i
-
-Walnut/WalnutApp/Source/Renderer.s: Walnut/WalnutApp/Source/Renderer.cpp.s
-.PHONY : Walnut/WalnutApp/Source/Renderer.s
-
-# target to generate assembly for a file
-Walnut/WalnutApp/Source/Renderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/Renderer.cpp.s
-.PHONY : Walnut/WalnutApp/Source/Renderer.cpp.s
-
-Walnut/WalnutApp/Source/WalnutApp.o: Walnut/WalnutApp/Source/WalnutApp.cpp.o
-.PHONY : Walnut/WalnutApp/Source/WalnutApp.o
-
-# target to build an object file
-Walnut/WalnutApp/Source/WalnutApp.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/WalnutApp.cpp.o
-.PHONY : Walnut/WalnutApp/Source/WalnutApp.cpp.o
-
-Walnut/WalnutApp/Source/WalnutApp.i: Walnut/WalnutApp/Source/WalnutApp.cpp.i
-.PHONY : Walnut/WalnutApp/Source/WalnutApp.i
-
-# target to preprocess a source file
-Walnut/WalnutApp/Source/WalnutApp.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/WalnutApp.cpp.i
-.PHONY : Walnut/WalnutApp/Source/WalnutApp.cpp.i
-
-Walnut/WalnutApp/Source/WalnutApp.s: Walnut/WalnutApp/Source/WalnutApp.cpp.s
-.PHONY : Walnut/WalnutApp/Source/WalnutApp.s
-
-# target to generate assembly for a file
-Walnut/WalnutApp/Source/WalnutApp.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/WalnutApp.cpp.s
-.PHONY : Walnut/WalnutApp/Source/WalnutApp.cpp.s
-
 Walnut/vendor/glad/src/gl.o: Walnut/vendor/glad/src/gl.c.o
 .PHONY : Walnut/vendor/glad/src/gl.o
 
@@ -1074,6 +812,534 @@ Walnut/vendor/imgui/imgui_widgets.s: Walnut/vendor/imgui/imgui_widgets.cpp.s
 Walnut/vendor/imgui/imgui_widgets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImGui.dir/build.make CMakeFiles/ImGui.dir/Walnut/vendor/imgui/imgui_widgets.cpp.s
 .PHONY : Walnut/vendor/imgui/imgui_widgets.cpp.s
+
+Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.o: Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.cpp.o
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.o
+
+# target to build an object file
+Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asset_browser.dir/build.make CMakeFiles/asset_browser.dir/Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.cpp.o
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.cpp.o
+
+Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.i: Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.cpp.i
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.i
+
+# target to preprocess a source file
+Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asset_browser.dir/build.make CMakeFiles/asset_browser.dir/Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.cpp.i
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.cpp.i
+
+Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.s: Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.cpp.s
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.s
+
+# target to generate assembly for a file
+Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asset_browser.dir/build.make CMakeFiles/asset_browser.dir/Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.cpp.s
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.cpp.s
+
+Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.o: Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.cpp.o
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.o
+
+# target to build an object file
+Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asset_browser.dir/build.make CMakeFiles/asset_browser.dir/Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.cpp.o
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.cpp.o
+
+Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.i: Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.cpp.i
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.i
+
+# target to preprocess a source file
+Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asset_browser.dir/build.make CMakeFiles/asset_browser.dir/Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.cpp.i
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.cpp.i
+
+Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.s: Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.cpp.s
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.s
+
+# target to generate assembly for a file
+Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asset_browser.dir/build.make CMakeFiles/asset_browser.dir/Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.cpp.s
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.cpp.s
+
+Walnut/vendor/rlImGui/examples/asset_browser/item_views.o: Walnut/vendor/rlImGui/examples/asset_browser/item_views.cpp.o
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/item_views.o
+
+# target to build an object file
+Walnut/vendor/rlImGui/examples/asset_browser/item_views.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asset_browser.dir/build.make CMakeFiles/asset_browser.dir/Walnut/vendor/rlImGui/examples/asset_browser/item_views.cpp.o
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/item_views.cpp.o
+
+Walnut/vendor/rlImGui/examples/asset_browser/item_views.i: Walnut/vendor/rlImGui/examples/asset_browser/item_views.cpp.i
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/item_views.i
+
+# target to preprocess a source file
+Walnut/vendor/rlImGui/examples/asset_browser/item_views.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asset_browser.dir/build.make CMakeFiles/asset_browser.dir/Walnut/vendor/rlImGui/examples/asset_browser/item_views.cpp.i
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/item_views.cpp.i
+
+Walnut/vendor/rlImGui/examples/asset_browser/item_views.s: Walnut/vendor/rlImGui/examples/asset_browser/item_views.cpp.s
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/item_views.s
+
+# target to generate assembly for a file
+Walnut/vendor/rlImGui/examples/asset_browser/item_views.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asset_browser.dir/build.make CMakeFiles/asset_browser.dir/Walnut/vendor/rlImGui/examples/asset_browser/item_views.cpp.s
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/item_views.cpp.s
+
+Walnut/vendor/rlImGui/examples/asset_browser/main.o: Walnut/vendor/rlImGui/examples/asset_browser/main.cpp.o
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/main.o
+
+# target to build an object file
+Walnut/vendor/rlImGui/examples/asset_browser/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asset_browser.dir/build.make CMakeFiles/asset_browser.dir/Walnut/vendor/rlImGui/examples/asset_browser/main.cpp.o
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/main.cpp.o
+
+Walnut/vendor/rlImGui/examples/asset_browser/main.i: Walnut/vendor/rlImGui/examples/asset_browser/main.cpp.i
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/main.i
+
+# target to preprocess a source file
+Walnut/vendor/rlImGui/examples/asset_browser/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asset_browser.dir/build.make CMakeFiles/asset_browser.dir/Walnut/vendor/rlImGui/examples/asset_browser/main.cpp.i
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/main.cpp.i
+
+Walnut/vendor/rlImGui/examples/asset_browser/main.s: Walnut/vendor/rlImGui/examples/asset_browser/main.cpp.s
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/main.s
+
+# target to generate assembly for a file
+Walnut/vendor/rlImGui/examples/asset_browser/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asset_browser.dir/build.make CMakeFiles/asset_browser.dir/Walnut/vendor/rlImGui/examples/asset_browser/main.cpp.s
+.PHONY : Walnut/vendor/rlImGui/examples/asset_browser/main.cpp.s
+
+Walnut/vendor/rlImGui/examples/docking_example.o: Walnut/vendor/rlImGui/examples/docking_example.cpp.o
+.PHONY : Walnut/vendor/rlImGui/examples/docking_example.o
+
+# target to build an object file
+Walnut/vendor/rlImGui/examples/docking_example.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/docking_example.dir/build.make CMakeFiles/docking_example.dir/Walnut/vendor/rlImGui/examples/docking_example.cpp.o
+.PHONY : Walnut/vendor/rlImGui/examples/docking_example.cpp.o
+
+Walnut/vendor/rlImGui/examples/docking_example.i: Walnut/vendor/rlImGui/examples/docking_example.cpp.i
+.PHONY : Walnut/vendor/rlImGui/examples/docking_example.i
+
+# target to preprocess a source file
+Walnut/vendor/rlImGui/examples/docking_example.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/docking_example.dir/build.make CMakeFiles/docking_example.dir/Walnut/vendor/rlImGui/examples/docking_example.cpp.i
+.PHONY : Walnut/vendor/rlImGui/examples/docking_example.cpp.i
+
+Walnut/vendor/rlImGui/examples/docking_example.s: Walnut/vendor/rlImGui/examples/docking_example.cpp.s
+.PHONY : Walnut/vendor/rlImGui/examples/docking_example.s
+
+# target to generate assembly for a file
+Walnut/vendor/rlImGui/examples/docking_example.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/docking_example.dir/build.make CMakeFiles/docking_example.dir/Walnut/vendor/rlImGui/examples/docking_example.cpp.s
+.PHONY : Walnut/vendor/rlImGui/examples/docking_example.cpp.s
+
+Walnut/vendor/rlImGui/examples/editor.o: Walnut/vendor/rlImGui/examples/editor.cpp.o
+.PHONY : Walnut/vendor/rlImGui/examples/editor.o
+
+# target to build an object file
+Walnut/vendor/rlImGui/examples/editor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/editor.dir/build.make CMakeFiles/editor.dir/Walnut/vendor/rlImGui/examples/editor.cpp.o
+.PHONY : Walnut/vendor/rlImGui/examples/editor.cpp.o
+
+Walnut/vendor/rlImGui/examples/editor.i: Walnut/vendor/rlImGui/examples/editor.cpp.i
+.PHONY : Walnut/vendor/rlImGui/examples/editor.i
+
+# target to preprocess a source file
+Walnut/vendor/rlImGui/examples/editor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/editor.dir/build.make CMakeFiles/editor.dir/Walnut/vendor/rlImGui/examples/editor.cpp.i
+.PHONY : Walnut/vendor/rlImGui/examples/editor.cpp.i
+
+Walnut/vendor/rlImGui/examples/editor.s: Walnut/vendor/rlImGui/examples/editor.cpp.s
+.PHONY : Walnut/vendor/rlImGui/examples/editor.s
+
+# target to generate assembly for a file
+Walnut/vendor/rlImGui/examples/editor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/editor.dir/build.make CMakeFiles/editor.dir/Walnut/vendor/rlImGui/examples/editor.cpp.s
+.PHONY : Walnut/vendor/rlImGui/examples/editor.cpp.s
+
+Walnut/vendor/rlImGui/examples/imgui_style_example.o: Walnut/vendor/rlImGui/examples/imgui_style_example.cpp.o
+.PHONY : Walnut/vendor/rlImGui/examples/imgui_style_example.o
+
+# target to build an object file
+Walnut/vendor/rlImGui/examples/imgui_style_example.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui_style_example.dir/build.make CMakeFiles/imgui_style_example.dir/Walnut/vendor/rlImGui/examples/imgui_style_example.cpp.o
+.PHONY : Walnut/vendor/rlImGui/examples/imgui_style_example.cpp.o
+
+Walnut/vendor/rlImGui/examples/imgui_style_example.i: Walnut/vendor/rlImGui/examples/imgui_style_example.cpp.i
+.PHONY : Walnut/vendor/rlImGui/examples/imgui_style_example.i
+
+# target to preprocess a source file
+Walnut/vendor/rlImGui/examples/imgui_style_example.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui_style_example.dir/build.make CMakeFiles/imgui_style_example.dir/Walnut/vendor/rlImGui/examples/imgui_style_example.cpp.i
+.PHONY : Walnut/vendor/rlImGui/examples/imgui_style_example.cpp.i
+
+Walnut/vendor/rlImGui/examples/imgui_style_example.s: Walnut/vendor/rlImGui/examples/imgui_style_example.cpp.s
+.PHONY : Walnut/vendor/rlImGui/examples/imgui_style_example.s
+
+# target to generate assembly for a file
+Walnut/vendor/rlImGui/examples/imgui_style_example.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui_style_example.dir/build.make CMakeFiles/imgui_style_example.dir/Walnut/vendor/rlImGui/examples/imgui_style_example.cpp.s
+.PHONY : Walnut/vendor/rlImGui/examples/imgui_style_example.cpp.s
+
+Walnut/vendor/rlImGui/examples/simple.o: Walnut/vendor/rlImGui/examples/simple.cpp.o
+.PHONY : Walnut/vendor/rlImGui/examples/simple.o
+
+# target to build an object file
+Walnut/vendor/rlImGui/examples/simple.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple.dir/build.make CMakeFiles/simple.dir/Walnut/vendor/rlImGui/examples/simple.cpp.o
+.PHONY : Walnut/vendor/rlImGui/examples/simple.cpp.o
+
+Walnut/vendor/rlImGui/examples/simple.i: Walnut/vendor/rlImGui/examples/simple.cpp.i
+.PHONY : Walnut/vendor/rlImGui/examples/simple.i
+
+# target to preprocess a source file
+Walnut/vendor/rlImGui/examples/simple.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple.dir/build.make CMakeFiles/simple.dir/Walnut/vendor/rlImGui/examples/simple.cpp.i
+.PHONY : Walnut/vendor/rlImGui/examples/simple.cpp.i
+
+Walnut/vendor/rlImGui/examples/simple.s: Walnut/vendor/rlImGui/examples/simple.cpp.s
+.PHONY : Walnut/vendor/rlImGui/examples/simple.s
+
+# target to generate assembly for a file
+Walnut/vendor/rlImGui/examples/simple.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple.dir/build.make CMakeFiles/simple.dir/Walnut/vendor/rlImGui/examples/simple.cpp.s
+.PHONY : Walnut/vendor/rlImGui/examples/simple.cpp.s
+
+Walnut/vendor/rlImGui/imgui-master/imgui.o: Walnut/vendor/rlImGui/imgui-master/imgui.cpp.o
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui.o
+
+# target to build an object file
+Walnut/vendor/rlImGui/imgui-master/imgui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlImGui.dir/build.make CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/imgui-master/imgui.cpp.o
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui.cpp.o
+
+Walnut/vendor/rlImGui/imgui-master/imgui.i: Walnut/vendor/rlImGui/imgui-master/imgui.cpp.i
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui.i
+
+# target to preprocess a source file
+Walnut/vendor/rlImGui/imgui-master/imgui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlImGui.dir/build.make CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/imgui-master/imgui.cpp.i
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui.cpp.i
+
+Walnut/vendor/rlImGui/imgui-master/imgui.s: Walnut/vendor/rlImGui/imgui-master/imgui.cpp.s
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui.s
+
+# target to generate assembly for a file
+Walnut/vendor/rlImGui/imgui-master/imgui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlImGui.dir/build.make CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/imgui-master/imgui.cpp.s
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui.cpp.s
+
+Walnut/vendor/rlImGui/imgui-master/imgui_demo.o: Walnut/vendor/rlImGui/imgui-master/imgui_demo.cpp.o
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_demo.o
+
+# target to build an object file
+Walnut/vendor/rlImGui/imgui-master/imgui_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlImGui.dir/build.make CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/imgui-master/imgui_demo.cpp.o
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_demo.cpp.o
+
+Walnut/vendor/rlImGui/imgui-master/imgui_demo.i: Walnut/vendor/rlImGui/imgui-master/imgui_demo.cpp.i
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_demo.i
+
+# target to preprocess a source file
+Walnut/vendor/rlImGui/imgui-master/imgui_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlImGui.dir/build.make CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/imgui-master/imgui_demo.cpp.i
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_demo.cpp.i
+
+Walnut/vendor/rlImGui/imgui-master/imgui_demo.s: Walnut/vendor/rlImGui/imgui-master/imgui_demo.cpp.s
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_demo.s
+
+# target to generate assembly for a file
+Walnut/vendor/rlImGui/imgui-master/imgui_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlImGui.dir/build.make CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/imgui-master/imgui_demo.cpp.s
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_demo.cpp.s
+
+Walnut/vendor/rlImGui/imgui-master/imgui_draw.o: Walnut/vendor/rlImGui/imgui-master/imgui_draw.cpp.o
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_draw.o
+
+# target to build an object file
+Walnut/vendor/rlImGui/imgui-master/imgui_draw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlImGui.dir/build.make CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/imgui-master/imgui_draw.cpp.o
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_draw.cpp.o
+
+Walnut/vendor/rlImGui/imgui-master/imgui_draw.i: Walnut/vendor/rlImGui/imgui-master/imgui_draw.cpp.i
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_draw.i
+
+# target to preprocess a source file
+Walnut/vendor/rlImGui/imgui-master/imgui_draw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlImGui.dir/build.make CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/imgui-master/imgui_draw.cpp.i
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_draw.cpp.i
+
+Walnut/vendor/rlImGui/imgui-master/imgui_draw.s: Walnut/vendor/rlImGui/imgui-master/imgui_draw.cpp.s
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_draw.s
+
+# target to generate assembly for a file
+Walnut/vendor/rlImGui/imgui-master/imgui_draw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlImGui.dir/build.make CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/imgui-master/imgui_draw.cpp.s
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_draw.cpp.s
+
+Walnut/vendor/rlImGui/imgui-master/imgui_tables.o: Walnut/vendor/rlImGui/imgui-master/imgui_tables.cpp.o
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_tables.o
+
+# target to build an object file
+Walnut/vendor/rlImGui/imgui-master/imgui_tables.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlImGui.dir/build.make CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/imgui-master/imgui_tables.cpp.o
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_tables.cpp.o
+
+Walnut/vendor/rlImGui/imgui-master/imgui_tables.i: Walnut/vendor/rlImGui/imgui-master/imgui_tables.cpp.i
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_tables.i
+
+# target to preprocess a source file
+Walnut/vendor/rlImGui/imgui-master/imgui_tables.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlImGui.dir/build.make CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/imgui-master/imgui_tables.cpp.i
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_tables.cpp.i
+
+Walnut/vendor/rlImGui/imgui-master/imgui_tables.s: Walnut/vendor/rlImGui/imgui-master/imgui_tables.cpp.s
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_tables.s
+
+# target to generate assembly for a file
+Walnut/vendor/rlImGui/imgui-master/imgui_tables.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlImGui.dir/build.make CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/imgui-master/imgui_tables.cpp.s
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_tables.cpp.s
+
+Walnut/vendor/rlImGui/imgui-master/imgui_widgets.o: Walnut/vendor/rlImGui/imgui-master/imgui_widgets.cpp.o
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_widgets.o
+
+# target to build an object file
+Walnut/vendor/rlImGui/imgui-master/imgui_widgets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlImGui.dir/build.make CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/imgui-master/imgui_widgets.cpp.o
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_widgets.cpp.o
+
+Walnut/vendor/rlImGui/imgui-master/imgui_widgets.i: Walnut/vendor/rlImGui/imgui-master/imgui_widgets.cpp.i
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_widgets.i
+
+# target to preprocess a source file
+Walnut/vendor/rlImGui/imgui-master/imgui_widgets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlImGui.dir/build.make CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/imgui-master/imgui_widgets.cpp.i
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_widgets.cpp.i
+
+Walnut/vendor/rlImGui/imgui-master/imgui_widgets.s: Walnut/vendor/rlImGui/imgui-master/imgui_widgets.cpp.s
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_widgets.s
+
+# target to generate assembly for a file
+Walnut/vendor/rlImGui/imgui-master/imgui_widgets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlImGui.dir/build.make CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/imgui-master/imgui_widgets.cpp.s
+.PHONY : Walnut/vendor/rlImGui/imgui-master/imgui_widgets.cpp.s
+
+Walnut/vendor/rlImGui/raylib-master/src/raudio.o: Walnut/vendor/rlImGui/raylib-master/src/raudio.c.o
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/raudio.o
+
+# target to build an object file
+Walnut/vendor/rlImGui/raylib-master/src/raudio.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/raudio.c.o
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/raudio.c.o
+
+Walnut/vendor/rlImGui/raylib-master/src/raudio.i: Walnut/vendor/rlImGui/raylib-master/src/raudio.c.i
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/raudio.i
+
+# target to preprocess a source file
+Walnut/vendor/rlImGui/raylib-master/src/raudio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/raudio.c.i
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/raudio.c.i
+
+Walnut/vendor/rlImGui/raylib-master/src/raudio.s: Walnut/vendor/rlImGui/raylib-master/src/raudio.c.s
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/raudio.s
+
+# target to generate assembly for a file
+Walnut/vendor/rlImGui/raylib-master/src/raudio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/raudio.c.s
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/raudio.c.s
+
+Walnut/vendor/rlImGui/raylib-master/src/rcore.o: Walnut/vendor/rlImGui/raylib-master/src/rcore.c.o
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rcore.o
+
+# target to build an object file
+Walnut/vendor/rlImGui/raylib-master/src/rcore.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rcore.c.o
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rcore.c.o
+
+Walnut/vendor/rlImGui/raylib-master/src/rcore.i: Walnut/vendor/rlImGui/raylib-master/src/rcore.c.i
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rcore.i
+
+# target to preprocess a source file
+Walnut/vendor/rlImGui/raylib-master/src/rcore.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rcore.c.i
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rcore.c.i
+
+Walnut/vendor/rlImGui/raylib-master/src/rcore.s: Walnut/vendor/rlImGui/raylib-master/src/rcore.c.s
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rcore.s
+
+# target to generate assembly for a file
+Walnut/vendor/rlImGui/raylib-master/src/rcore.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rcore.c.s
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rcore.c.s
+
+Walnut/vendor/rlImGui/raylib-master/src/rglfw.o: Walnut/vendor/rlImGui/raylib-master/src/rglfw.c.o
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rglfw.o
+
+# target to build an object file
+Walnut/vendor/rlImGui/raylib-master/src/rglfw.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rglfw.c.o
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rglfw.c.o
+
+Walnut/vendor/rlImGui/raylib-master/src/rglfw.i: Walnut/vendor/rlImGui/raylib-master/src/rglfw.c.i
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rglfw.i
+
+# target to preprocess a source file
+Walnut/vendor/rlImGui/raylib-master/src/rglfw.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rglfw.c.i
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rglfw.c.i
+
+Walnut/vendor/rlImGui/raylib-master/src/rglfw.s: Walnut/vendor/rlImGui/raylib-master/src/rglfw.c.s
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rglfw.s
+
+# target to generate assembly for a file
+Walnut/vendor/rlImGui/raylib-master/src/rglfw.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rglfw.c.s
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rglfw.c.s
+
+Walnut/vendor/rlImGui/raylib-master/src/rmodels.o: Walnut/vendor/rlImGui/raylib-master/src/rmodels.c.o
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rmodels.o
+
+# target to build an object file
+Walnut/vendor/rlImGui/raylib-master/src/rmodels.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rmodels.c.o
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rmodels.c.o
+
+Walnut/vendor/rlImGui/raylib-master/src/rmodels.i: Walnut/vendor/rlImGui/raylib-master/src/rmodels.c.i
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rmodels.i
+
+# target to preprocess a source file
+Walnut/vendor/rlImGui/raylib-master/src/rmodels.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rmodels.c.i
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rmodels.c.i
+
+Walnut/vendor/rlImGui/raylib-master/src/rmodels.s: Walnut/vendor/rlImGui/raylib-master/src/rmodels.c.s
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rmodels.s
+
+# target to generate assembly for a file
+Walnut/vendor/rlImGui/raylib-master/src/rmodels.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rmodels.c.s
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rmodels.c.s
+
+Walnut/vendor/rlImGui/raylib-master/src/rshapes.o: Walnut/vendor/rlImGui/raylib-master/src/rshapes.c.o
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rshapes.o
+
+# target to build an object file
+Walnut/vendor/rlImGui/raylib-master/src/rshapes.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rshapes.c.o
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rshapes.c.o
+
+Walnut/vendor/rlImGui/raylib-master/src/rshapes.i: Walnut/vendor/rlImGui/raylib-master/src/rshapes.c.i
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rshapes.i
+
+# target to preprocess a source file
+Walnut/vendor/rlImGui/raylib-master/src/rshapes.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rshapes.c.i
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rshapes.c.i
+
+Walnut/vendor/rlImGui/raylib-master/src/rshapes.s: Walnut/vendor/rlImGui/raylib-master/src/rshapes.c.s
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rshapes.s
+
+# target to generate assembly for a file
+Walnut/vendor/rlImGui/raylib-master/src/rshapes.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rshapes.c.s
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rshapes.c.s
+
+Walnut/vendor/rlImGui/raylib-master/src/rtext.o: Walnut/vendor/rlImGui/raylib-master/src/rtext.c.o
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rtext.o
+
+# target to build an object file
+Walnut/vendor/rlImGui/raylib-master/src/rtext.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rtext.c.o
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rtext.c.o
+
+Walnut/vendor/rlImGui/raylib-master/src/rtext.i: Walnut/vendor/rlImGui/raylib-master/src/rtext.c.i
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rtext.i
+
+# target to preprocess a source file
+Walnut/vendor/rlImGui/raylib-master/src/rtext.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rtext.c.i
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rtext.c.i
+
+Walnut/vendor/rlImGui/raylib-master/src/rtext.s: Walnut/vendor/rlImGui/raylib-master/src/rtext.c.s
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rtext.s
+
+# target to generate assembly for a file
+Walnut/vendor/rlImGui/raylib-master/src/rtext.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rtext.c.s
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rtext.c.s
+
+Walnut/vendor/rlImGui/raylib-master/src/rtextures.o: Walnut/vendor/rlImGui/raylib-master/src/rtextures.c.o
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rtextures.o
+
+# target to build an object file
+Walnut/vendor/rlImGui/raylib-master/src/rtextures.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rtextures.c.o
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rtextures.c.o
+
+Walnut/vendor/rlImGui/raylib-master/src/rtextures.i: Walnut/vendor/rlImGui/raylib-master/src/rtextures.c.i
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rtextures.i
+
+# target to preprocess a source file
+Walnut/vendor/rlImGui/raylib-master/src/rtextures.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rtextures.c.i
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rtextures.c.i
+
+Walnut/vendor/rlImGui/raylib-master/src/rtextures.s: Walnut/vendor/rlImGui/raylib-master/src/rtextures.c.s
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rtextures.s
+
+# target to generate assembly for a file
+Walnut/vendor/rlImGui/raylib-master/src/rtextures.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rtextures.c.s
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/rtextures.c.s
+
+Walnut/vendor/rlImGui/raylib-master/src/utils.o: Walnut/vendor/rlImGui/raylib-master/src/utils.c.o
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/utils.o
+
+# target to build an object file
+Walnut/vendor/rlImGui/raylib-master/src/utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/utils.c.o
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/utils.c.o
+
+Walnut/vendor/rlImGui/raylib-master/src/utils.i: Walnut/vendor/rlImGui/raylib-master/src/utils.c.i
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/utils.i
+
+# target to preprocess a source file
+Walnut/vendor/rlImGui/raylib-master/src/utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/utils.c.i
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/utils.c.i
+
+Walnut/vendor/rlImGui/raylib-master/src/utils.s: Walnut/vendor/rlImGui/raylib-master/src/utils.c.s
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/utils.s
+
+# target to generate assembly for a file
+Walnut/vendor/rlImGui/raylib-master/src/utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib.dir/build.make CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/utils.c.s
+.PHONY : Walnut/vendor/rlImGui/raylib-master/src/utils.c.s
+
+Walnut/vendor/rlImGui/rlImGui.o: Walnut/vendor/rlImGui/rlImGui.cpp.o
+.PHONY : Walnut/vendor/rlImGui/rlImGui.o
+
+# target to build an object file
+Walnut/vendor/rlImGui/rlImGui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlImGui.dir/build.make CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/rlImGui.cpp.o
+.PHONY : Walnut/vendor/rlImGui/rlImGui.cpp.o
+
+Walnut/vendor/rlImGui/rlImGui.i: Walnut/vendor/rlImGui/rlImGui.cpp.i
+.PHONY : Walnut/vendor/rlImGui/rlImGui.i
+
+# target to preprocess a source file
+Walnut/vendor/rlImGui/rlImGui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlImGui.dir/build.make CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/rlImGui.cpp.i
+.PHONY : Walnut/vendor/rlImGui/rlImGui.cpp.i
+
+Walnut/vendor/rlImGui/rlImGui.s: Walnut/vendor/rlImGui/rlImGui.cpp.s
+.PHONY : Walnut/vendor/rlImGui/rlImGui.s
+
+# target to generate assembly for a file
+Walnut/vendor/rlImGui/rlImGui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlImGui.dir/build.make CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/rlImGui.cpp.s
+.PHONY : Walnut/vendor/rlImGui/rlImGui.cpp.s
 
 Walnut/vendor/stb_image/stb_image.o: Walnut/vendor/stb_image/stb_image.cpp.o
 .PHONY : Walnut/vendor/stb_image/stb_image.o
@@ -1851,47 +2117,22 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... ComputeApp"
-	@echo "... Cubed-Client"
-	@echo "... Cubed-Common"
 	@echo "... ImGui"
 	@echo "... RaylibApp"
 	@echo "... Walnut"
-	@echo "... Walnut-Networking"
-	@echo "... WalnutApp"
+	@echo "... asset_browser"
+	@echo "... docking_example"
+	@echo "... editor"
 	@echo "... glad"
+	@echo "... imgui_style_example"
+	@echo "... raylib"
+	@echo "... rlImGui"
+	@echo "... simple"
 	@echo "... stb"
 	@echo "... yaml-cpp"
-	@echo "... Cubed-Client/Source/ClientLayer.o"
-	@echo "... Cubed-Client/Source/ClientLayer.i"
-	@echo "... Cubed-Client/Source/ClientLayer.s"
-	@echo "... Cubed-Client/Source/CubedApp.o"
-	@echo "... Cubed-Client/Source/CubedApp.i"
-	@echo "... Cubed-Client/Source/CubedApp.s"
-	@echo "... Cubed-Client/Source/Renderer/Renderer.o"
-	@echo "... Cubed-Client/Source/Renderer/Renderer.i"
-	@echo "... Cubed-Client/Source/Renderer/Renderer.s"
-	@echo "... Cubed-Common/Source/ServerPacket.o"
-	@echo "... Cubed-Common/Source/ServerPacket.i"
-	@echo "... Cubed-Common/Source/ServerPacket.s"
-	@echo "... Walnut/ComputeApp/Source/Main.o"
-	@echo "... Walnut/ComputeApp/Source/Main.i"
-	@echo "... Walnut/ComputeApp/Source/Main.s"
 	@echo "... Walnut/RaylibApp/Source/RaylibApp.o"
 	@echo "... Walnut/RaylibApp/Source/RaylibApp.i"
 	@echo "... Walnut/RaylibApp/Source/RaylibApp.s"
-	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.o"
-	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.i"
-	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.s"
-	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.o"
-	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.i"
-	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.s"
-	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.o"
-	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.i"
-	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.s"
-	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.o"
-	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.i"
-	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.s"
 	@echo "... Walnut/Walnut/Platform/GUI/Raylib/Application.o"
 	@echo "... Walnut/Walnut/Platform/GUI/Raylib/Application.i"
 	@echo "... Walnut/Walnut/Platform/GUI/Raylib/Application.s"
@@ -1937,15 +2178,6 @@ help:
 	@echo "... Walnut/Walnut/Source/Walnut/Utils/StringUtils.o"
 	@echo "... Walnut/Walnut/Source/Walnut/Utils/StringUtils.i"
 	@echo "... Walnut/Walnut/Source/Walnut/Utils/StringUtils.s"
-	@echo "... Walnut/WalnutApp/Source/Camera.o"
-	@echo "... Walnut/WalnutApp/Source/Camera.i"
-	@echo "... Walnut/WalnutApp/Source/Camera.s"
-	@echo "... Walnut/WalnutApp/Source/Renderer.o"
-	@echo "... Walnut/WalnutApp/Source/Renderer.i"
-	@echo "... Walnut/WalnutApp/Source/Renderer.s"
-	@echo "... Walnut/WalnutApp/Source/WalnutApp.o"
-	@echo "... Walnut/WalnutApp/Source/WalnutApp.i"
-	@echo "... Walnut/WalnutApp/Source/WalnutApp.s"
 	@echo "... Walnut/vendor/glad/src/gl.o"
 	@echo "... Walnut/vendor/glad/src/gl.i"
 	@echo "... Walnut/vendor/glad/src/gl.s"
@@ -1964,6 +2196,72 @@ help:
 	@echo "... Walnut/vendor/imgui/imgui_widgets.o"
 	@echo "... Walnut/vendor/imgui/imgui_widgets.i"
 	@echo "... Walnut/vendor/imgui/imgui_widgets.s"
+	@echo "... Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.o"
+	@echo "... Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.i"
+	@echo "... Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.s"
+	@echo "... Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.o"
+	@echo "... Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.i"
+	@echo "... Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.s"
+	@echo "... Walnut/vendor/rlImGui/examples/asset_browser/item_views.o"
+	@echo "... Walnut/vendor/rlImGui/examples/asset_browser/item_views.i"
+	@echo "... Walnut/vendor/rlImGui/examples/asset_browser/item_views.s"
+	@echo "... Walnut/vendor/rlImGui/examples/asset_browser/main.o"
+	@echo "... Walnut/vendor/rlImGui/examples/asset_browser/main.i"
+	@echo "... Walnut/vendor/rlImGui/examples/asset_browser/main.s"
+	@echo "... Walnut/vendor/rlImGui/examples/docking_example.o"
+	@echo "... Walnut/vendor/rlImGui/examples/docking_example.i"
+	@echo "... Walnut/vendor/rlImGui/examples/docking_example.s"
+	@echo "... Walnut/vendor/rlImGui/examples/editor.o"
+	@echo "... Walnut/vendor/rlImGui/examples/editor.i"
+	@echo "... Walnut/vendor/rlImGui/examples/editor.s"
+	@echo "... Walnut/vendor/rlImGui/examples/imgui_style_example.o"
+	@echo "... Walnut/vendor/rlImGui/examples/imgui_style_example.i"
+	@echo "... Walnut/vendor/rlImGui/examples/imgui_style_example.s"
+	@echo "... Walnut/vendor/rlImGui/examples/simple.o"
+	@echo "... Walnut/vendor/rlImGui/examples/simple.i"
+	@echo "... Walnut/vendor/rlImGui/examples/simple.s"
+	@echo "... Walnut/vendor/rlImGui/imgui-master/imgui.o"
+	@echo "... Walnut/vendor/rlImGui/imgui-master/imgui.i"
+	@echo "... Walnut/vendor/rlImGui/imgui-master/imgui.s"
+	@echo "... Walnut/vendor/rlImGui/imgui-master/imgui_demo.o"
+	@echo "... Walnut/vendor/rlImGui/imgui-master/imgui_demo.i"
+	@echo "... Walnut/vendor/rlImGui/imgui-master/imgui_demo.s"
+	@echo "... Walnut/vendor/rlImGui/imgui-master/imgui_draw.o"
+	@echo "... Walnut/vendor/rlImGui/imgui-master/imgui_draw.i"
+	@echo "... Walnut/vendor/rlImGui/imgui-master/imgui_draw.s"
+	@echo "... Walnut/vendor/rlImGui/imgui-master/imgui_tables.o"
+	@echo "... Walnut/vendor/rlImGui/imgui-master/imgui_tables.i"
+	@echo "... Walnut/vendor/rlImGui/imgui-master/imgui_tables.s"
+	@echo "... Walnut/vendor/rlImGui/imgui-master/imgui_widgets.o"
+	@echo "... Walnut/vendor/rlImGui/imgui-master/imgui_widgets.i"
+	@echo "... Walnut/vendor/rlImGui/imgui-master/imgui_widgets.s"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/raudio.o"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/raudio.i"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/raudio.s"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/rcore.o"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/rcore.i"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/rcore.s"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/rglfw.o"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/rglfw.i"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/rglfw.s"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/rmodels.o"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/rmodels.i"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/rmodels.s"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/rshapes.o"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/rshapes.i"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/rshapes.s"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/rtext.o"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/rtext.i"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/rtext.s"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/rtextures.o"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/rtextures.i"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/rtextures.s"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/utils.o"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/utils.i"
+	@echo "... Walnut/vendor/rlImGui/raylib-master/src/utils.s"
+	@echo "... Walnut/vendor/rlImGui/rlImGui.o"
+	@echo "... Walnut/vendor/rlImGui/rlImGui.i"
+	@echo "... Walnut/vendor/rlImGui/rlImGui.s"
 	@echo "... Walnut/vendor/stb_image/stb_image.o"
 	@echo "... Walnut/vendor/stb_image/stb_image.i"
 	@echo "... Walnut/vendor/stb_image/stb_image.s"

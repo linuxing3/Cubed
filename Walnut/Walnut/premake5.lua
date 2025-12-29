@@ -20,9 +20,8 @@ project "Walnut"
       "../vendor",
       "../vendor/glm",
       "../vendor/imgui",
+      "../vendor/rlImGui/raylib-master/src",
       "../vendor/imgui/backends",
-      "../vendor/raylib/include",
-      "../vendor/glfw/include",
       "../vendor/glad/include",
       "../vendor/spdlog/include",
       "../vendor/yaml-cpp/include",
@@ -30,8 +29,7 @@ project "Walnut"
 
    -- includedirs (extra_includedirs)
    libdirs {
-      "../vendor/glfw/lib",
-      "../vendor/raylib/lib"
+      -- "../vendor/glfw/lib",
    }
 
    links
@@ -39,7 +37,7 @@ project "Walnut"
        "ImGui",
        "rlImGui",
        "raylib",
-       "glfw3",
+       "glfw",
        "glad",
        "GL",
        "X11",

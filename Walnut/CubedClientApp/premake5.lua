@@ -14,7 +14,6 @@ project "Cubed-Client"
       "../Walnut/vendor/glad/include",
       "../Walnut/vendor/glm",
       "../Walnut/vendor/imgui",
-      "../Walnut/vendor/glfw/include",
       "../Walnut/vendor/spdlog/include",
       
       "../Walnut/Walnut/Source",
@@ -27,14 +26,14 @@ project "Cubed-Client"
 
    -- includedirs (extra_includedirs)
    libdirs {
-      "../Walnut/vendor/glfw/lib"
+      -- "../Walnut/vendor/glfw/lib"
    }
     links
     {
         -- "Cubed-Common",
         "glad",
         "ImGui",
-        "glfw3",
+        "glfw",
         "X11",
         "xcb",
         "Xau",
