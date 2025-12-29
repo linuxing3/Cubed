@@ -5,6 +5,7 @@
 #include "GUI/Walnut/Image.h"
 #include "Walnut/Core/Log.h"
 #include "Walnut/Shader.h"
+#include "imgui.h"
 
 #include "glm/gtc/matrix_transform.hpp"
 #include "glm/gtc/type_ptr.hpp"
@@ -72,17 +73,17 @@ void Renderer::Render() {
 }
 
 void Renderer::RenderUI() {
-  
-		ImGui::Begin("Controls");
 
-		// ImGui::DragFloat3("Position", glm::value_ptr(m_CubePosition), 0.05f);
-		// ImGui::DragFloat3("Rotation", glm::value_ptr(m_CubeRotation), 0.05f);
+  ImGui::Begin("Controls");
 
-		ImGui::DragFloat3("Position", glm::value_ptr(m_MVP), 0.05f);
-		// ImGui::DragFloat3("Rotation", glm::value_ptr(m_CameraRotation), 0.05f);
-		// ImGui::DragFloat("Scale", &m_CubeScale, 0.0005f);
+  // ImGui::DragFloat3("Position", glm::value_ptr(m_CubePosition), 0.05f);
+  // ImGui::DragFloat3("Rotation", glm::value_ptr(m_CubeRotation), 0.05f);
 
-		ImGui::End();
+  ImGui::DragFloat3("Position", glm::value_ptr(m_MVP), 0.05f);
+  // ImGui::DragFloat3("Rotation", glm::value_ptr(m_CameraRotation), 0.05f);
+  // ImGui::DragFloat("Scale", &m_CubeScale, 0.0005f);
+
+  ImGui::End();
 }
 
 void Renderer::InitPipeline() {

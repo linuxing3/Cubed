@@ -4,7 +4,7 @@
 #include "Walnut/Layer.h"
 #include "Walnut/Core/Buffer.h"
 
-// #include "Walnut/Networking/Client.h"
+#include "Walnut/Networking/Client.h"
 
 #include <glm/glm.hpp>
 

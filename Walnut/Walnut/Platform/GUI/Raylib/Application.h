@@ -1,25 +1,21 @@
 #pragma once
 
-#include "Walnut/Layer.h"
-
 #include <functional>
 #include <memory>
 #include <string>
 #include <vector>
 
-struct GLFWwindow;
-
-namespace Walnut {
+namespace Raylib {
 
 struct ApplicationSpecification {
-  std::string Name = "Walnut App";
+  std::string Name = "Raylib App";
   uint32_t Width = 1600;
   uint32_t Height = 900;
 };
 
 class Application {
 public:
-  Application(const ApplicationSpecification &applicationSpecification =
+  Application(const Raylib::ApplicationSpecification &applicationSpecification =
                   ApplicationSpecification());
   ~Application();
 
@@ -30,21 +26,9 @@ public:
     m_MenubarCallback = menubarCallback;
   }
 
-  template <typename T> void PushLayer() {
-    static_assert(std::is_base_of<Layer, T>::value,
-                  "Pushed type is not subclass of Layer!");
-    m_LayerStack.emplace_back(std::make_shared<T>())->OnAttach();
-  }
-
-  void PushLayer(const std::shared_ptr<Layer> &layer) {
-    m_LayerStack.emplace_back(layer);
-    layer->OnAttach();
-  }
-
   void Close();
 
   float GetTime();
-  GLFWwindow *GetWindowHandle() const { return m_WindowHandle; }
 
   static void SubmitResourceFree(std::function<void()> &&func);
 
@@ -54,17 +38,15 @@ private:
 
 private:
   ApplicationSpecification m_Specification;
-  GLFWwindow *m_WindowHandle = nullptr;
   bool m_Running = false;
 
   float m_TimeStep = 0.0f;
   float m_FrameTime = 0.0f;
   float m_LastFrameTime = 0.0f;
 
-  std::vector<std::shared_ptr<Layer>> m_LayerStack;
   std::function<void()> m_MenubarCallback;
 };
 
 // Implemented by CLIENT
 Application *CreateApplication(int argc, char **argv);
-} // namespace Walnut
+} // namespace Raylib

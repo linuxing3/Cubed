@@ -6,3 +6,7 @@ include "Walnut"
 
 include "WalnutApp"
 
+include "ComputeApp"
+
+include "RaylibApp"
+

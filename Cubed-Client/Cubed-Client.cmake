@@ -4,6 +4,7 @@
   "Cubed-Client/Source/CubedApp.cpp"
     "Cubed-Client/Source/Renderer/Renderer.cpp"
     "Cubed-Client/Source/Renderer/Renderer.h"
+    "Cubed-Client/Source/Renderer/shared.h"
 )
 if(CMAKE_BUILD_TYPE STREQUAL Debug)
   add_dependencies("Cubed-Client"
@@ -23,6 +24,7 @@ target_include_directories("Cubed-Client" PRIVATE
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glad/include>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glm>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/imgui>
+  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glfw/include>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/spdlog/include>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut/Source>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut/Platform>
@@ -33,12 +35,13 @@ target_compile_definitions("Cubed-Client" PRIVATE
   $<$<CONFIG:Debug>:WL_DEBUG>
 )
 target_link_directories("Cubed-Client" PRIVATE
+  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glfw/lib>
 )
 target_link_libraries("Cubed-Client"
   $<$<CONFIG:Debug>:glad>
   $<$<CONFIG:Debug>:ImGui>
   $<$<CONFIG:Debug>:Walnut>
-  $<$<CONFIG:Debug>:glfw>
+  $<$<CONFIG:Debug>:glfw3>
   $<$<CONFIG:Debug>:X11>
   $<$<CONFIG:Debug>:xcb>
   $<$<CONFIG:Debug>:Xau>
@@ -81,6 +84,7 @@ target_include_directories("Cubed-Client" PRIVATE
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glad/include>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glm>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/imgui>
+  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glfw/include>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/spdlog/include>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut/Source>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut/Platform>
@@ -91,12 +95,13 @@ target_compile_definitions("Cubed-Client" PRIVATE
   $<$<CONFIG:Release>:WL_RELEASE>
 )
 target_link_directories("Cubed-Client" PRIVATE
+  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glfw/lib>
 )
 target_link_libraries("Cubed-Client"
   $<$<CONFIG:Release>:glad>
   $<$<CONFIG:Release>:ImGui>
   $<$<CONFIG:Release>:Walnut>
-  $<$<CONFIG:Release>:glfw>
+  $<$<CONFIG:Release>:glfw3>
   $<$<CONFIG:Release>:X11>
   $<$<CONFIG:Release>:xcb>
   $<$<CONFIG:Release>:Xau>
@@ -141,6 +146,7 @@ target_include_directories("Cubed-Client" PRIVATE
   $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/glad/include>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/glm>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/imgui>
+  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/glfw/include>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/spdlog/include>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/Walnut/Source>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/Walnut/Platform>
@@ -151,12 +157,13 @@ target_compile_definitions("Cubed-Client" PRIVATE
   $<$<CONFIG:Dist>:WL_DIST>
 )
 target_link_directories("Cubed-Client" PRIVATE
+  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/glfw/lib>
 )
 target_link_libraries("Cubed-Client"
   $<$<CONFIG:Dist>:glad>
   $<$<CONFIG:Dist>:ImGui>
   $<$<CONFIG:Dist>:Walnut>
-  $<$<CONFIG:Dist>:glfw>
+  $<$<CONFIG:Dist>:glfw3>
   $<$<CONFIG:Dist>:X11>
   $<$<CONFIG:Dist>:xcb>
   $<$<CONFIG:Dist>:Xau>

@@ -1,4 +1,6 @@
 ﻿add_library("Walnut" STATIC
+        "Walnut/Walnut/Platform/GUI/Raylib/Application.cpp"
+        "Walnut/Walnut/Platform/GUI/Raylib/Application.h"
         "Walnut/Walnut/Platform/GUI/Walnut/Application.cpp"
         "Walnut/Walnut/Platform/GUI/Walnut/Application.h"
           "Walnut/Walnut/Platform/GUI/Walnut/ImGui/ImGuiTheme.cpp"
@@ -10,6 +12,7 @@
           "Walnut/Walnut/Platform/GUI/Walnut/Input/Input.cpp"
           "Walnut/Walnut/Platform/GUI/Walnut/Input/Input.h"
           "Walnut/Walnut/Platform/GUI/Walnut/Input/KeyCodes.h"
+      "Walnut/Walnut/Source/Raylib/EntryPoint.h"
         "Walnut/Walnut/Source/Walnut/Core/Assert.h"
         "Walnut/Walnut/Source/Walnut/Core/Buffer.h"
         "Walnut/Walnut/Source/Walnut/Core/Log.cpp"
@@ -54,6 +57,8 @@ target_include_directories("Walnut" PRIVATE
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glm>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/imgui>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/imgui/backends>
+  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/raylib/include>
+  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glfw/include>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glad/include>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/spdlog/include>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include>
@@ -62,13 +67,17 @@ target_compile_definitions("Walnut" PRIVATE
   $<$<CONFIG:Debug>:WL_DEBUG>
 )
 target_link_directories("Walnut" PRIVATE
+  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glfw/lib>
+  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/raylib/lib>
 )
 target_link_libraries("Walnut"
   $<$<CONFIG:Debug>:ImGui>
   $<$<CONFIG:Debug>:glad>
   $<$<CONFIG:Debug>:yaml-cpp>
   $<$<CONFIG:Debug>:stb>
-  $<$<CONFIG:Debug>:glfw>
+  $<$<CONFIG:Debug>:rlImGui>
+  $<$<CONFIG:Debug>:raylib>
+  $<$<CONFIG:Debug>:glfw3>
   $<$<CONFIG:Debug>:GL>
   $<$<CONFIG:Debug>:X11>
   $<$<CONFIG:Debug>:xcb>
@@ -115,6 +124,8 @@ target_include_directories("Walnut" PRIVATE
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glm>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/imgui>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/imgui/backends>
+  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/raylib/include>
+  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glfw/include>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glad/include>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/spdlog/include>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include>
@@ -123,13 +134,17 @@ target_compile_definitions("Walnut" PRIVATE
   $<$<CONFIG:Release>:WL_RELEASE>
 )
 target_link_directories("Walnut" PRIVATE
+  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glfw/lib>
+  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/raylib/lib>
 )
 target_link_libraries("Walnut"
   $<$<CONFIG:Release>:ImGui>
   $<$<CONFIG:Release>:glad>
   $<$<CONFIG:Release>:yaml-cpp>
   $<$<CONFIG:Release>:stb>
-  $<$<CONFIG:Release>:glfw>
+  $<$<CONFIG:Release>:rlImGui>
+  $<$<CONFIG:Release>:raylib>
+  $<$<CONFIG:Release>:glfw3>
   $<$<CONFIG:Release>:GL>
   $<$<CONFIG:Release>:X11>
   $<$<CONFIG:Release>:xcb>
@@ -178,6 +193,8 @@ target_include_directories("Walnut" PRIVATE
   $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/glm>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/imgui>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/imgui/backends>
+  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/raylib/include>
+  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/glfw/include>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/glad/include>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/spdlog/include>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include>
@@ -186,13 +203,17 @@ target_compile_definitions("Walnut" PRIVATE
   $<$<CONFIG:Dist>:WL_DIST>
 )
 target_link_directories("Walnut" PRIVATE
+  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/glfw/lib>
+  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/raylib/lib>
 )
 target_link_libraries("Walnut"
   $<$<CONFIG:Dist>:ImGui>
   $<$<CONFIG:Dist>:glad>
   $<$<CONFIG:Dist>:yaml-cpp>
   $<$<CONFIG:Dist>:stb>
-  $<$<CONFIG:Dist>:glfw>
+  $<$<CONFIG:Dist>:rlImGui>
+  $<$<CONFIG:Dist>:raylib>
+  $<$<CONFIG:Dist>:glfw3>
   $<$<CONFIG:Dist>:GL>
   $<$<CONFIG:Dist>:X11>
   $<$<CONFIG:Dist>:xcb>

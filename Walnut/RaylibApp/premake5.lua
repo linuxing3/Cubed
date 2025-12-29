@@ -1,4 +1,4 @@
-project "WalnutApp"
+project "RaylibApp"
 kind "ConsoleApp"
 language "C++"
 cppdialect "C++17"
@@ -9,37 +9,30 @@ staticruntime "off"
 
 files { "Source/**.h", "Source/**.cpp"}
 
+defines{
+    "RAYLIB_APP"
+}
+
 includedirs
 {
     "Source",
     "../Walnut/Source",
     "../Walnut/Platform",
     "../vendor",
-    "../vendor/glm",
-    "../vendor/glad/include",
-    "../vendor/glfw/include",
-    "../vendor/imgui",
-    "../vendor/imgui/backends",
+    "../vendor/raylib/include",
 }
 
 -- includedirs (extra_includedirs)
 libdirs {
-  "../vendor/glfw/lib"
+      "../vendor/glfw/lib",
+      "../vendor/raylib/lib"
 }
 links
 {
     "Walnut",
-    "ImGui",
-    "glad",
     "glfw3",
-    "stb",
-    "dl",
-    "pthread",
-    "X11",
-    "GL",
-    "rt",
-    "m",
-    "stdc++fs"
+    "rlImGui",
+    "raylib",
 }
 
 targetdir("../bin/" .. outputdir .. "/%{prj.name}")

@@ -1,29 +1,22 @@
-﻿add_executable("WalnutApp"
-  "Walnut/WalnutApp/Source/Camera.cpp"
-  "Walnut/WalnutApp/Source/Camera.h"
-  "Walnut/WalnutApp/Source/ComputerLayer.h"
-  "Walnut/WalnutApp/Source/Ray.h"
-  "Walnut/WalnutApp/Source/Renderer.cpp"
-  "Walnut/WalnutApp/Source/Renderer.h"
-  "Walnut/WalnutApp/Source/Scene.h"
-  "Walnut/WalnutApp/Source/WalnutApp.cpp"
+﻿add_executable("ComputeApp"
+  "Walnut/ComputeApp/Source/Main.cpp"
 )
 if(CMAKE_BUILD_TYPE STREQUAL Debug)
-  add_dependencies("WalnutApp"
+  add_dependencies("ComputeApp"
     "Walnut"
     "ImGui"
     "glad"
     "stb"
   )
-  set_target_properties("WalnutApp" PROPERTIES
-    OUTPUT_NAME "WalnutApp"
-    ARCHIVE_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/WalnutApp"
-    LIBRARY_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/WalnutApp"
-    RUNTIME_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/WalnutApp"
+  set_target_properties("ComputeApp" PROPERTIES
+    OUTPUT_NAME "ComputeApp"
+    ARCHIVE_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/ComputeApp"
+    LIBRARY_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/ComputeApp"
+    RUNTIME_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/ComputeApp"
   )
 endif()
-target_include_directories("WalnutApp" PRIVATE
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/WalnutApp/Source>
+target_include_directories("ComputeApp" PRIVATE
+  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/ComputeApp/Source>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut/Source>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut/Platform>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor>
@@ -33,13 +26,13 @@ target_include_directories("WalnutApp" PRIVATE
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/imgui>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/imgui/backends>
 )
-target_compile_definitions("WalnutApp" PRIVATE
+target_compile_definitions("ComputeApp" PRIVATE
   $<$<CONFIG:Debug>:WL_DEBUG>
 )
-target_link_directories("WalnutApp" PRIVATE
+target_link_directories("ComputeApp" PRIVATE
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glfw/lib>
 )
-target_link_libraries("WalnutApp"
+target_link_libraries("ComputeApp"
   $<$<CONFIG:Debug>:Walnut>
   $<$<CONFIG:Debug>:ImGui>
   $<$<CONFIG:Debug>:glad>
@@ -53,13 +46,13 @@ target_link_libraries("WalnutApp"
   $<$<CONFIG:Debug>:m>
   $<$<CONFIG:Debug>:stdc++fs>
 )
-target_compile_options("WalnutApp" PRIVATE
+target_compile_options("ComputeApp" PRIVATE
   $<$<AND:$<CONFIG:Debug>,$<COMPILE_LANGUAGE:C>>:-g>
   $<$<AND:$<CONFIG:Debug>,$<COMPILE_LANGUAGE:CXX>>:-g>
   $<$<AND:$<CONFIG:Debug>,$<COMPILE_LANGUAGE:CXX>>:-std=c++17>
 )
 if(CMAKE_BUILD_TYPE STREQUAL Debug)
-  set_target_properties("WalnutApp" PROPERTIES
+  set_target_properties("ComputeApp" PROPERTIES
     CXX_STANDARD 17
     CXX_STANDARD_REQUIRED YES
     CXX_EXTENSIONS NO
@@ -68,21 +61,21 @@ if(CMAKE_BUILD_TYPE STREQUAL Debug)
   )
 endif()
 if(CMAKE_BUILD_TYPE STREQUAL Release)
-  add_dependencies("WalnutApp"
+  add_dependencies("ComputeApp"
     "Walnut"
     "ImGui"
     "glad"
     "stb"
   )
-  set_target_properties("WalnutApp" PROPERTIES
-    OUTPUT_NAME "WalnutApp"
-    ARCHIVE_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/WalnutApp"
-    LIBRARY_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/WalnutApp"
-    RUNTIME_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/WalnutApp"
+  set_target_properties("ComputeApp" PROPERTIES
+    OUTPUT_NAME "ComputeApp"
+    ARCHIVE_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/ComputeApp"
+    LIBRARY_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/ComputeApp"
+    RUNTIME_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/ComputeApp"
   )
 endif()
-target_include_directories("WalnutApp" PRIVATE
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/WalnutApp/Source>
+target_include_directories("ComputeApp" PRIVATE
+  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/ComputeApp/Source>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut/Source>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut/Platform>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor>
@@ -92,13 +85,13 @@ target_include_directories("WalnutApp" PRIVATE
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/imgui>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/imgui/backends>
 )
-target_compile_definitions("WalnutApp" PRIVATE
+target_compile_definitions("ComputeApp" PRIVATE
   $<$<CONFIG:Release>:WL_RELEASE>
 )
-target_link_directories("WalnutApp" PRIVATE
+target_link_directories("ComputeApp" PRIVATE
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glfw/lib>
 )
-target_link_libraries("WalnutApp"
+target_link_libraries("ComputeApp"
   $<$<CONFIG:Release>:Walnut>
   $<$<CONFIG:Release>:ImGui>
   $<$<CONFIG:Release>:glad>
@@ -112,7 +105,7 @@ target_link_libraries("WalnutApp"
   $<$<CONFIG:Release>:m>
   $<$<CONFIG:Release>:stdc++fs>
 )
-target_compile_options("WalnutApp" PRIVATE
+target_compile_options("ComputeApp" PRIVATE
   $<$<AND:$<CONFIG:Release>,$<COMPILE_LANGUAGE:C>>:-O2>
   $<$<AND:$<CONFIG:Release>,$<COMPILE_LANGUAGE:C>>:-g>
   $<$<AND:$<CONFIG:Release>,$<COMPILE_LANGUAGE:CXX>>:-O2>
@@ -120,7 +113,7 @@ target_compile_options("WalnutApp" PRIVATE
   $<$<AND:$<CONFIG:Release>,$<COMPILE_LANGUAGE:CXX>>:-std=c++17>
 )
 if(CMAKE_BUILD_TYPE STREQUAL Release)
-  set_target_properties("WalnutApp" PROPERTIES
+  set_target_properties("ComputeApp" PROPERTIES
     CXX_STANDARD 17
     CXX_STANDARD_REQUIRED YES
     CXX_EXTENSIONS NO
@@ -129,21 +122,21 @@ if(CMAKE_BUILD_TYPE STREQUAL Release)
   )
 endif()
 if(CMAKE_BUILD_TYPE STREQUAL Dist)
-  add_dependencies("WalnutApp"
+  add_dependencies("ComputeApp"
     "Walnut"
     "ImGui"
     "glad"
     "stb"
   )
-  set_target_properties("WalnutApp" PROPERTIES
-    OUTPUT_NAME "WalnutApp"
-    ARCHIVE_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Dist-linux-ARM64/WalnutApp"
-    LIBRARY_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Dist-linux-ARM64/WalnutApp"
-    RUNTIME_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Dist-linux-ARM64/WalnutApp"
+  set_target_properties("ComputeApp" PROPERTIES
+    OUTPUT_NAME "ComputeApp"
+    ARCHIVE_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Dist-linux-ARM64/ComputeApp"
+    LIBRARY_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Dist-linux-ARM64/ComputeApp"
+    RUNTIME_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Dist-linux-ARM64/ComputeApp"
   )
 endif()
-target_include_directories("WalnutApp" PRIVATE
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/WalnutApp/Source>
+target_include_directories("ComputeApp" PRIVATE
+  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/ComputeApp/Source>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/Walnut/Source>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/Walnut/Platform>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor>
@@ -153,13 +146,13 @@ target_include_directories("WalnutApp" PRIVATE
   $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/imgui>
   $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/imgui/backends>
 )
-target_compile_definitions("WalnutApp" PRIVATE
+target_compile_definitions("ComputeApp" PRIVATE
   $<$<CONFIG:Dist>:WL_DIST>
 )
-target_link_directories("WalnutApp" PRIVATE
+target_link_directories("ComputeApp" PRIVATE
   $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/glfw/lib>
 )
-target_link_libraries("WalnutApp"
+target_link_libraries("ComputeApp"
   $<$<CONFIG:Dist>:Walnut>
   $<$<CONFIG:Dist>:ImGui>
   $<$<CONFIG:Dist>:glad>
@@ -173,13 +166,13 @@ target_link_libraries("WalnutApp"
   $<$<CONFIG:Dist>:m>
   $<$<CONFIG:Dist>:stdc++fs>
 )
-target_compile_options("WalnutApp" PRIVATE
+target_compile_options("ComputeApp" PRIVATE
   $<$<AND:$<CONFIG:Dist>,$<COMPILE_LANGUAGE:C>>:-O2>
   $<$<AND:$<CONFIG:Dist>,$<COMPILE_LANGUAGE:CXX>>:-O2>
   $<$<AND:$<CONFIG:Dist>,$<COMPILE_LANGUAGE:CXX>>:-std=c++17>
 )
 if(CMAKE_BUILD_TYPE STREQUAL Dist)
-  set_target_properties("WalnutApp" PROPERTIES
+  set_target_properties("ComputeApp" PROPERTIES
     CXX_STANDARD 17
     CXX_STANDARD_REQUIRED YES
     CXX_EXTENSIONS NO

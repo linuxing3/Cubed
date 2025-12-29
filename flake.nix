@@ -18,7 +18,12 @@
         inputs.nixpkgs.lib.genAttrs supportedSystems (
           system:
           f {
-            pkgs = import inputs.nixpkgs { inherit system; };
+            pkgs = import inputs.nixpkgs {
+              inherit system;
+              config = {
+                allowUnfree = true;
+              };
+            };
           }
         );
     in
@@ -59,10 +64,13 @@
                 LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath deps;
                 CXX_INCLUDE_PATH = pkgs.lib.makeIncludePath deps;
                 C_INCLUDE_PATH = pkgs.lib.makeIncludePath deps;
-                buildInputs = with pkgs; deps ++ [
-                  premake5
-                  cmake # or other build systems like meson, etc.
-                ];
+                buildInputs =
+                  with pkgs;
+                  deps
+                  ++ [
+                    premake5
+                    cmake # or other build systems like meson, etc.
+                  ];
 
                 packages = with pkgs; [
                   gcc

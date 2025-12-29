@@ -7,11 +7,11 @@
 #include "imgui_impl_opengl3.h"
 
 // #include "Renderer.h"
-#include "Walnut/Image.h"
-#include "Shader.h"
+#include "GUI/Walnut/Image.h"
+#include "Walnut/Shader.h"
 
 // Emedded font
-#include "ImGui/Roboto-Regular.embed"
+#include "GUI/Walnut/ImGui/Roboto-Regular.embed"
 
 static uint32_t s_ComputeShader = -1;
 static const std::filesystem::path s_ComputeShaderPath = "Shaders/Compute.glsl";
@@ -29,7 +29,7 @@ static void KeyCallback(GLFWwindow *window, int key, int scancode, int action,
     s_ComputeShader = ReloadComputeShader(s_ComputeShader, s_ComputeShaderPath);
 }
 
-int test_compute() {
+int main() {
   glfwSetErrorCallback(ErrorCallback);
 
   if (!glfwInit())

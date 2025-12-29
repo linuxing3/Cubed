@@ -14,7 +14,7 @@ project "Cubed-Client"
       "../Walnut/vendor/glad/include",
       "../Walnut/vendor/glm",
       "../Walnut/vendor/imgui",
-      -- "../Walnut/vendor/glfw/include",
+      "../Walnut/vendor/glfw/include",
       "../Walnut/vendor/spdlog/include",
       
       "../Walnut/Walnut/Source",
@@ -25,12 +25,16 @@ project "Cubed-Client"
       "../Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include"
    }
 
+   -- includedirs (extra_includedirs)
+   libdirs {
+      "../Walnut/vendor/glfw/lib"
+   }
     links
     {
         -- "Cubed-Common",
         "glad",
         "ImGui",
-        "glfw",
+        "glfw3",
         "X11",
         "xcb",
         "Xau",
