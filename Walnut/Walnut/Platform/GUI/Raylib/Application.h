@@ -5,6 +5,8 @@
 #include <string>
 #include <vector>
 
+#include "Walnut/Layer.h"
+
 namespace Raylib {
 
 struct ApplicationSpecification {
@@ -26,6 +28,17 @@ public:
     m_MenubarCallback = menubarCallback;
   }
 
+  template <typename T> void PushLayer() {
+    static_assert(std::is_base_of<Walnut::Layer, T>::value,
+                  "Pushed type is not subclass of Layer!");
+    m_LayerStack.emplace_back(std::make_shared<T>())->OnAttach();
+  }
+
+  void PushLayer(const std::shared_ptr<Walnut::Layer> &layer) {
+    m_LayerStack.emplace_back(layer);
+    layer->OnAttach();
+  }
+
   void Close();
 
   float GetTime();
@@ -44,6 +57,7 @@ private:
   float m_FrameTime = 0.0f;
   float m_LastFrameTime = 0.0f;
 
+  std::vector<std::shared_ptr<Walnut::Layer>> m_LayerStack;
   std::function<void()> m_MenubarCallback;
 };
 

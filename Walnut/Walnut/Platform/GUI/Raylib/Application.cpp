@@ -64,10 +64,20 @@ void Application::Init() {
 #endif
 }
 
-void Application::Shutdown() { g_ApplicationRunning = false; }
+void Application::Shutdown() {
+
+  for (auto &layer : m_LayerStack)
+    layer->OnDetach();
+
+  m_LayerStack.clear();
+  g_ApplicationRunning = false;
+}
 
 void Application::Run() {
   m_Running = true;
+
+  for (auto &layer : m_LayerStack)
+    layer->OnAttach();
 
   bool showDemoWindow = true;
   // Main game loop
@@ -95,27 +105,8 @@ void Application::Run() {
                                                  // dockspace
 #endif
 
-    // show a simple menu bar
-    if (ImGui::BeginMainMenuBar()) {
-      if (ImGui::BeginMenu("File")) {
-        if (ImGui::MenuItem("Quit"))
-          m_Running = false;
-
-        ImGui::EndMenu();
-      }
-
-      ImGui::EndMainMenuBar();
-    }
-
-    // show some windows
-
-    if (showDemoWindow)
-      ImGui::ShowDemoWindow(&showDemoWindow);
-
-    if (ImGui::Begin("Test Window")) {
-      ImGui::TextUnformatted("Another window");
-    }
-    ImGui::End();
+    for (auto &layer : m_LayerStack)
+      layer->OnUIRender();
 
     // end ImGui Content
     rlImGuiEnd();
