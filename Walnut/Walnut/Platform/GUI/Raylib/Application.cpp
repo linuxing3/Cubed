@@ -27,6 +27,7 @@ static Raylib::Application *s_Instance = nullptr;
 
 static std::vector<std::vector<std::function<void()>>> s_ResourceFreeQueue;
 static uint32_t s_CurrentFrameIndex = 0;
+static int FRAME_COUNT = 2;
 
 namespace Raylib {
 
@@ -49,37 +50,40 @@ void Application::Init() {
   int screenWidth = m_Specification.Width;
   int screenHeight = m_Specification.Height;
 
-  // do not set the FLAG_WINDOW_HIGHDPI flag, that scales a low res framebuffer
-  // up to the native resolution. use the native resolution and scale your
-  // geometry.
   SetConfigFlags(FLAG_MSAA_4X_HINT | FLAG_VSYNC_HINT | FLAG_WINDOW_RESIZABLE);
-  InitWindow(screenWidth, screenHeight,
-             "raylib-Extras [ImGui] example - Docking");
+  InitWindow(screenWidth, screenHeight, "Efwmc Application");
   SetTargetFPS(144);
   rlImGuiSetup(true);
 
 #ifdef IMGUI_HAS_DOCK
   ImGui::GetIO().ConfigFlags |= ImGuiConfigFlags_DockingEnable;
 #endif
+  s_ResourceFreeQueue.resize(FRAME_COUNT);
 }
 
 void Application::Close() {
-  m_Running = false;
 
-  // De-Initialization
+  m_Running = false;
+  g_ApplicationRunning = false;
+
   rlImGuiShutdown();
 
-  //--------------------------------------------------------------------------------------
-  CloseWindow(); // Close window and OpenGL context
+  CloseWindow();
 }
 
 void Application::Shutdown() {
 
+  // Walnut ImGui Layer Callback
   for (auto &layer : m_LayerStack)
     layer->OnDetach();
-
   m_LayerStack.clear();
-  g_ApplicationRunning = false;
+
+  // Resource Queue Callback
+  for (auto &queue : s_ResourceFreeQueue) {
+    for (auto &func : queue)
+      func();
+  }
+  s_ResourceFreeQueue.clear();
 
   Close();
 }
@@ -87,15 +91,13 @@ void Application::Shutdown() {
 void Application::Run() {
   m_Running = true;
 
+  // Prepare ( i.e. Camera, ... )
   for (auto &layer : m_LayerStack)
     layer->OnAttach();
 
   bool showDemoWindow = true;
-  // Main game loop
-  while (!WindowShouldClose() && m_Running) // Detect window close button or ESC
-                                            // key, or a quit from the menu,
-  {
-    // Update and Prepare
+  while (!WindowShouldClose() && m_Running) {
+    // Update ( i.e. mvp, color ... )
     float time = (float)glfwGetTime();
     m_FrameTime = time - m_LastFrameTime;
     m_TimeStep = std::min(m_FrameTime, 0.0333f);
@@ -108,25 +110,26 @@ void Application::Run() {
     BeginDrawing();
     ClearBackground(DARKGRAY);
 
-    // start ImGui content
+    // Drawing ImGui content
     rlImGuiBegin();
 
-    // if you want windows to dock to the viewport, call this.
 #ifdef IMGUI_HAS_DOCK
-    ImGui::DockSpaceOverViewport(
-        0, NULL,
-        ImGuiDockNodeFlags_PassthruCentralNode); // set
-                                                 // ImGuiDockNodeFlags_PassthruCentralNode
-                                                 // so that we can see the
-                                                 // raylib contents behind the
-                                                 // dockspace
+    ImGui::DockSpaceOverViewport(0, NULL,
+                                 ImGuiDockNodeFlags_PassthruCentralNode);
 #endif
 
+    // Drawing ImGui Custom Layers
     for (auto &layer : m_LayerStack)
       layer->OnUIRender();
 
-    // end ImGui Content
+    // End ImGui Content
     rlImGuiEnd();
+
+    // Run funcs in resources queue
+    s_CurrentFrameIndex = (s_CurrentFrameIndex + 1) % FRAME_COUNT;
+    for (auto &func : s_ResourceFreeQueue[s_CurrentFrameIndex])
+      func();
+    s_ResourceFreeQueue[s_CurrentFrameIndex].clear();
 
     EndDrawing();
   }
