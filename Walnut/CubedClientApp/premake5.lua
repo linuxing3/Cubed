@@ -1,4 +1,4 @@
-project "Cubed-Client"
+project "CubedClientApp"
    kind "ConsoleApp"
    language "C++"
    cppdialect "C++17"
@@ -9,19 +9,19 @@ project "Cubed-Client"
 
    includedirs
    {
-      "../Cubed-Common/Source",
+      "../CubedCommon/Source",
 
-      "../Walnut/vendor/glad/include",
-      "../Walnut/vendor/glm",
-      "../Walnut/vendor/imgui",
-      "../Walnut/vendor/spdlog/include",
+      "../vendor/glad/include",
+      "../vendor/glm",
+      "../vendor/imgui",
+      "../vendor/spdlog/include",
       
-      "../Walnut/Walnut/Source",
-      "../Walnut/Walnut/Platform",
+      "../Walnut/Source",
+      "../Walnut/Platform",
 
       -- Walnut-Networking
-      "../Walnut/Walnut-Modules/Walnut-Networking/Source",
-      "../Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include"
+      "../Walnut-Modules/Walnut-Networking/Source",
+      "../Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include"
    }
 
    -- includedirs (extra_includedirs)

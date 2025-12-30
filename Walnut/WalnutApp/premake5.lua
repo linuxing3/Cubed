@@ -30,7 +30,7 @@ links
     "Walnut",
     "ImGui",
     "glad",
-    -- "glfw3",
+    "glfw",
     "stb",
     "dl",
     "pthread",

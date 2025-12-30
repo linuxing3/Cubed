@@ -1,4 +1,6 @@
 ﻿add_executable("RaylibApp"
+  "Walnut/RaylibApp/Source/ComputeLayer.h"
+  "Walnut/RaylibApp/Source/CubeLayer.h"
   "Walnut/RaylibApp/Source/RaylibApp.cpp"
 )
 if(CMAKE_BUILD_TYPE STREQUAL Debug)
@@ -19,6 +21,7 @@ target_include_directories("RaylibApp" PRIVATE
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut/Source>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut/Platform>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor>
+  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/rlImGui/raylib-master/src>
 )
 target_compile_definitions("RaylibApp" PRIVATE
   $<$<CONFIG:Debug>:DEBUG>
@@ -68,6 +71,7 @@ target_include_directories("RaylibApp" PRIVATE
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut/Source>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut/Platform>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor>
+  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/rlImGui/raylib-master/src>
 )
 target_compile_definitions("RaylibApp" PRIVATE
   $<$<CONFIG:Release>:NDEBUG>

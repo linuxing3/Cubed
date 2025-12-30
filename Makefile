@@ -117,30 +117,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named RaylibApp
+# Target rules for targets named ComputeApp
 
 # Build rule for target.
-RaylibApp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RaylibApp
-.PHONY : RaylibApp
+ComputeApp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ComputeApp
+.PHONY : ComputeApp
 
 # fast build rule for target.
-RaylibApp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RaylibApp.dir/build.make CMakeFiles/RaylibApp.dir/build
-.PHONY : RaylibApp/fast
+ComputeApp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputeApp.dir/build.make CMakeFiles/ComputeApp.dir/build
+.PHONY : ComputeApp/fast
 
 #=============================================================================
-# Target rules for targets named Walnut
+# Target rules for targets named Walnut-Networking
 
 # Build rule for target.
-Walnut: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Walnut
-.PHONY : Walnut
+Walnut-Networking: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Walnut-Networking
+.PHONY : Walnut-Networking
 
 # fast build rule for target.
-Walnut/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/build
-.PHONY : Walnut/fast
+Walnut-Networking/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/build
+.PHONY : Walnut-Networking/fast
+
+#=============================================================================
+# Target rules for targets named CubedClientApp
+
+# Build rule for target.
+CubedClientApp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CubedClientApp
+.PHONY : CubedClientApp
+
+# fast build rule for target.
+CubedClientApp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CubedClientApp.dir/build.make CMakeFiles/CubedClientApp.dir/build
+.PHONY : CubedClientApp/fast
 
 #=============================================================================
 # Target rules for targets named asset_browser
@@ -221,6 +234,45 @@ ImGui/fast:
 .PHONY : ImGui/fast
 
 #=============================================================================
+# Target rules for targets named RaylibApp
+
+# Build rule for target.
+RaylibApp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RaylibApp
+.PHONY : RaylibApp
+
+# fast build rule for target.
+RaylibApp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RaylibApp.dir/build.make CMakeFiles/RaylibApp.dir/build
+.PHONY : RaylibApp/fast
+
+#=============================================================================
+# Target rules for targets named Walnut
+
+# Build rule for target.
+Walnut: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Walnut
+.PHONY : Walnut
+
+# fast build rule for target.
+Walnut/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/build
+.PHONY : Walnut/fast
+
+#=============================================================================
+# Target rules for targets named WalnutApp
+
+# Build rule for target.
+WalnutApp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 WalnutApp
+.PHONY : WalnutApp
+
+# fast build rule for target.
+WalnutApp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/build
+.PHONY : WalnutApp/fast
+
+#=============================================================================
 # Target rules for targets named glad
 
 # Build rule for target.
@@ -285,6 +337,102 @@ yaml-cpp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/yaml-cpp.dir/build.make CMakeFiles/yaml-cpp.dir/build
 .PHONY : yaml-cpp/fast
 
+Walnut/ComputeApp/Source/Main.o: Walnut/ComputeApp/Source/Main.cpp.o
+.PHONY : Walnut/ComputeApp/Source/Main.o
+
+# target to build an object file
+Walnut/ComputeApp/Source/Main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputeApp.dir/build.make CMakeFiles/ComputeApp.dir/Walnut/ComputeApp/Source/Main.cpp.o
+.PHONY : Walnut/ComputeApp/Source/Main.cpp.o
+
+Walnut/ComputeApp/Source/Main.i: Walnut/ComputeApp/Source/Main.cpp.i
+.PHONY : Walnut/ComputeApp/Source/Main.i
+
+# target to preprocess a source file
+Walnut/ComputeApp/Source/Main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputeApp.dir/build.make CMakeFiles/ComputeApp.dir/Walnut/ComputeApp/Source/Main.cpp.i
+.PHONY : Walnut/ComputeApp/Source/Main.cpp.i
+
+Walnut/ComputeApp/Source/Main.s: Walnut/ComputeApp/Source/Main.cpp.s
+.PHONY : Walnut/ComputeApp/Source/Main.s
+
+# target to generate assembly for a file
+Walnut/ComputeApp/Source/Main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputeApp.dir/build.make CMakeFiles/ComputeApp.dir/Walnut/ComputeApp/Source/Main.cpp.s
+.PHONY : Walnut/ComputeApp/Source/Main.cpp.s
+
+Walnut/CubedClientApp/Source/ClientLayer.o: Walnut/CubedClientApp/Source/ClientLayer.cpp.o
+.PHONY : Walnut/CubedClientApp/Source/ClientLayer.o
+
+# target to build an object file
+Walnut/CubedClientApp/Source/ClientLayer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CubedClientApp.dir/build.make CMakeFiles/CubedClientApp.dir/Walnut/CubedClientApp/Source/ClientLayer.cpp.o
+.PHONY : Walnut/CubedClientApp/Source/ClientLayer.cpp.o
+
+Walnut/CubedClientApp/Source/ClientLayer.i: Walnut/CubedClientApp/Source/ClientLayer.cpp.i
+.PHONY : Walnut/CubedClientApp/Source/ClientLayer.i
+
+# target to preprocess a source file
+Walnut/CubedClientApp/Source/ClientLayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CubedClientApp.dir/build.make CMakeFiles/CubedClientApp.dir/Walnut/CubedClientApp/Source/ClientLayer.cpp.i
+.PHONY : Walnut/CubedClientApp/Source/ClientLayer.cpp.i
+
+Walnut/CubedClientApp/Source/ClientLayer.s: Walnut/CubedClientApp/Source/ClientLayer.cpp.s
+.PHONY : Walnut/CubedClientApp/Source/ClientLayer.s
+
+# target to generate assembly for a file
+Walnut/CubedClientApp/Source/ClientLayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CubedClientApp.dir/build.make CMakeFiles/CubedClientApp.dir/Walnut/CubedClientApp/Source/ClientLayer.cpp.s
+.PHONY : Walnut/CubedClientApp/Source/ClientLayer.cpp.s
+
+Walnut/CubedClientApp/Source/CubedApp.o: Walnut/CubedClientApp/Source/CubedApp.cpp.o
+.PHONY : Walnut/CubedClientApp/Source/CubedApp.o
+
+# target to build an object file
+Walnut/CubedClientApp/Source/CubedApp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CubedClientApp.dir/build.make CMakeFiles/CubedClientApp.dir/Walnut/CubedClientApp/Source/CubedApp.cpp.o
+.PHONY : Walnut/CubedClientApp/Source/CubedApp.cpp.o
+
+Walnut/CubedClientApp/Source/CubedApp.i: Walnut/CubedClientApp/Source/CubedApp.cpp.i
+.PHONY : Walnut/CubedClientApp/Source/CubedApp.i
+
+# target to preprocess a source file
+Walnut/CubedClientApp/Source/CubedApp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CubedClientApp.dir/build.make CMakeFiles/CubedClientApp.dir/Walnut/CubedClientApp/Source/CubedApp.cpp.i
+.PHONY : Walnut/CubedClientApp/Source/CubedApp.cpp.i
+
+Walnut/CubedClientApp/Source/CubedApp.s: Walnut/CubedClientApp/Source/CubedApp.cpp.s
+.PHONY : Walnut/CubedClientApp/Source/CubedApp.s
+
+# target to generate assembly for a file
+Walnut/CubedClientApp/Source/CubedApp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CubedClientApp.dir/build.make CMakeFiles/CubedClientApp.dir/Walnut/CubedClientApp/Source/CubedApp.cpp.s
+.PHONY : Walnut/CubedClientApp/Source/CubedApp.cpp.s
+
+Walnut/CubedClientApp/Source/Renderer/Renderer.o: Walnut/CubedClientApp/Source/Renderer/Renderer.cpp.o
+.PHONY : Walnut/CubedClientApp/Source/Renderer/Renderer.o
+
+# target to build an object file
+Walnut/CubedClientApp/Source/Renderer/Renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CubedClientApp.dir/build.make CMakeFiles/CubedClientApp.dir/Walnut/CubedClientApp/Source/Renderer/Renderer.cpp.o
+.PHONY : Walnut/CubedClientApp/Source/Renderer/Renderer.cpp.o
+
+Walnut/CubedClientApp/Source/Renderer/Renderer.i: Walnut/CubedClientApp/Source/Renderer/Renderer.cpp.i
+.PHONY : Walnut/CubedClientApp/Source/Renderer/Renderer.i
+
+# target to preprocess a source file
+Walnut/CubedClientApp/Source/Renderer/Renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CubedClientApp.dir/build.make CMakeFiles/CubedClientApp.dir/Walnut/CubedClientApp/Source/Renderer/Renderer.cpp.i
+.PHONY : Walnut/CubedClientApp/Source/Renderer/Renderer.cpp.i
+
+Walnut/CubedClientApp/Source/Renderer/Renderer.s: Walnut/CubedClientApp/Source/Renderer/Renderer.cpp.s
+.PHONY : Walnut/CubedClientApp/Source/Renderer/Renderer.s
+
+# target to generate assembly for a file
+Walnut/CubedClientApp/Source/Renderer/Renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CubedClientApp.dir/build.make CMakeFiles/CubedClientApp.dir/Walnut/CubedClientApp/Source/Renderer/Renderer.cpp.s
+.PHONY : Walnut/CubedClientApp/Source/Renderer/Renderer.cpp.s
+
 Walnut/RaylibApp/Source/RaylibApp.o: Walnut/RaylibApp/Source/RaylibApp.cpp.o
 .PHONY : Walnut/RaylibApp/Source/RaylibApp.o
 
@@ -308,6 +456,102 @@ Walnut/RaylibApp/Source/RaylibApp.s: Walnut/RaylibApp/Source/RaylibApp.cpp.s
 Walnut/RaylibApp/Source/RaylibApp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RaylibApp.dir/build.make CMakeFiles/RaylibApp.dir/Walnut/RaylibApp/Source/RaylibApp.cpp.s
 .PHONY : Walnut/RaylibApp/Source/RaylibApp.cpp.s
+
+Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.o: Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.o
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.o
+
+# target to build an object file
+Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.o
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.o
+
+Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.i: Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.i
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.i
+
+# target to preprocess a source file
+Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.i
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.i
+
+Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.s: Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.s
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.s
+
+# target to generate assembly for a file
+Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.s
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.s
+
+Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.o: Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.o
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.o
+
+# target to build an object file
+Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.o
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.o
+
+Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.i: Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.i
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.i
+
+# target to preprocess a source file
+Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.i
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.i
+
+Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.s: Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.s
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.s
+
+# target to generate assembly for a file
+Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.s
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.s
+
+Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.o: Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.o
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.o
+
+# target to build an object file
+Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.o
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.o
+
+Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.i: Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.i
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.i
+
+# target to preprocess a source file
+Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.i
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.i
+
+Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.s: Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.s
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.s
+
+# target to generate assembly for a file
+Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.s
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.s
+
+Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.o: Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.o
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.o
+
+# target to build an object file
+Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.o
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.o
+
+Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.i: Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.i
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.i
+
+# target to preprocess a source file
+Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.i
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.i
+
+Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.s: Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.s
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.s
+
+# target to generate assembly for a file
+Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut-Networking.dir/build.make CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.s
+.PHONY : Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.s
 
 Walnut/Walnut/Platform/GUI/Raylib/Application.o: Walnut/Walnut/Platform/GUI/Raylib/Application.cpp.o
 .PHONY : Walnut/Walnut/Platform/GUI/Raylib/Application.o
@@ -668,6 +912,78 @@ Walnut/Walnut/Source/Walnut/Utils/StringUtils.s: Walnut/Walnut/Source/Walnut/Uti
 Walnut/Walnut/Source/Walnut/Utils/StringUtils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Walnut.dir/build.make CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Utils/StringUtils.cpp.s
 .PHONY : Walnut/Walnut/Source/Walnut/Utils/StringUtils.cpp.s
+
+Walnut/WalnutApp/Source/Camera.o: Walnut/WalnutApp/Source/Camera.cpp.o
+.PHONY : Walnut/WalnutApp/Source/Camera.o
+
+# target to build an object file
+Walnut/WalnutApp/Source/Camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/Camera.cpp.o
+.PHONY : Walnut/WalnutApp/Source/Camera.cpp.o
+
+Walnut/WalnutApp/Source/Camera.i: Walnut/WalnutApp/Source/Camera.cpp.i
+.PHONY : Walnut/WalnutApp/Source/Camera.i
+
+# target to preprocess a source file
+Walnut/WalnutApp/Source/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/Camera.cpp.i
+.PHONY : Walnut/WalnutApp/Source/Camera.cpp.i
+
+Walnut/WalnutApp/Source/Camera.s: Walnut/WalnutApp/Source/Camera.cpp.s
+.PHONY : Walnut/WalnutApp/Source/Camera.s
+
+# target to generate assembly for a file
+Walnut/WalnutApp/Source/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/Camera.cpp.s
+.PHONY : Walnut/WalnutApp/Source/Camera.cpp.s
+
+Walnut/WalnutApp/Source/Renderer.o: Walnut/WalnutApp/Source/Renderer.cpp.o
+.PHONY : Walnut/WalnutApp/Source/Renderer.o
+
+# target to build an object file
+Walnut/WalnutApp/Source/Renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/Renderer.cpp.o
+.PHONY : Walnut/WalnutApp/Source/Renderer.cpp.o
+
+Walnut/WalnutApp/Source/Renderer.i: Walnut/WalnutApp/Source/Renderer.cpp.i
+.PHONY : Walnut/WalnutApp/Source/Renderer.i
+
+# target to preprocess a source file
+Walnut/WalnutApp/Source/Renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/Renderer.cpp.i
+.PHONY : Walnut/WalnutApp/Source/Renderer.cpp.i
+
+Walnut/WalnutApp/Source/Renderer.s: Walnut/WalnutApp/Source/Renderer.cpp.s
+.PHONY : Walnut/WalnutApp/Source/Renderer.s
+
+# target to generate assembly for a file
+Walnut/WalnutApp/Source/Renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/Renderer.cpp.s
+.PHONY : Walnut/WalnutApp/Source/Renderer.cpp.s
+
+Walnut/WalnutApp/Source/WalnutApp.o: Walnut/WalnutApp/Source/WalnutApp.cpp.o
+.PHONY : Walnut/WalnutApp/Source/WalnutApp.o
+
+# target to build an object file
+Walnut/WalnutApp/Source/WalnutApp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/WalnutApp.cpp.o
+.PHONY : Walnut/WalnutApp/Source/WalnutApp.cpp.o
+
+Walnut/WalnutApp/Source/WalnutApp.i: Walnut/WalnutApp/Source/WalnutApp.cpp.i
+.PHONY : Walnut/WalnutApp/Source/WalnutApp.i
+
+# target to preprocess a source file
+Walnut/WalnutApp/Source/WalnutApp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/WalnutApp.cpp.i
+.PHONY : Walnut/WalnutApp/Source/WalnutApp.cpp.i
+
+Walnut/WalnutApp/Source/WalnutApp.s: Walnut/WalnutApp/Source/WalnutApp.cpp.s
+.PHONY : Walnut/WalnutApp/Source/WalnutApp.s
+
+# target to generate assembly for a file
+Walnut/WalnutApp/Source/WalnutApp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp.dir/build.make CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/WalnutApp.cpp.s
+.PHONY : Walnut/WalnutApp/Source/WalnutApp.cpp.s
 
 Walnut/vendor/glad/src/gl.o: Walnut/vendor/glad/src/gl.c.o
 .PHONY : Walnut/vendor/glad/src/gl.o
@@ -2117,9 +2433,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... ComputeApp"
+	@echo "... CubedClientApp"
 	@echo "... ImGui"
 	@echo "... RaylibApp"
 	@echo "... Walnut"
+	@echo "... Walnut-Networking"
+	@echo "... WalnutApp"
 	@echo "... asset_browser"
 	@echo "... docking_example"
 	@echo "... editor"
@@ -2130,9 +2450,33 @@ help:
 	@echo "... simple"
 	@echo "... stb"
 	@echo "... yaml-cpp"
+	@echo "... Walnut/ComputeApp/Source/Main.o"
+	@echo "... Walnut/ComputeApp/Source/Main.i"
+	@echo "... Walnut/ComputeApp/Source/Main.s"
+	@echo "... Walnut/CubedClientApp/Source/ClientLayer.o"
+	@echo "... Walnut/CubedClientApp/Source/ClientLayer.i"
+	@echo "... Walnut/CubedClientApp/Source/ClientLayer.s"
+	@echo "... Walnut/CubedClientApp/Source/CubedApp.o"
+	@echo "... Walnut/CubedClientApp/Source/CubedApp.i"
+	@echo "... Walnut/CubedClientApp/Source/CubedApp.s"
+	@echo "... Walnut/CubedClientApp/Source/Renderer/Renderer.o"
+	@echo "... Walnut/CubedClientApp/Source/Renderer/Renderer.i"
+	@echo "... Walnut/CubedClientApp/Source/Renderer/Renderer.s"
 	@echo "... Walnut/RaylibApp/Source/RaylibApp.o"
 	@echo "... Walnut/RaylibApp/Source/RaylibApp.i"
 	@echo "... Walnut/RaylibApp/Source/RaylibApp.s"
+	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.o"
+	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.i"
+	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.s"
+	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.o"
+	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.i"
+	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.s"
+	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.o"
+	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.i"
+	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.s"
+	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.o"
+	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.i"
+	@echo "... Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.s"
 	@echo "... Walnut/Walnut/Platform/GUI/Raylib/Application.o"
 	@echo "... Walnut/Walnut/Platform/GUI/Raylib/Application.i"
 	@echo "... Walnut/Walnut/Platform/GUI/Raylib/Application.s"
@@ -2178,6 +2522,15 @@ help:
 	@echo "... Walnut/Walnut/Source/Walnut/Utils/StringUtils.o"
 	@echo "... Walnut/Walnut/Source/Walnut/Utils/StringUtils.i"
 	@echo "... Walnut/Walnut/Source/Walnut/Utils/StringUtils.s"
+	@echo "... Walnut/WalnutApp/Source/Camera.o"
+	@echo "... Walnut/WalnutApp/Source/Camera.i"
+	@echo "... Walnut/WalnutApp/Source/Camera.s"
+	@echo "... Walnut/WalnutApp/Source/Renderer.o"
+	@echo "... Walnut/WalnutApp/Source/Renderer.i"
+	@echo "... Walnut/WalnutApp/Source/Renderer.s"
+	@echo "... Walnut/WalnutApp/Source/WalnutApp.o"
+	@echo "... Walnut/WalnutApp/Source/WalnutApp.i"
+	@echo "... Walnut/WalnutApp/Source/WalnutApp.s"
 	@echo "... Walnut/vendor/glad/src/gl.o"
 	@echo "... Walnut/vendor/glad/src/gl.i"
 	@echo "... Walnut/vendor/glad/src/gl.s"

@@ -12,9 +12,8 @@
 
 #include "GUI/Raylib/Application.h"
 
+#include "external/glfw/include/GLFW/glfw3.h"
 #include "raylib.h"
-#include "raymath.h"
-#include "rlImGui/imgui-master/imgui.h"
 #include "rlImGui/rlImGui.h" // include the API header
 
 // DPI scaling functions
@@ -64,6 +63,16 @@ void Application::Init() {
 #endif
 }
 
+void Application::Close() {
+  m_Running = false;
+
+  // De-Initialization
+  rlImGuiShutdown();
+
+  //--------------------------------------------------------------------------------------
+  CloseWindow(); // Close window and OpenGL context
+}
+
 void Application::Shutdown() {
 
   for (auto &layer : m_LayerStack)
@@ -71,6 +80,8 @@ void Application::Shutdown() {
 
   m_LayerStack.clear();
   g_ApplicationRunning = false;
+
+  Close();
 }
 
 void Application::Run() {
@@ -87,9 +98,13 @@ void Application::Run() {
     BeginDrawing();
     ClearBackground(DARKGRAY);
 
-    // draw something to the raylib window below the GUI.
-    DrawCircle(GetScreenWidth() / 2, GetScreenHeight() / 2,
-               GetScreenHeight() * 0.45f, DARKGREEN);
+    float time = (float)glfwGetTime();
+    m_FrameTime = time - m_LastFrameTime;
+    m_TimeStep = std::min(m_FrameTime, 0.0333f);
+    m_LastFrameTime = time;
+
+    for (auto &layer : m_LayerStack)
+      layer->OnUpdate(time);
 
     // start ImGui content
     rlImGuiBegin();
@@ -114,18 +129,6 @@ void Application::Run() {
     EndDrawing();
   }
 }
-
-void Application::Close() {
-  m_Running = false;
-
-  // De-Initialization
-  rlImGuiShutdown();
-
-  //--------------------------------------------------------------------------------------
-  CloseWindow(); // Close window and OpenGL context
-}
-
-float Application::GetTime() { return 0.0; }
 
 void Application::SubmitResourceFree(std::function<void()> &&func) {
   s_ResourceFreeQueue[s_CurrentFrameIndex].emplace_back(func);

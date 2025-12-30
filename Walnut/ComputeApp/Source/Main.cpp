@@ -14,7 +14,8 @@
 #include "GUI/Walnut/ImGui/Roboto-Regular.embed"
 
 static uint32_t s_ComputeShader = -1;
-static const std::filesystem::path s_ComputeShaderPath = "Shaders/Compute.glsl";
+static const std::filesystem::path s_ComputeShaderPath =
+    "Walnut/ComputeApp/Shaders/Compute.glsl";
 
 static void ErrorCallback(int error, const char *description) {
   std::cerr << "Error: " << description << std::endl;

@@ -20,6 +20,7 @@ includedirs
     "../Walnut/Source",
     "../Walnut/Platform",
     "../vendor",
+    "../vendor/rlImGui/raylib-master/src",
 }
 
 links

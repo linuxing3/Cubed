@@ -92,9 +92,9 @@ void Renderer::InitPipeline() {
   glBindVertexArray(m_VertexArrayID);
 
   const std::filesystem::path &vs =
-      "Cubed-Client/Assets/Shaders/TransformVertexShader.vertexshader";
-  const std::filesystem::path &fs =
-      "Cubed-Client/Assets/Shaders/ColorFragmentShader.fragmentshader";
+      "Walnut/CubedClientApp/Assets/Shaders/TransformVertexShader.vertexshader";
+  const std::filesystem::path &fs = "Walnut/CubedClientApp/Assets/Shaders/"
+                                    "ColorFragmentShader.fragmentshader";
   m_ShaderProgramID = CreateGraphicsShader(vs, fs);
 
   // Get a handle for our "MVP" uniform

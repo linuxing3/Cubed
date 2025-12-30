@@ -1,16 +1,22 @@
-run-compute-app:
+compute-app:
     ./Walnut/bin/Debug-linux-ARM64/ComputeApp/ComputeApp
-run-raylib-app:
+raylib-app:
     ./Walnut/bin/Debug-linux-ARM64/RaylibApp/RaylibApp
-run-walnut-app:
+walnut-app:
     ./Walnut/bin/Debug-linux-ARM64/WalnutApp/WalnutApp
-run-cubed-client:
-    ./bin/Debug-linux-ARM64/Cubed-Client/Cubed-Client
-premake-cmake-build:
+cubed-client:
+    ./Walnut/bin/Debug-linux-ARM64/CubedClientApp/CubedClientApp
+raylib-editor:
+    ./Walnut/vendor/rlImGui/bin/Debug/editor
+raylib-docking:
+    ./Walnut/vendor/rlImGui/bin/Debug/docking_example
+raylib-asset-browser:
+    ./Walnut/vendor/rlImGui/bin/Debug/asset_browser
+cmake-build:
     #!/bin/bash
     premake5 cmake
     cmake --build .
-premake-make-build:
+make-build:
     #!/bin/bash
     premake5 gmake2
     make

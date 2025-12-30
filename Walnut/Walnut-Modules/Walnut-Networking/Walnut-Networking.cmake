@@ -1,11 +1,11 @@
 ﻿add_library("Walnut-Networking" STATIC
-          "../../Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp"
-        "../../Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp"
-        "../../Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.h"
-        "../../Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp"
-        "../../Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.h"
-        "../../Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp"
-        "../../Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.h"
+          "Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp"
+        "Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp"
+        "Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.h"
+        "Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp"
+        "Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.h"
+        "Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp"
+        "Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.h"
 )
 if(CMAKE_BUILD_TYPE STREQUAL Debug)
   set_target_properties("Walnut-Networking" PROPERTIES
@@ -38,7 +38,6 @@ target_link_libraries("Walnut-Networking"
 )
 target_compile_options("Walnut-Networking" PRIVATE
   $<$<AND:$<CONFIG:Debug>,$<COMPILE_LANGUAGE:C>>:-g>
-  $<$<AND:$<CONFIG:Debug>,$<COMPILE_LANGUAGE:C>>:-std=c99>
   $<$<AND:$<CONFIG:Debug>,$<COMPILE_LANGUAGE:CXX>>:-g>
   $<$<AND:$<CONFIG:Debug>,$<COMPILE_LANGUAGE:CXX>>:-std=c++17>
 )
@@ -83,7 +82,6 @@ target_link_libraries("Walnut-Networking"
 target_compile_options("Walnut-Networking" PRIVATE
   $<$<AND:$<CONFIG:Release>,$<COMPILE_LANGUAGE:C>>:-O2>
   $<$<AND:$<CONFIG:Release>,$<COMPILE_LANGUAGE:C>>:-g>
-  $<$<AND:$<CONFIG:Release>,$<COMPILE_LANGUAGE:C>>:-std=c99>
   $<$<AND:$<CONFIG:Release>,$<COMPILE_LANGUAGE:CXX>>:-O2>
   $<$<AND:$<CONFIG:Release>,$<COMPILE_LANGUAGE:CXX>>:-g>
   $<$<AND:$<CONFIG:Release>,$<COMPILE_LANGUAGE:CXX>>:-std=c++17>
