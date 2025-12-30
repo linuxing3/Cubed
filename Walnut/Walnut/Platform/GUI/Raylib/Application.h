@@ -23,6 +23,8 @@ public:
 
   static Application &Get();
 
+  static void SubmitResourceFree(std::function<void()> &&func);
+
   void Run();
   void SetMenubarCallback(const std::function<void()> &menubarCallback) {
     m_MenubarCallback = menubarCallback;
@@ -42,8 +44,6 @@ public:
   void Close();
 
   float GetTime();
-
-  static void SubmitResourceFree(std::function<void()> &&func);
 
 private:
   void Init();

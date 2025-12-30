@@ -31,6 +31,7 @@ static int FRAME_COUNT = 2;
 
 namespace Raylib {
 
+//--------------------------------------------------------------------------------------
 Application::Application(const Raylib::ApplicationSpecification &specification)
     : m_Specification(specification) {
   s_Instance = this;
@@ -44,14 +45,13 @@ Application::~Application() {
 
 Application &Application::Get() { return *s_Instance; }
 
+//--------------------------------------------------------------------------------------
 void Application::Init() {
   // Initialization
-  //--------------------------------------------------------------------------------------
-  int screenWidth = m_Specification.Width;
-  int screenHeight = m_Specification.Height;
 
   SetConfigFlags(FLAG_MSAA_4X_HINT | FLAG_VSYNC_HINT | FLAG_WINDOW_RESIZABLE);
-  InitWindow(screenWidth, screenHeight, "Efwmc Application");
+  InitWindow((int)m_Specification.Width, (int)m_Specification.Height,
+             m_Specification.Name.c_str());
   SetTargetFPS(144);
   rlImGuiSetup(true);
 
@@ -61,6 +61,7 @@ void Application::Init() {
   s_ResourceFreeQueue.resize(FRAME_COUNT);
 }
 
+//--------------------------------------------------------------------------------------
 void Application::Close() {
 
   m_Running = false;
@@ -71,6 +72,7 @@ void Application::Close() {
   CloseWindow();
 }
 
+//--------------------------------------------------------------------------------------
 void Application::Shutdown() {
 
   // Walnut ImGui Layer Callback
@@ -88,6 +90,10 @@ void Application::Shutdown() {
   Close();
 }
 
+//--------------------------------------------------------------------------------------
+float Application::GetTime() { return (float)glfwGetTime(); }
+
+//--------------------------------------------------------------------------------------
 void Application::Run() {
   m_Running = true;
 
@@ -97,14 +103,22 @@ void Application::Run() {
 
   bool showDemoWindow = true;
   while (!WindowShouldClose() && m_Running) {
-    // Update ( i.e. mvp, color ... )
-    float time = (float)glfwGetTime();
+    // update timer
+    float time = GetTime();
     m_FrameTime = time - m_LastFrameTime;
     m_TimeStep = std::min(m_FrameTime, 0.0333f);
     m_LastFrameTime = time;
 
+    // Update ( i.e. mvp, color ... )
     for (auto &layer : m_LayerStack)
       layer->OnUpdate(time);
+
+    // Run funcs in resources queue
+    // Update ( i.e. any backend data... )
+    s_CurrentFrameIndex = (s_CurrentFrameIndex + 1) % FRAME_COUNT;
+    for (auto &func : s_ResourceFreeQueue[s_CurrentFrameIndex])
+      func();
+    s_ResourceFreeQueue[s_CurrentFrameIndex].clear();
 
     // Drawing
     BeginDrawing();
@@ -125,16 +139,11 @@ void Application::Run() {
     // End ImGui Content
     rlImGuiEnd();
 
-    // Run funcs in resources queue
-    s_CurrentFrameIndex = (s_CurrentFrameIndex + 1) % FRAME_COUNT;
-    for (auto &func : s_ResourceFreeQueue[s_CurrentFrameIndex])
-      func();
-    s_ResourceFreeQueue[s_CurrentFrameIndex].clear();
-
     EndDrawing();
   }
 }
 
+//--------------------------------------------------------------------------------------
 void Application::SubmitResourceFree(std::function<void()> &&func) {
   s_ResourceFreeQueue[s_CurrentFrameIndex].emplace_back(func);
 }
