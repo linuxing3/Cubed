@@ -95,9 +95,7 @@ void Application::Run() {
   while (!WindowShouldClose() && m_Running) // Detect window close button or ESC
                                             // key, or a quit from the menu,
   {
-    BeginDrawing();
-    ClearBackground(DARKGRAY);
-
+    // Update and Prepare
     float time = (float)glfwGetTime();
     m_FrameTime = time - m_LastFrameTime;
     m_TimeStep = std::min(m_FrameTime, 0.0333f);
@@ -105,6 +103,10 @@ void Application::Run() {
 
     for (auto &layer : m_LayerStack)
       layer->OnUpdate(time);
+
+    // Drawing
+    BeginDrawing();
+    ClearBackground(DARKGRAY);
 
     // start ImGui content
     rlImGuiBegin();

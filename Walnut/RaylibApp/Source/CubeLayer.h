@@ -105,6 +105,8 @@ public:
       }
     }
 
+    DrawGrid(10, 1.0);
+
     EndMode3D();
     EndTextureMode();
   }

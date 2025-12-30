@@ -1,6 +1,7 @@
 ﻿add_executable("RaylibApp"
   "Walnut/RaylibApp/Source/ComputeLayer.h"
   "Walnut/RaylibApp/Source/CubeLayer.h"
+  "Walnut/RaylibApp/Source/GridLayer.h"
   "Walnut/RaylibApp/Source/RaylibApp.cpp"
 )
 if(CMAKE_BUILD_TYPE STREQUAL Debug)
