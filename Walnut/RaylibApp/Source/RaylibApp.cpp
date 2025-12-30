@@ -2,6 +2,7 @@
 #include "CubeLayer.h"
 #include "GUI/Raylib/Application.h"
 #include "GridLayer.h"
+#include "ModelLayer.h"
 #include "Raylib/EntryPoint.h"
 #include "rlImGui/imgui-master/imgui.h"
 
@@ -10,9 +11,10 @@ Raylib::Application *Raylib::CreateApplication(int argc, char **argv) {
   spec.Name = "Ray Tracing";
 
   Raylib::Application *app = new Raylib::Application(spec);
-  app->PushLayer<CubeLayer>();
-  app->PushLayer<ComputeLayer>();
-  app->PushLayer<GridLayer>();
+  // app->PushLayer<CubeLayer>();
+  // app->PushLayer<ComputeLayer>();
+  // app->PushLayer<GridLayer>();
+  app->PushLayer<ModelLayer>();
   app->SetMenubarCallback([app]() {
     if (ImGui::BeginMainMenuBar()) {
       if (ImGui::BeginMenu("File")) {

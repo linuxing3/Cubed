@@ -3,6 +3,7 @@
 CMakeFiles/
 bin/
 bin-int
+examples/
 */**/bin
 */**/bin-init
 vendor/
