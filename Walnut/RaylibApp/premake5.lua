@@ -12,7 +12,8 @@ files { "Source/**.h", "Source/**.cpp"}
 defines{
     "PLATFORM_DESKTOP",
     "RAYLIB_APP",
-    "IMGUI_HAS_DOCK"
+    "IMGUI_HAS_DOCK",
+    "RLIGHTS_IMPLEMENTATION"
 }
 
 includedirs

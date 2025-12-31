@@ -499,7 +499,7 @@
 },
 {
   "directory": "/share/sources/glfw-app",
-  "command": "/usr/bin/c++ -DDEBUG -DIMGUI_HAS_DOCK -DPLATFORM_DESKTOP -DRAYLIB_APP -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/sources/glfw-app/Walnut/RaylibApp/Source -I/share/sources/glfw-app -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/Walnut/Platform -I/share/sources/glfw-app/Walnut/vendor -I/share/sources/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -std=c++17 -g -std=c++17 -o CMakeFiles/RaylibApp.dir/Walnut/RaylibApp/Source/RaylibApp.cpp.o -c /share/sources/glfw-app/Walnut/RaylibApp/Source/RaylibApp.cpp",
+  "command": "/usr/bin/c++ -DDEBUG -DIMGUI_HAS_DOCK -DPLATFORM_DESKTOP -DRAYLIB_APP -DRLIGHTS_IMPLEMENTATION -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/sources/glfw-app/Walnut/RaylibApp/Source -I/share/sources/glfw-app -I/share/sources/glfw-app/Walnut/Walnut/Source -I/share/sources/glfw-app/Walnut/Walnut/Platform -I/share/sources/glfw-app/Walnut/vendor -I/share/sources/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -std=c++17 -g -std=c++17 -o CMakeFiles/RaylibApp.dir/Walnut/RaylibApp/Source/RaylibApp.cpp.o -c /share/sources/glfw-app/Walnut/RaylibApp/Source/RaylibApp.cpp",
   "file": "/share/sources/glfw-app/Walnut/RaylibApp/Source/RaylibApp.cpp",
   "output": "CMakeFiles/RaylibApp.dir/Walnut/RaylibApp/Source/RaylibApp.cpp.o"
 },

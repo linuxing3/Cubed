@@ -2,7 +2,9 @@
   "Walnut/RaylibApp/Source/ComputeLayer.h"
   "Walnut/RaylibApp/Source/CubeLayer.h"
   "Walnut/RaylibApp/Source/GridLayer.h"
+  "Walnut/RaylibApp/Source/LightLayer.h"
   "Walnut/RaylibApp/Source/ModelLayer.h"
+  "Walnut/RaylibApp/Source/PbrLayer.h"
   "Walnut/RaylibApp/Source/RayMarchingLayer.h"
   "Walnut/RaylibApp/Source/RaylibApp.cpp"
   "Walnut/RaylibApp/Source/RotatingCubeShaderLayer.h"
@@ -36,6 +38,7 @@ target_compile_definitions("RaylibApp" PRIVATE
   $<$<CONFIG:Debug>:PLATFORM_DESKTOP>
   $<$<CONFIG:Debug>:RAYLIB_APP>
   $<$<CONFIG:Debug>:IMGUI_HAS_DOCK>
+  $<$<CONFIG:Debug>:RLIGHTS_IMPLEMENTATION>
   $<$<CONFIG:Debug>:WL_DEBUG>
 )
 target_link_directories("RaylibApp" PRIVATE
@@ -88,6 +91,7 @@ target_compile_definitions("RaylibApp" PRIVATE
   $<$<CONFIG:Release>:PLATFORM_DESKTOP>
   $<$<CONFIG:Release>:RAYLIB_APP>
   $<$<CONFIG:Release>:IMGUI_HAS_DOCK>
+  $<$<CONFIG:Release>:RLIGHTS_IMPLEMENTATION>
   $<$<CONFIG:Release>:WL_RELEASE>
 )
 target_link_directories("RaylibApp" PRIVATE
