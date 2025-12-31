@@ -4,6 +4,7 @@
   "Walnut/RaylibApp/Source/GridLayer.h"
   "Walnut/RaylibApp/Source/ModelLayer.h"
   "Walnut/RaylibApp/Source/RaylibApp.cpp"
+  "Walnut/RaylibApp/Source/ShaderLayer.h"
 )
 if(CMAKE_BUILD_TYPE STREQUAL Debug)
   add_dependencies("RaylibApp"
@@ -20,6 +21,7 @@ if(CMAKE_BUILD_TYPE STREQUAL Debug)
 endif()
 target_include_directories("RaylibApp" PRIVATE
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/RaylibApp/Source>
+  $<$<CONFIG:Debug>:/share/sources/glfw-app>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut/Source>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut/Platform>
   $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor>
@@ -29,6 +31,7 @@ target_compile_definitions("RaylibApp" PRIVATE
   $<$<CONFIG:Debug>:DEBUG>
   $<$<CONFIG:Debug>:_GLFW_X11>
   $<$<CONFIG:Debug>:_GNU_SOURCE>
+  $<$<CONFIG:Debug>:PLATFORM_DESKTOP>
   $<$<CONFIG:Debug>:RAYLIB_APP>
   $<$<CONFIG:Debug>:IMGUI_HAS_DOCK>
   $<$<CONFIG:Debug>:WL_DEBUG>
@@ -70,6 +73,7 @@ if(CMAKE_BUILD_TYPE STREQUAL Release)
 endif()
 target_include_directories("RaylibApp" PRIVATE
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/RaylibApp/Source>
+  $<$<CONFIG:Release>:/share/sources/glfw-app>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut/Source>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut/Platform>
   $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor>
@@ -79,6 +83,7 @@ target_compile_definitions("RaylibApp" PRIVATE
   $<$<CONFIG:Release>:NDEBUG>
   $<$<CONFIG:Release>:_GLFW_X11>
   $<$<CONFIG:Release>:_GNU_SOURCE>
+  $<$<CONFIG:Release>:PLATFORM_DESKTOP>
   $<$<CONFIG:Release>:RAYLIB_APP>
   $<$<CONFIG:Release>:IMGUI_HAS_DOCK>
   $<$<CONFIG:Release>:WL_RELEASE>

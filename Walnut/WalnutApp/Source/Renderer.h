@@ -49,7 +49,8 @@ private:
   Settings m_Settings;
 
   uint32_t m_ComputeShader = -1;
-  const std::filesystem::path m_ComputeShaderPath = "Shaders/Compute.glsl";
+  const std::filesystem::path m_ComputeShaderPath =
+      "Walnut/ComputeApp/Shaders/Compute.glsl";
 
   std::vector<uint32_t> m_ImageHorizontalIter, m_ImageVerticalIter;
 

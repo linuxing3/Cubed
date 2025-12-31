@@ -7,11 +7,11 @@ walnut-app:
 cubed-client:
     ./Walnut/bin/Debug-linux-ARM64/CubedClientApp/CubedClientApp
 raylib-editor:
-    ./Walnut/vendor/rlImGui/bin/Debug/editor
+    ./Walnut/vendor/rlImGui/bin/Debug-linux-ARM64/editor/editor
 raylib-docking:
-    ./Walnut/vendor/rlImGui/bin/Debug/docking_example
+    ./Walnut/vendor/rlImGui/bin/Debug-linux-ARM64/docking_example/docking_example
 raylib-asset-browser:
-    ./Walnut/vendor/rlImGui/bin/Debug/asset_browser
+    ./Walnut/vendor/rlImGui/bin/Debug-linux-ARM64/asset_browser/asset_browser
 cmake-build:
     #!/bin/bash
     premake5 cmake

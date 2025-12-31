@@ -10,6 +10,7 @@ staticruntime "off"
 files { "Source/**.h", "Source/**.cpp"}
 
 defines{
+    "PLATFORM_DESKTOP",
     "RAYLIB_APP",
     "IMGUI_HAS_DOCK"
 }
@@ -17,6 +18,7 @@ defines{
 includedirs
 {
     "Source",
+    "../..",
     "../Walnut/Source",
     "../Walnut/Platform",
     "../vendor",
