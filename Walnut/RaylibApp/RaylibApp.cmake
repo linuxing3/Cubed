@@ -3,6 +3,7 @@
   "Walnut/RaylibApp/Source/CubeLayer.h"
   "Walnut/RaylibApp/Source/GridLayer.h"
   "Walnut/RaylibApp/Source/ModelLayer.h"
+  "Walnut/RaylibApp/Source/RayMarchingLayer.h"
   "Walnut/RaylibApp/Source/RaylibApp.cpp"
   "Walnut/RaylibApp/Source/RotatingCubeShaderLayer.h"
   "Walnut/RaylibApp/Source/ShaderLayer.h"

@@ -2,9 +2,10 @@
 // #include "CubeLayer.h"
 #include "GUI/Raylib/Application.h"
 // #include "GridLayer.h"
-// #include "ModelLayer.h"
+#include "ModelLayer.h"
 #include "Raylib/EntryPoint.h"
-#include "RotatingCubeShaderLayer.h"
+// #include "RotatingCubeShaderLayer.h"
+// #include "RayMarchingLayer.h"
 // #include "ShaderLayer.h"
 #include "rlImGui/imgui-master/imgui.h"
 
@@ -16,9 +17,10 @@ Raylib::Application *Raylib::CreateApplication(int argc, char **argv) {
   // app->PushLayer<CubeLayer>();
   // app->PushLayer<ComputeLayer>();
   // app->PushLayer<GridLayer>();
-  // app->PushLayer<ModelLayer>();
+  app->PushLayer<ModelLayer>();
   // app->PushLayer<ShaderLayer>();
-  app->PushLayer<RotatingCubeShaderLayer>();
+  // app->PushLayer<RotatingCubeShaderLayer>();
+  // app->PushLayer<RayMarchingShaderLayer>();
   app->SetMenubarCallback([app]() {
     if (ImGui::BeginMainMenuBar()) {
       if (ImGui::BeginMenu("File")) {
