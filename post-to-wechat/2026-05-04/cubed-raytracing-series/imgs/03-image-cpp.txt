@@ -1,0 +1,125 @@
+$ nl -ba /share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/Image.cpp | sed -n "10,130p"
+
+(eval):1: can't change option: zle
+(eval):1: can't change option: zle
+    10	Texture Image::AllocateMemory(int width, int height, GLenum format) {
+    11	  Texture result;
+    12	  result.Width = width;
+    13	  result.Height = height;
+    14	
+    15	  glCreateTextures(GL_TEXTURE_2D, 1, &result.Handle);
+    16	
+    17	  glTextureStorage2D(result.Handle, 1, format, width, height);
+    18	
+    19	  glTextureParameteri(result.Handle, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+    20	  glTextureParameteri(result.Handle, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+    21	
+    22	  glTextureParameteri(result.Handle, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    23	  glTextureParameteri(result.Handle, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    24	
+    25	  return result;
+    26	}
+    27	
+    28	Texture Image::AllocateAndSetupDataFromFile(const std::filesystem::path &path) {
+    29	  int width, height, channels;
+    30	  std::string filepath = path.string();
+    31	  unsigned char *data =
+    32	      stbi_load(filepath.c_str(), &width, &height, &channels, 0);
+    33	
+    34	  if (!data) {
+    35	    std::cerr << "Failed to load texture: " << filepath << "\n";
+    36	    return {};
+    37	  }
+    38	
+    39	  GLenum format = channels == 4   ? GL_RGBA
+    40	                  : channels == 3 ? GL_RGB
+    41	                  : channels == 1 ? GL_RED
+    42	                                  : 0;
+    43	
+    44	  Texture result = AllocateAndSetupDataFromMemory(width, height, format, data);
+    45	  stbi_image_free(data);
+    46	
+    47	  return result;
+    48	}
+    49	
+    50	Texture Image::AllocateAndSetupDataFromMemory(int width, int height,
+    51	                                              GLenum format, const void *data) {
+    52	  if (!data) {
+    53	    return {};
+    54	  }
+    55	
+    56	  Texture result;
+    57	  result.Width = width;
+    58	  result.Height = height;
+    59	
+    60	  glCreateTextures(GL_TEXTURE_2D, 1, &result.Handle);
+    61	
+    62	  glTextureStorage2D(result.Handle, 1, (format == GL_RGBA ? GL_RGBA8 : GL_RGB8),
+    63	                     width, height);
+    64	
+    65	  glTextureSubImage2D(result.Handle, 0, 0, 0, width, height, format,
+    66	                      GL_UNSIGNED_BYTE, data);
+    67	
+    68	  glTextureParameteri(result.Handle, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    69	  glTextureParameteri(result.Handle, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    70	
+    71	  glTextureParameteri(result.Handle, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    72	  glTextureParameteri(result.Handle, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    73	
+    74	  glGenerateTextureMipmap(result.Handle);
+    75	
+    76	  return result;
+    77	}
+    78	
+    79	void Image::SetData(int width, int height, GLenum format, const void *data) {
+    80	
+    81	  if (!data)
+    82	    return;
+    83	
+    84	  if (width != m_Texture.Width || height != m_Texture.Height) {
+    85	    std::cout << "resizing " << std::endl;
+    86	    glDeleteTextures(1, &m_Texture.Handle);
+    87	  }
+    88	
+    89	  m_Texture = AllocateAndSetupDataFromMemory(width, height, format, data);
+    90	}
+    91	
+    92	Framebuffer Image::CreateFramebufferWithTexture(const Texture texture) {
+    93	  Framebuffer result;
+    94	
+    95	  glCreateFramebuffers(1, &result.Handle);
+    96	
+    97	  if (!AttachTextureToFramebuffer(result, texture)) {
+    98	    glDeleteFramebuffers(1, &result.Handle);
+    99	    return {};
+   100	  }
+   101	
+   102	  return result;
+   103	}
+   104	
+   105	bool Image::AttachTextureToFramebuffer(Framebuffer &framebuffer,
+   106	                                       const Texture texture) {
+   107	  glNamedFramebufferTexture(framebuffer.Handle, GL_COLOR_ATTACHMENT0,
+   108	                            texture.Handle, 0);
+   109	
+   110	  if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE) {
+   111	    std::cerr << "Framebuffer is not complete!" << std::endl;
+   112	    return false;
+   113	  }
+   114	
+   115	  framebuffer.ColorAttachment = texture;
+   116	  return true;
+   117	}
+   118	
+   119	void Image::BlitFramebufferToSwapchain(const Framebuffer framebuffer) {
+   120	  glBindFramebuffer(GL_READ_FRAMEBUFFER, framebuffer.Handle);
+   121	  glBindFramebuffer(GL_DRAW_FRAMEBUFFER, 0); // swapchain
+   122	
+   123	  glBlitFramebuffer(0, 0, framebuffer.ColorAttachment.Width,
+   124	                    framebuffer.ColorAttachment.Height, // Source rect
+   125	                    0, 0, framebuffer.ColorAttachment.Width,
+   126	                    framebuffer.ColorAttachment.Height, // Destination rect
+   127	                    GL_COLOR_BUFFER_BIT, GL_NEAREST);
+   128	}
+   129	
+   130	} // namespace Walnut

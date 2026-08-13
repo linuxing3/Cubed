@@ -10,20 +10,20 @@ if(CMAKE_BUILD_TYPE STREQUAL Debug)
   )
   set_target_properties("ComputeApp" PROPERTIES
     OUTPUT_NAME "ComputeApp"
-    ARCHIVE_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/ComputeApp"
-    LIBRARY_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/ComputeApp"
-    RUNTIME_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/ComputeApp"
+    ARCHIVE_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Debug-linux-ARM64/ComputeApp"
+    LIBRARY_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Debug-linux-ARM64/ComputeApp"
+    RUNTIME_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Debug-linux-ARM64/ComputeApp"
   )
 endif()
 target_include_directories("ComputeApp" PRIVATE
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/ComputeApp/Source>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut/Source>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut/Platform>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glm>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glad/include>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/imgui>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/imgui/backends>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/ComputeApp/Source>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends>
 )
 target_compile_definitions("ComputeApp" PRIVATE
   $<$<CONFIG:Debug>:DEBUG>
@@ -70,20 +70,20 @@ if(CMAKE_BUILD_TYPE STREQUAL Release)
   )
   set_target_properties("ComputeApp" PROPERTIES
     OUTPUT_NAME "ComputeApp"
-    ARCHIVE_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/ComputeApp"
-    LIBRARY_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/ComputeApp"
-    RUNTIME_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/ComputeApp"
+    ARCHIVE_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Release-linux-ARM64/ComputeApp"
+    LIBRARY_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Release-linux-ARM64/ComputeApp"
+    RUNTIME_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Release-linux-ARM64/ComputeApp"
   )
 endif()
 target_include_directories("ComputeApp" PRIVATE
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/ComputeApp/Source>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut/Source>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut/Platform>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glm>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glad/include>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/imgui>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/imgui/backends>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/ComputeApp/Source>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends>
 )
 target_compile_definitions("ComputeApp" PRIVATE
   $<$<CONFIG:Release>:NDEBUG>

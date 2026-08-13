@@ -1,0 +1,437 @@
+[
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -D_GLFW_X11 -D_GNU_SOURCE  -fPIC -fPIC -g -std=c++11 -std=c++11 -o CMakeFiles/ImGui.dir/Walnut/vendor/imgui/imgui.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/imgui.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/imgui.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -D_GLFW_X11 -D_GNU_SOURCE  -fPIC -fPIC -g -std=c++11 -std=c++11 -o CMakeFiles/ImGui.dir/Walnut/vendor/imgui/imgui_demo.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/imgui_demo.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/imgui_demo.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -D_GLFW_X11 -D_GNU_SOURCE  -fPIC -fPIC -g -std=c++11 -std=c++11 -o CMakeFiles/ImGui.dir/Walnut/vendor/imgui/imgui_draw.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/imgui_draw.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/imgui_draw.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -D_GLFW_X11 -D_GNU_SOURCE  -fPIC -fPIC -g -std=c++11 -std=c++11 -o CMakeFiles/ImGui.dir/Walnut/vendor/imgui/imgui_tables.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/imgui_tables.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/imgui_tables.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -D_GLFW_X11 -D_GNU_SOURCE  -fPIC -fPIC -g -std=c++11 -std=c++11 -o CMakeFiles/ImGui.dir/Walnut/vendor/imgui/imgui_widgets.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/imgui_widgets.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/imgui_widgets.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/gcc -DDEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include -g -w -o CMakeFiles/glad.dir/Walnut/vendor/glad/src/gl.c.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/src/gl.c",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/src/gl.c"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/gcc -DDEBUG -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external/glfw/include -g -std=c99 -o CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/raudio.c.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/raudio.c",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/raudio.c"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/gcc -DDEBUG -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external/glfw/include -g -std=c99 -o CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rcore.c.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/rcore.c",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/rcore.c"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/gcc -DDEBUG -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external/glfw/include -g -std=c99 -o CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rglfw.c.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/rglfw.c",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/rglfw.c"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/gcc -DDEBUG -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external/glfw/include -g -std=c99 -o CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rmodels.c.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/rmodels.c",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/rmodels.c"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/gcc -DDEBUG -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external/glfw/include -g -std=c99 -o CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rshapes.c.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/rshapes.c",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/rshapes.c"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/gcc -DDEBUG -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external/glfw/include -g -std=c99 -o CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rtext.c.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/rtext.c",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/rtext.c"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/gcc -DDEBUG -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external/glfw/include -g -std=c99 -o CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/rtextures.c.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/rtextures.c",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/rtextures.c"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/gcc -DDEBUG -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external/glfw/include -g -std=c99 -o CMakeFiles/raylib.dir/Walnut/vendor/rlImGui/raylib-master/src/utils.c.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/utils.c",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/utils.c"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DGRAPHICS_API_OPENGL_33 -DIMGUI_DISABLE_OBSOLETE_FUNCTIONS -DIMGUI_DISABLE_OBSOLETE_KEYIO -DPLATFORM_DESKTOP -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external/glfw/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/rlImGui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master -g -std=c++17 -std=c++17 -o CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/imgui-master/imgui.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master/imgui.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master/imgui.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DGRAPHICS_API_OPENGL_33 -DIMGUI_DISABLE_OBSOLETE_FUNCTIONS -DIMGUI_DISABLE_OBSOLETE_KEYIO -DPLATFORM_DESKTOP -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external/glfw/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/rlImGui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master -g -std=c++17 -std=c++17 -o CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/imgui-master/imgui_demo.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master/imgui_demo.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master/imgui_demo.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DGRAPHICS_API_OPENGL_33 -DIMGUI_DISABLE_OBSOLETE_FUNCTIONS -DIMGUI_DISABLE_OBSOLETE_KEYIO -DPLATFORM_DESKTOP -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external/glfw/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/rlImGui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master -g -std=c++17 -std=c++17 -o CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/imgui-master/imgui_draw.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master/imgui_draw.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master/imgui_draw.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DGRAPHICS_API_OPENGL_33 -DIMGUI_DISABLE_OBSOLETE_FUNCTIONS -DIMGUI_DISABLE_OBSOLETE_KEYIO -DPLATFORM_DESKTOP -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external/glfw/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/rlImGui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master -g -std=c++17 -std=c++17 -o CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/imgui-master/imgui_tables.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master/imgui_tables.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master/imgui_tables.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DGRAPHICS_API_OPENGL_33 -DIMGUI_DISABLE_OBSOLETE_FUNCTIONS -DIMGUI_DISABLE_OBSOLETE_KEYIO -DPLATFORM_DESKTOP -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external/glfw/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/rlImGui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master -g -std=c++17 -std=c++17 -o CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/imgui-master/imgui_widgets.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master/imgui_widgets.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master/imgui_widgets.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DGRAPHICS_API_OPENGL_33 -DIMGUI_DISABLE_OBSOLETE_FUNCTIONS -DIMGUI_DISABLE_OBSOLETE_KEYIO -DPLATFORM_DESKTOP -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external/glfw/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/rlImGui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master -g -std=c++17 -std=c++17 -o CMakeFiles/rlImGui.dir/Walnut/vendor/rlImGui/rlImGui.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/rlImGui.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/rlImGui.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/stb_image -fPIC -fPIC -g -std=c++11 -std=c++11 -o CMakeFiles/stb.dir/Walnut/vendor/stb_image/stb_image.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/stb_image/stb_image.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/stb_image/stb_image.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/binary.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/binary.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/binary.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/contrib/graphbuilder.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/contrib/graphbuilder.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/contrib/graphbuilder.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/contrib/graphbuilderadapter.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/contrib/graphbuilderadapter.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/contrib/graphbuilderadapter.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/convert.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/convert.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/convert.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/depthguard.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/depthguard.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/depthguard.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/directives.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/directives.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/directives.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/emit.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/emit.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/emit.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/emitfromevents.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/emitfromevents.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/emitfromevents.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/emitter.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/emitter.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/emitter.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/emitterstate.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/emitterstate.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/emitterstate.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/emitterutils.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/emitterutils.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/emitterutils.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/exceptions.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/exceptions.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/exceptions.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/exp.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/exp.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/exp.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/memory.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/memory.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/memory.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/node.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/node.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/node.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/node_data.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/node_data.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/node_data.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/nodebuilder.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/nodebuilder.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/nodebuilder.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/nodeevents.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/nodeevents.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/nodeevents.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/null.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/null.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/null.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/ostream_wrapper.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/ostream_wrapper.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/ostream_wrapper.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/parse.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/parse.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/parse.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/parser.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/parser.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/parser.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/regex_yaml.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/regex_yaml.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/regex_yaml.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/scanner.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/scanner.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/scanner.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/scanscalar.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/scanscalar.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/scanscalar.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/scantag.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/scantag.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/scantag.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/scantoken.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/scantoken.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/scantoken.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/simplekey.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/simplekey.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/simplekey.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/singledocparser.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/singledocparser.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/singledocparser.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/stream.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/stream.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/stream.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DYAML_CPP_STATIC_DEFINE -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -fPIC -fPIC -g -std=c++17 -std=c++17 -o CMakeFiles/yaml-cpp.dir/Walnut/vendor/yaml-cpp/src/tag.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/tag.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/src/tag.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform -I/share/data/sources/development-projects/glfw-app/Walnut/vendor -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/examples/libs/glfw/include -g -std=c++17 -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Platform/GUI/Raylib/Application.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform/GUI/Raylib/Application.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform/GUI/Raylib/Application.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform -I/share/data/sources/development-projects/glfw-app/Walnut/vendor -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/examples/libs/glfw/include -g -std=c++17 -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Platform/GUI/Walnut/Application.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/Application.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/Application.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform -I/share/data/sources/development-projects/glfw-app/Walnut/vendor -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/examples/libs/glfw/include -g -std=c++17 -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Platform/GUI/Walnut/ImGui/ImGuiTheme.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/ImGui/ImGuiTheme.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/ImGui/ImGuiTheme.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform -I/share/data/sources/development-projects/glfw-app/Walnut/vendor -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/examples/libs/glfw/include -g -std=c++17 -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Platform/GUI/Walnut/ImGui/imgui_impl_glfw.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/ImGui/imgui_impl_glfw.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/ImGui/imgui_impl_glfw.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform -I/share/data/sources/development-projects/glfw-app/Walnut/vendor -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/examples/libs/glfw/include -g -std=c++17 -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Platform/GUI/Walnut/ImGui/imgui_impl_opengl3.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/ImGui/imgui_impl_opengl3.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/ImGui/imgui_impl_opengl3.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform -I/share/data/sources/development-projects/glfw-app/Walnut/vendor -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/examples/libs/glfw/include -g -std=c++17 -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Platform/GUI/Walnut/Image.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/Image.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/Image.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform -I/share/data/sources/development-projects/glfw-app/Walnut/vendor -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/examples/libs/glfw/include -g -std=c++17 -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Platform/GUI/Walnut/Input/Input.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/Input/Input.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/Input/Input.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform -I/share/data/sources/development-projects/glfw-app/Walnut/vendor -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/examples/libs/glfw/include -g -std=c++17 -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Core/Log.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source/Walnut/Core/Log.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source/Walnut/Core/Log.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform -I/share/data/sources/development-projects/glfw-app/Walnut/vendor -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/examples/libs/glfw/include -g -std=c++17 -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Random.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source/Walnut/Random.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source/Walnut/Random.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform -I/share/data/sources/development-projects/glfw-app/Walnut/vendor -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/examples/libs/glfw/include -g -std=c++17 -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Serialization/BufferStream.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source/Walnut/Serialization/BufferStream.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source/Walnut/Serialization/BufferStream.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform -I/share/data/sources/development-projects/glfw-app/Walnut/vendor -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/examples/libs/glfw/include -g -std=c++17 -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Serialization/FileStream.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source/Walnut/Serialization/FileStream.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source/Walnut/Serialization/FileStream.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform -I/share/data/sources/development-projects/glfw-app/Walnut/vendor -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/examples/libs/glfw/include -g -std=c++17 -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Serialization/StreamReader.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source/Walnut/Serialization/StreamReader.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source/Walnut/Serialization/StreamReader.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform -I/share/data/sources/development-projects/glfw-app/Walnut/vendor -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/examples/libs/glfw/include -g -std=c++17 -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Serialization/StreamWriter.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source/Walnut/Serialization/StreamWriter.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source/Walnut/Serialization/StreamWriter.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform -I/share/data/sources/development-projects/glfw-app/Walnut/vendor -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/examples/libs/glfw/include -g -std=c++17 -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Shader.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source/Walnut/Shader.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source/Walnut/Shader.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform -I/share/data/sources/development-projects/glfw-app/Walnut/vendor -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/examples/libs/glfw/include -g -std=c++17 -std=c++17 -o CMakeFiles/Walnut.dir/Walnut/Walnut/Source/Walnut/Utils/StringUtils.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source/Walnut/Utils/StringUtils.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source/Walnut/Utils/StringUtils.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/ComputeApp/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform -I/share/data/sources/development-projects/glfw-app/Walnut/vendor -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends -g -std=c++17 -std=c++17 -o CMakeFiles/ComputeApp.dir/Walnut/ComputeApp/Source/Main.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/ComputeApp/Source/Main.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/ComputeApp/Source/Main.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -DWL_PLATFORM_LINUX -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glfw/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux -g -std=c++17 -std=c++17 -o CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux/Walnut/Networking/LinuxNetworkingUtils.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -DWL_PLATFORM_LINUX -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glfw/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux -g -std=c++17 -std=c++17 -o CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Client.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -DWL_PLATFORM_LINUX -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glfw/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux -g -std=c++17 -std=c++17 -o CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/NetworkingUtils.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -DWL_PLATFORM_LINUX -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glfw/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux -g -std=c++17 -std=c++17 -o CMakeFiles/Walnut-Networking.dir/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source/Walnut/Networking/Server.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/CubedCommon/Source -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/examples/libs/glfw/include -g -std=c++17 -std=c++17 -o CMakeFiles/CubedClientApp.dir/Walnut/CubedClientApp/Source/ClientLayer.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/CubedClientApp/Source/ClientLayer.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/CubedClientApp/Source/ClientLayer.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/CubedCommon/Source -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/examples/libs/glfw/include -g -std=c++17 -std=c++17 -o CMakeFiles/CubedClientApp.dir/Walnut/CubedClientApp/Source/CubedApp.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/CubedClientApp/Source/CubedApp.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/CubedClientApp/Source/CubedApp.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/CubedCommon/Source -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/examples/libs/glfw/include -g -std=c++17 -std=c++17 -o CMakeFiles/CubedClientApp.dir/Walnut/CubedClientApp/Source/Renderer/Renderer.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/CubedClientApp/Source/Renderer/Renderer.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/CubedClientApp/Source/Renderer/Renderer.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external/glfw/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/examples/asset_browser -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master -g -std=c++17 -std=c++17 -o CMakeFiles/asset_browser.dir/Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/examples/asset_browser/asset_browser.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external/glfw/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/examples/asset_browser -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master -g -std=c++17 -std=c++17 -o CMakeFiles/asset_browser.dir/Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/examples/asset_browser/imgui_utils.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external/glfw/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/examples/asset_browser -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master -g -std=c++17 -std=c++17 -o CMakeFiles/asset_browser.dir/Walnut/vendor/rlImGui/examples/asset_browser/item_views.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/examples/asset_browser/item_views.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/examples/asset_browser/item_views.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external/glfw/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/examples/asset_browser -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master -g -std=c++17 -std=c++17 -o CMakeFiles/asset_browser.dir/Walnut/vendor/rlImGui/examples/asset_browser/main.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/examples/asset_browser/main.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/examples/asset_browser/main.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external/glfw/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master -g -std=c++17 -std=c++17 -o CMakeFiles/docking_example.dir/Walnut/vendor/rlImGui/examples/docking_example.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/examples/docking_example.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/examples/docking_example.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external/glfw/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master -g -std=c++17 -std=c++17 -o CMakeFiles/editor.dir/Walnut/vendor/rlImGui/examples/editor.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/examples/editor.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/examples/editor.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external/glfw/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master -g -std=c++17 -std=c++17 -o CMakeFiles/imgui_style_example.dir/Walnut/vendor/rlImGui/examples/imgui_style_example.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/examples/imgui_style_example.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/examples/imgui_style_example.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src/external/glfw/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/imgui-master -g -std=c++17 -std=c++17 -o CMakeFiles/simple.dir/Walnut/vendor/rlImGui/examples/simple.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/examples/simple.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/examples/simple.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DIMGUI_HAS_DOCK -DPLATFORM_DESKTOP -DRAYLIB_APP -DRLIGHTS_IMPLEMENTATION -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/RaylibApp/Source -I/share/data/sources/development-projects/glfw-app -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform -I/share/data/sources/development-projects/glfw-app/Walnut/vendor -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src -g -std=c++17 -std=c++17 -o CMakeFiles/RaylibApp.dir/Walnut/RaylibApp/Source/RaylibApp.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/RaylibApp/Source/RaylibApp.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/RaylibApp/Source/RaylibApp.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/WalnutApp/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform -I/share/data/sources/development-projects/glfw-app/Walnut/vendor -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends -g -std=c++17 -std=c++17 -o CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/Camera.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/WalnutApp/Source/Camera.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/WalnutApp/Source/Camera.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/WalnutApp/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform -I/share/data/sources/development-projects/glfw-app/Walnut/vendor -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends -g -std=c++17 -std=c++17 -o CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/Renderer.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/WalnutApp/Source/Renderer.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/WalnutApp/Source/Renderer.cpp"
+},
+{
+  "directory": "/share/data/sources/development-projects/glfw-app/build-hermes",
+  "command": "/home/Designers/.nix-profile/bin/g++ -DDEBUG -DWL_DEBUG -D_GLFW_X11 -D_GNU_SOURCE -I/share/data/sources/development-projects/glfw-app/Walnut/WalnutApp/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source -I/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform -I/share/data/sources/development-projects/glfw-app/Walnut/vendor -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui -I/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends -g -std=c++17 -std=c++17 -o CMakeFiles/WalnutApp.dir/Walnut/WalnutApp/Source/WalnutApp.cpp.o -c /share/data/sources/development-projects/glfw-app/Walnut/WalnutApp/Source/WalnutApp.cpp",
+  "file": "/share/data/sources/development-projects/glfw-app/Walnut/WalnutApp/Source/WalnutApp.cpp"
+}
+]

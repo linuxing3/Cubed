@@ -10,20 +10,20 @@
 if(CMAKE_BUILD_TYPE STREQUAL Debug)
   set_target_properties("Walnut-Networking" PROPERTIES
     OUTPUT_NAME "Walnut-Networking"
-    ARCHIVE_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/Walnut-Networking"
-    LIBRARY_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/Walnut-Networking"
-    RUNTIME_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/Walnut-Networking"
+    ARCHIVE_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Debug-linux-ARM64/Walnut-Networking"
+    LIBRARY_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Debug-linux-ARM64/Walnut-Networking"
+    RUNTIME_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Debug-linux-ARM64/Walnut-Networking"
   )
 endif()
 target_include_directories("Walnut-Networking" PRIVATE
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut/Source>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/imgui>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glfw/include>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glm>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/spdlog/include>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glfw/include>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux>
 )
 target_compile_definitions("Walnut-Networking" PRIVATE
   $<$<CONFIG:Debug>:DEBUG>
@@ -53,20 +53,20 @@ endif()
 if(CMAKE_BUILD_TYPE STREQUAL Release)
   set_target_properties("Walnut-Networking" PROPERTIES
     OUTPUT_NAME "Walnut-Networking"
-    ARCHIVE_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/Walnut-Networking"
-    LIBRARY_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/Walnut-Networking"
-    RUNTIME_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/Walnut-Networking"
+    ARCHIVE_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Release-linux-ARM64/Walnut-Networking"
+    LIBRARY_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Release-linux-ARM64/Walnut-Networking"
+    RUNTIME_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Release-linux-ARM64/Walnut-Networking"
   )
 endif()
 target_include_directories("Walnut-Networking" PRIVATE
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut/Source>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/imgui>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glfw/include>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glm>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/spdlog/include>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glfw/include>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Platform/Linux>
 )
 target_compile_definitions("Walnut-Networking" PRIVATE
   $<$<CONFIG:Release>:NDEBUG>

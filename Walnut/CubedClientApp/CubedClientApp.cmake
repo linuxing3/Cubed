@@ -14,21 +14,22 @@ if(CMAKE_BUILD_TYPE STREQUAL Debug)
   )
   set_target_properties("CubedClientApp" PROPERTIES
     OUTPUT_NAME "CubedClientApp"
-    ARCHIVE_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/CubedClientApp"
-    LIBRARY_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/CubedClientApp"
-    RUNTIME_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/CubedClientApp"
+    ARCHIVE_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Debug-linux-ARM64/CubedClientApp"
+    LIBRARY_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Debug-linux-ARM64/CubedClientApp"
+    RUNTIME_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Debug-linux-ARM64/CubedClientApp"
   )
 endif()
 target_include_directories("CubedClientApp" PRIVATE
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/CubedCommon/Source>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glad/include>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glm>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/imgui>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/spdlog/include>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut/Source>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut/Platform>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/CubedCommon/Source>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/examples/libs/glfw/include>
 )
 target_compile_definitions("CubedClientApp" PRIVATE
   $<$<CONFIG:Debug>:DEBUG>
@@ -42,7 +43,6 @@ target_link_libraries("CubedClientApp"
   $<$<CONFIG:Debug>:glad>
   $<$<CONFIG:Debug>:ImGui>
   $<$<CONFIG:Debug>:Walnut>
-  $<$<CONFIG:Debug>:glfw>
   $<$<CONFIG:Debug>:X11>
   $<$<CONFIG:Debug>:xcb>
   $<$<CONFIG:Debug>:Xau>
@@ -75,21 +75,22 @@ if(CMAKE_BUILD_TYPE STREQUAL Release)
   )
   set_target_properties("CubedClientApp" PROPERTIES
     OUTPUT_NAME "CubedClientApp"
-    ARCHIVE_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/CubedClientApp"
-    LIBRARY_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/CubedClientApp"
-    RUNTIME_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/CubedClientApp"
+    ARCHIVE_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Release-linux-ARM64/CubedClientApp"
+    LIBRARY_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Release-linux-ARM64/CubedClientApp"
+    RUNTIME_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Release-linux-ARM64/CubedClientApp"
   )
 endif()
 target_include_directories("CubedClientApp" PRIVATE
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/CubedCommon/Source>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glad/include>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glm>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/imgui>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/spdlog/include>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut/Source>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut/Platform>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/CubedCommon/Source>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Source>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/vendor/GameNetworkingSockets/include>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/examples/libs/glfw/include>
 )
 target_compile_definitions("CubedClientApp" PRIVATE
   $<$<CONFIG:Release>:NDEBUG>
@@ -103,7 +104,6 @@ target_link_libraries("CubedClientApp"
   $<$<CONFIG:Release>:glad>
   $<$<CONFIG:Release>:ImGui>
   $<$<CONFIG:Release>:Walnut>
-  $<$<CONFIG:Release>:glfw>
   $<$<CONFIG:Release>:X11>
   $<$<CONFIG:Release>:xcb>
   $<$<CONFIG:Release>:Xau>

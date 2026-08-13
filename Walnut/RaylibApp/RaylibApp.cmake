@@ -18,18 +18,18 @@ if(CMAKE_BUILD_TYPE STREQUAL Debug)
   )
   set_target_properties("RaylibApp" PROPERTIES
     OUTPUT_NAME "RaylibApp"
-    ARCHIVE_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/RaylibApp"
-    LIBRARY_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/RaylibApp"
-    RUNTIME_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/RaylibApp"
+    ARCHIVE_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Debug-linux-ARM64/RaylibApp"
+    LIBRARY_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Debug-linux-ARM64/RaylibApp"
+    RUNTIME_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Debug-linux-ARM64/RaylibApp"
   )
 endif()
 target_include_directories("RaylibApp" PRIVATE
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/RaylibApp/Source>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut/Source>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut/Platform>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/rlImGui/raylib-master/src>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/RaylibApp/Source>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src>
 )
 target_compile_definitions("RaylibApp" PRIVATE
   $<$<CONFIG:Debug>:DEBUG>
@@ -71,18 +71,18 @@ if(CMAKE_BUILD_TYPE STREQUAL Release)
   )
   set_target_properties("RaylibApp" PROPERTIES
     OUTPUT_NAME "RaylibApp"
-    ARCHIVE_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/RaylibApp"
-    LIBRARY_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/RaylibApp"
-    RUNTIME_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/RaylibApp"
+    ARCHIVE_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Release-linux-ARM64/RaylibApp"
+    LIBRARY_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Release-linux-ARM64/RaylibApp"
+    RUNTIME_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Release-linux-ARM64/RaylibApp"
   )
 endif()
 target_include_directories("RaylibApp" PRIVATE
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/RaylibApp/Source>
-  $<$<CONFIG:Release>:/share/sources/glfw-app>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut/Source>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut/Platform>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/rlImGui/raylib-master/src>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/RaylibApp/Source>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src>
 )
 target_compile_definitions("RaylibApp" PRIVATE
   $<$<CONFIG:Release>:NDEBUG>

@@ -17,27 +17,27 @@ if(CMAKE_BUILD_TYPE STREQUAL Debug)
   )
   set_target_properties("WalnutApp" PROPERTIES
     OUTPUT_NAME "WalnutApp"
-    ARCHIVE_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/WalnutApp"
-    LIBRARY_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/WalnutApp"
-    RUNTIME_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/WalnutApp"
+    ARCHIVE_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Debug-linux-ARM64/WalnutApp"
+    LIBRARY_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Debug-linux-ARM64/WalnutApp"
+    RUNTIME_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Debug-linux-ARM64/WalnutApp"
   )
 endif()
 target_include_directories("WalnutApp" PRIVATE
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/WalnutApp/Source>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut/Source>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut/Platform>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glm>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glad/include>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glfw/include>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/imgui>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/imgui/backends>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/WalnutApp/Source>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glfw/include>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends>
 )
 target_compile_definitions("WalnutApp" PRIVATE
   $<$<CONFIG:Debug>:WL_DEBUG>
 )
 target_link_directories("WalnutApp" PRIVATE
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glfw/lib>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glfw/lib>
 )
 target_link_libraries("WalnutApp"
   $<$<CONFIG:Debug>:Walnut>
@@ -76,27 +76,27 @@ if(CMAKE_BUILD_TYPE STREQUAL Release)
   )
   set_target_properties("WalnutApp" PROPERTIES
     OUTPUT_NAME "WalnutApp"
-    ARCHIVE_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/WalnutApp"
-    LIBRARY_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/WalnutApp"
-    RUNTIME_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/WalnutApp"
+    ARCHIVE_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Release-linux-ARM64/WalnutApp"
+    LIBRARY_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Release-linux-ARM64/WalnutApp"
+    RUNTIME_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Release-linux-ARM64/WalnutApp"
   )
 endif()
 target_include_directories("WalnutApp" PRIVATE
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/WalnutApp/Source>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut/Source>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut/Platform>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glm>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glad/include>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glfw/include>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/imgui>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/imgui/backends>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/WalnutApp/Source>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glfw/include>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends>
 )
 target_compile_definitions("WalnutApp" PRIVATE
   $<$<CONFIG:Release>:WL_RELEASE>
 )
 target_link_directories("WalnutApp" PRIVATE
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glfw/lib>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glfw/lib>
 )
 target_link_libraries("WalnutApp"
   $<$<CONFIG:Release>:Walnut>
@@ -137,27 +137,27 @@ if(CMAKE_BUILD_TYPE STREQUAL Dist)
   )
   set_target_properties("WalnutApp" PROPERTIES
     OUTPUT_NAME "WalnutApp"
-    ARCHIVE_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Dist-linux-ARM64/WalnutApp"
-    LIBRARY_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Dist-linux-ARM64/WalnutApp"
-    RUNTIME_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Dist-linux-ARM64/WalnutApp"
+    ARCHIVE_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Dist-linux-ARM64/WalnutApp"
+    LIBRARY_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Dist-linux-ARM64/WalnutApp"
+    RUNTIME_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Dist-linux-ARM64/WalnutApp"
   )
 endif()
 target_include_directories("WalnutApp" PRIVATE
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/WalnutApp/Source>
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/Walnut/Source>
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/Walnut/Platform>
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor>
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/glm>
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/glad/include>
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/glfw/include>
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/imgui>
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/imgui/backends>
+  $<$<CONFIG:Dist>:/share/data/sources/development-projects/glfw-app/Walnut/WalnutApp/Source>
+  $<$<CONFIG:Dist>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source>
+  $<$<CONFIG:Dist>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform>
+  $<$<CONFIG:Dist>:/share/data/sources/development-projects/glfw-app/Walnut/vendor>
+  $<$<CONFIG:Dist>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm>
+  $<$<CONFIG:Dist>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include>
+  $<$<CONFIG:Dist>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glfw/include>
+  $<$<CONFIG:Dist>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui>
+  $<$<CONFIG:Dist>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends>
 )
 target_compile_definitions("WalnutApp" PRIVATE
   $<$<CONFIG:Dist>:WL_DIST>
 )
 target_link_directories("WalnutApp" PRIVATE
-  $<$<CONFIG:Dist>:/share/sources/glfw-app/Walnut/vendor/glfw/lib>
+  $<$<CONFIG:Dist>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glfw/lib>
 )
 target_link_libraries("WalnutApp"
   $<$<CONFIG:Dist>:Walnut>

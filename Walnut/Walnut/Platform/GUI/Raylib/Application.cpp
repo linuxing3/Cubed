@@ -122,7 +122,10 @@ void Application::Run() {
 
     // Drawing
     BeginDrawing();
-    ClearBackground(DARKGRAY);
+
+    // Drawing ImGui Custom Layers
+    for (auto &layer : m_LayerStack)
+      layer->OnPresent();
 
     // Drawing ImGui content
     rlImGuiBegin();

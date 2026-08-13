@@ -1,0 +1,23 @@
+$ git -C /share/data/sources/development-projects/glfw-app show --name-status --oneline f0d4c4f
+
+(eval):1: can't change option: zle
+(eval):1: can't change option: zle
+f0d4c4f feat: show texture in imgui window
+M	App/App.cpp
+M	App/WalnutApp.cmake
+R100	App/src/App.cpp	App/demo/App.cpp
+M	App/premake5.lua
+A	App/src/Camera.cpp
+A	App/src/Camera.h
+A	App/src/Ray.h
+A	App/src/Renderer.cpp
+A	App/src/Renderer.h
+A	App/src/Scene.h
+A	App/src/WalnutApp.cpp
+M	Makefile
+M	Walnut/src/Application.cpp
+M	Walnut/src/Image.cpp
+M	Walnut/src/Image.h
+M	Walnut/src/Layer.h
+M	compile_commands.json
+M	imgui.ini

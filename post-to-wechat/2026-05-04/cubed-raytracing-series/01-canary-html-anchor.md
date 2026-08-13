@@ -1,0 +1,88 @@
+---
+title: "Cubed 光线追踪游戏开发实战（01）：开坑总览——我为什么要折腾这个项目"
+description: "基于 Cubed/glfw-app 的提交历史，给这套 9 章教程定路线图：后端迁移、GPU 图像管线、Walnut+ImGui 显示、多平台构建与多人服务器。"
+author: "宝玉"
+coverImage: "cover.png"
+---
+
+🔗 仓库链接：https://github.com/linuxing3/Cubed
+
+# 背景情况
+我想做一套“**能看懂、能复现、还能顺手笑两下**”的光线追踪游戏开发系列。素材不是空想，而是直接啃项目提交历史：
+
+```bash
+git -C /share/data/sources/development-projects/glfw-app log --oneline --decorate -n 30
+```
+
+关键节点（节选）：
+```text
+cde52a7 init
+08a8f85 feat: walnut app
+f0d4c4f feat: show texture in imgui window
+daf5bd5 feat: render cube
+7e13ae2 feat: integrate raylib and rlImGui
+01fe078 feat: raylib image
+7013e1a feat: restructure
+286f629 feat: raylib app works
+...
+```
+
+# 基本目标
+这套专题希望同时照顾两类读者：
+1. 有图形学经验的同学：能看到架构决策和代码演进。
+2. 普通读者：能按“做了什么→为什么→怎么验证”一路跟下来。
+
+# 实现过程（本章是总路线）
+后续 8 章我会围绕这些主线：
+- Vulkan 思维到 OpenGL/Raylib 实操落地
+- Walnut/Image.cpp 的 GPU 图像与 FBO 流程
+- Application.cpp 启动图形上下文和 ImGui 生命周期
+- 图像如何挂到 ImGui 图层
+- 从 3D 风格渲染到多人服务端雏形
+- CMake + Premake 双构建体系
+- x86_64 与 ARM64 的跨架构实践
+- 主题分类、双向链接、定期整理（工程知识管理）
+
+# 注意事项
+- 本项目当前仓库名是 `glfw-app`，但历史里保留了大量 `Cubed` 命名。
+- 本系列基于**提交历史**讲故事，不是单看最终态代码。
+
+# 踩过的坑
+- “项目名叫 Cubed，目录却不一定叫 cubed”——第一坑就是找仓库。
+- 以为只会讲渲染，结果构建系统和目录重构才是最费脑子的部分。
+
+# 代码截图建议
+- `git log --oneline` 终端截图（作为路线图）
+- 仓库目录树截图（标出 Walnut、RaylibApp、CubedCommon）
+
+# 下一章预告
+下一章我们专讲：**项目如何从早期 Vulkan 痕迹，落到 OpenGL + Raylib 的可跑配置**。
+
+## 关键代码截图
+![01-bat-code](imgs/01-bat-code.png)
+!01-bat-code
+
+---
+## 系列导航
+当前进度：**第 1/10 篇**
+
+上一篇：无（这是第一篇）
+
+下一篇：第02篇 Cubed 光线追踪游戏开发实战（01）：开坑总览——我为什么要折腾这个项目
+
+完整系列目录：
+- 第01篇（当前）：Cubed 光线追踪游戏开发实战（01）：开坑总览——我为什么要折腾这个项目
+- 第02篇：Cubed 光线追踪游戏开发实战（01）：开坑总览——我为什么要折腾这个项目
+- 第03篇：Cubed 光线追踪游戏开发实战（01）：开坑总览——我为什么要折腾这个项目
+- 第04篇：Cubed 光线追踪游戏开发实战（01）：开坑总览——我为什么要折腾这个项目
+- 第05篇：Cubed 光线追踪游戏开发实战（01）：开坑总览——我为什么要折腾这个项目
+- 第06篇：Cubed 光线追踪游戏开发实战（02）：从 Vulkan 痕迹到 OpenGL/Raylib 可跑配置
+- 第07篇：Cubed 光线追踪游戏开发实战（03）：Walnut 的 Image.cpp 是怎么和 GPU 打交道的
+- 第08篇：Cubed 光线追踪游戏开发实战（04）：Application.cpp 里 GPU 启动是怎么设计出来的
+- 第09篇：Cubed 光线追踪游戏开发实战（05）：image 如何渲染到 Walnut 的 ImGui 图层
+- 第10篇：Cubed 光线追踪游戏开发实战（06）：用 OpenGL 基础框架做出 3D 风格画面
+- 第11篇：Cubed 光线追踪游戏开发实战（07）：多启动服务器与客户端通信是怎么串起来的
+- 第12篇：Cubed 光线追踪游戏开发实战（08）：CMake + Premake 双构建与 x86_64/ARM64 适配
+- 第13篇：Cubed 光线追踪游戏开发实战（09）：工程化收官——生成日志、定期整理、主题分类与双向链接
+- 第14篇：Cubed 光线追踪游戏开发实战（10）：前置知识与环境搭建（补完篇）
+---

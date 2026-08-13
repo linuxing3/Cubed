@@ -1,0 +1,163 @@
+$ nl -ba /share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/Application.cpp | sed -n "52,210p"
+
+(eval):1: can't change option: zle
+(eval):1: can't change option: zle
+    52	void Application::Init() {
+    53	
+    54	  glfwSetErrorCallback(ErrorCallback);
+    55	
+    56	  if (!glfwInit())
+    57	    exit(EXIT_FAILURE);
+    58	
+    59	  glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    60	  glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    61	
+    62	  int width = 1280;
+    63	  int height = 720;
+    64	
+    65	  m_WindowHandle = glfwCreateWindow(width, height, "Compute", NULL, NULL);
+    66	  if (!m_WindowHandle) {
+    67	    glfwTerminate();
+    68	    exit(EXIT_FAILURE);
+    69	  }
+    70	
+    71	  glfwSetKeyCallback(m_WindowHandle, KeyCallback);
+    72	
+    73	  glfwMakeContextCurrent(m_WindowHandle);
+    74	
+    75	  // LOAD GL
+    76	  gladLoadGL(glfwGetProcAddress);
+    77	  // Enable depth test
+    78	  glEnable(GL_DEPTH_TEST);
+    79	  // Accept fragment if it is closer to the camera than the former one
+    80	  glDepthFunc(GL_LESS);
+    81	
+    82	
+    83	  glfwSwapInterval(1);
+    84	
+    85	  // Init Imgui
+    86	  const char *glsl_version = "#version 130";
+    87	  // Create window with graphics context
+    88	  float main_scale = ImGui_ImplGlfw_GetContentScaleForMonitor(
+    89	      glfwGetPrimaryMonitor()); // Valid on GLFW 3.3+ only
+    90	  IMGUI_CHECKVERSION();
+    91	  ImGui::CreateContext();
+    92	  ImGuiIO &io = ImGui::GetIO();
+    93	  (void)io;
+    94	  io.ConfigFlags |=
+    95	      ImGuiConfigFlags_NavEnableKeyboard; // Enable Keyboard Controls
+    96	  io.ConfigFlags |=
+    97	      ImGuiConfigFlags_NavEnableGamepad;              // Enable Gamepad Controls
+    98	  io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;   // Enable Docking
+    99	  io.ConfigFlags |= ImGuiConfigFlags_ViewportsEnable; // Enable Multi-Viewport /
+   100	                                                      // Platform Windows
+   101	  // io.ConfigViewportsNoAutoMerge = true;
+   102	  // io.ConfigViewportsNoTaskBarIcon = true;
+   103	
+   104	  // Setup Dear ImGui style
+   105	  ImGui::StyleColorsDark();
+   106	  // ImGui::StyleColorsLight();
+   107	
+   108	  // Setup scaling
+   109	  ImGuiStyle &style = ImGui::GetStyle();
+   110	  style.ScaleAllSizes(main_scale);
+   111	  style.FontScaleDpi = main_scale;
+   112	#if GLFW_VERSION_MAJOR >= 3 && GLFW_VERSION_MINOR >= 3
+   113	  io.ConfigDpiScaleFonts =
+   114	      true; // [Experimental] Automatically overwrite style.FontScaleDpi in
+   115	            // Begin() when Monitor DPI changes. This will scale fonts but _NOT_
+   116	            // scale sizes/padding for now.
+   117	  io.ConfigDpiScaleViewports =
+   118	      true; // [Experimental] Scale Dear ImGui and Platform Windows when Monitor
+   119	            // DPI changes.
+   120	#endif
+   121	
+   122	  // When viewports are enabled we tweak WindowRounding/WindowBg so platform
+   123	  // windows can look identical to regular ones.
+   124	  if (io.ConfigFlags & ImGuiConfigFlags_ViewportsEnable) {
+   125	    style.WindowRounding = 0.0f;
+   126	    style.Colors[ImGuiCol_WindowBg].w = 1.0f;
+   127	  }
+   128	
+   129	  ImFontConfig fontConfig;
+   130	  fontConfig.FontDataOwnedByAtlas = false;
+   131	  ImFont *robotoFont = io.Fonts->AddFontFromMemoryTTF(
+   132	      (void *)g_RobotoRegular, sizeof(g_RobotoRegular), 20.0f, &fontConfig);
+   133	  io.FontDefault = robotoFont;
+   134	
+   135	  // Setup Platform/Renderer backends
+   136	  ImGui_ImplGlfw_InitForOpenGL(m_WindowHandle, true);
+   137	  ImGui_ImplOpenGL3_Init(glsl_version);
+   138	}
+   139	
+   140	void Application::Shutdown() {
+   141	  for (auto &layer : m_LayerStack)
+   142	    layer->OnDetach();
+   143	
+   144	  m_LayerStack.clear();
+   145	
+   146	  glfwDestroyWindow(m_WindowHandle);
+   147	  glfwTerminate();
+   148	
+   149	  g_ApplicationRunning = false;
+   150	}
+   151	
+   152	void Application::Run() {
+   153	  m_Running = true;
+   154	
+   155	  for (auto &layer : m_LayerStack)
+   156	    layer->OnAttach();
+   157	
+   158	  while (!glfwWindowShouldClose(m_WindowHandle)) {
+   159	    // ------------------- Clear starts ----------------------------
+   160	    // {
+   161	      ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
+   162	      int display_w, display_h;
+   163	      glfwGetFramebufferSize(m_WindowHandle, &display_w, &display_h);
+   164	      glViewport(0, 0, display_w, display_h);
+   165	      glClearColor(clear_color.x * clear_color.w, clear_color.y * clear_color.w,
+   166	                   clear_color.z * clear_color.w, clear_color.w);
+   167	      glClear(GL_COLOR_BUFFER_BIT);
+   168	    // }
+   169	    // ------------------- ImGui Frame starts ----------------------------
+   170	    ImGui_ImplOpenGL3_NewFrame();
+   171	    ImGui_ImplGlfw_NewFrame();
+   172	    ImGui::NewFrame();
+   173	
+   174	    {
+   175	      for (auto &layer : m_LayerStack)
+   176	        layer->OnUIRender();
+   177	    }
+   178	
+   179	    // ImGui Rendering
+   180	    {
+   181	      ImGui::Render();
+   182	      ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+   183	
+   184	      ImGuiIO &io = ImGui::GetIO();
+   185	      (void)io;
+   186	      if (io.ConfigFlags & ImGuiConfigFlags_ViewportsEnable) {
+   187	        GLFWwindow *backup_current_context = glfwGetCurrentContext();
+   188	        ImGui::UpdatePlatformWindows();
+   189	        ImGui::RenderPlatformWindowsDefault();
+   190	        glfwMakeContextCurrent(backup_current_context);
+   191	      }
+   192	    }
+   193	
+   194	    {
+   195	      for (auto &layer : m_LayerStack)
+   196	        layer->OnPresent();
+   197	    }
+   198	
+   199	    // --------------------- Present to screen ------------------------
+   200	    glfwSwapBuffers(m_WindowHandle);
+   201	    glfwPollEvents();
+   202	
+   203	    // ---------------------- Update clock ----------------------------
+   204	    float time = GetTime();
+   205	    m_FrameTime = time - m_LastFrameTime;
+   206	    m_TimeStep = glm::min<float>(m_FrameTime, 0.0333f);
+   207	    m_LastFrameTime = time;
+   208	  }
+   209	}
+   210

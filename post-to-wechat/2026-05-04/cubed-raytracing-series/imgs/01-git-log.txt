@@ -1,0 +1,22 @@
+$ git -C /share/data/sources/development-projects/glfw-app log --oneline --decorate -n 18
+
+(eval):1: can't change option: zle
+(eval):1: can't change option: zle
+2151a34 (HEAD -> raytracing) bug: no light in shaders
+4998cd9 feat: raymarching example
+eaf4f8a feat: rotating cube shader example
+5a51d2a feat: mesh instance example
+063e376 feat: load models
+4f8a84e fix: get time
+d4b0b8b fix: resourse queue must be resized before used
+bed195d feat: grid layer with cube/grid from third person camera view
+01fe078 feat: raylib image
+7013e1a feat: restructure
+286f629 feat: raylib app works
+7e13ae2 feat: integrate raylib and rlImGui
+57c3b05 fix: vertex and index data in separate file
+daf5bd5 feat: render cube
+3341aa6 feat: same file structure as Cubed
+3d3b1a7 test: restructure project file system
+052c16a fix: Walnut namespace error
+da689cc (tag: raytracing, main) feat: raytracing run

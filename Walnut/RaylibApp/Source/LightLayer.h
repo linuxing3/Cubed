@@ -141,9 +141,9 @@ public:
                             BLUE, shader);
   }
 
-  void OnDetach() override {}
+  void OnDetach() override { UnloadShader(shader); }
 
-  void OnUIRender() override {
+  void OnPresent() override {
 
     ClearBackground(RAYWHITE);
 

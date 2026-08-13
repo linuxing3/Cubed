@@ -3,11 +3,11 @@
 #include "GUI/Raylib/Application.h"
 // #include "GridLayer.h"
 // #include "ModelLayer.h"
-#include "LightLayer.h"
+// #include "LightLayer.h"
 #include "Raylib/EntryPoint.h"
 // #include "RotatingCubeShaderLayer.h"
 // #include "RayMarchingLayer.h"
-// #include "ShaderLayer.h"
+#include "ShaderLayer.h"
 #include "rlImGui/imgui-master/imgui.h"
 
 Raylib::Application *Raylib::CreateApplication(int argc, char **argv) {
@@ -19,8 +19,8 @@ Raylib::Application *Raylib::CreateApplication(int argc, char **argv) {
   // app->PushLayer<ComputeLayer>();
   // app->PushLayer<GridLayer>();
   // app->PushLayer<ModelLayer>();
-  app->PushLayer<LightLayer>();
-  // app->PushLayer<ShaderLayer>();
+  // app->PushLayer<LightLayer>();
+  app->PushLayer<ShaderLayer>();
   // app->PushLayer<RotatingCubeShaderLayer>();
   // app->PushLayer<RayMarchingShaderLayer>();
   app->SetMenubarCallback([app]() {

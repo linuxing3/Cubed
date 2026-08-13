@@ -5,7 +5,6 @@
 #include "raylib.h"
 #include "raymath.h"
 
-#define RLIGHTS_IMPLEMENTATION
 #include "examples/shaders/rlights.h"
 
 #include "rlImGui/imgui-master/imgui.h"

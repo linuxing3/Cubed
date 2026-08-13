@@ -1,0 +1,8 @@
+$ cd /share/data/sources/development-projects/glfw-app && (cmake --version | head -n 1) && (premake5 --version | head -n 2)
+
+(eval):1: can't change option: zle
+(eval):1: can't change option: zle
+direnv: error /share/data/sources/development-projects/glfw-app/.envrc is blocked. Run `direnv allow` to approve its content
+cmake version 3.31.7
+Error: module 'cmake' not found:
+	no field package.preload['cmake']

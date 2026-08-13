@@ -47,22 +47,23 @@ if(CMAKE_BUILD_TYPE STREQUAL Debug)
   )
   set_target_properties("Walnut" PROPERTIES
     OUTPUT_NAME "Walnut"
-    ARCHIVE_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/Walnut"
-    LIBRARY_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/Walnut"
-    RUNTIME_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Debug-linux-ARM64/Walnut"
+    ARCHIVE_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Debug-linux-ARM64/Walnut"
+    LIBRARY_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Debug-linux-ARM64/Walnut"
+    RUNTIME_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Debug-linux-ARM64/Walnut"
   )
 endif()
 target_include_directories("Walnut" PRIVATE
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut/Source>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/Walnut/Platform>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glm>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/imgui>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/rlImGui/raylib-master/src>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/imgui/backends>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/glad/include>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/spdlog/include>
-  $<$<CONFIG:Debug>:/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include>
+  $<$<CONFIG:Debug>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/examples/libs/glfw/include>
 )
 target_compile_definitions("Walnut" PRIVATE
   $<$<CONFIG:Debug>:DEBUG>
@@ -79,7 +80,6 @@ target_link_libraries("Walnut"
   $<$<CONFIG:Debug>:glad>
   $<$<CONFIG:Debug>:yaml-cpp>
   $<$<CONFIG:Debug>:stb>
-  $<$<CONFIG:Debug>:glfw>
   $<$<CONFIG:Debug>:GL>
   $<$<CONFIG:Debug>:X11>
   $<$<CONFIG:Debug>:xcb>
@@ -116,22 +116,23 @@ if(CMAKE_BUILD_TYPE STREQUAL Release)
   )
   set_target_properties("Walnut" PROPERTIES
     OUTPUT_NAME "Walnut"
-    ARCHIVE_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/Walnut"
-    LIBRARY_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/Walnut"
-    RUNTIME_OUTPUT_DIRECTORY "/share/sources/glfw-app/Walnut/bin/Release-linux-ARM64/Walnut"
+    ARCHIVE_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Release-linux-ARM64/Walnut"
+    LIBRARY_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Release-linux-ARM64/Walnut"
+    RUNTIME_OUTPUT_DIRECTORY "/share/data/sources/development-projects/glfw-app/Walnut/bin/Release-linux-ARM64/Walnut"
   )
 endif()
 target_include_directories("Walnut" PRIVATE
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut/Source>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/Walnut/Platform>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glm>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/imgui>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/rlImGui/raylib-master/src>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/imgui/backends>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/glad/include>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/spdlog/include>
-  $<$<CONFIG:Release>:/share/sources/glfw-app/Walnut/vendor/yaml-cpp/include>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Source>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glm>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/rlImGui/raylib-master/src>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/backends>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/glad/include>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/spdlog/include>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/yaml-cpp/include>
+  $<$<CONFIG:Release>:/share/data/sources/development-projects/glfw-app/Walnut/vendor/imgui/examples/libs/glfw/include>
 )
 target_compile_definitions("Walnut" PRIVATE
   $<$<CONFIG:Release>:NDEBUG>
@@ -148,7 +149,6 @@ target_link_libraries("Walnut"
   $<$<CONFIG:Release>:glad>
   $<$<CONFIG:Release>:yaml-cpp>
   $<$<CONFIG:Release>:stb>
-  $<$<CONFIG:Release>:glfw>
   $<$<CONFIG:Release>:GL>
   $<$<CONFIG:Release>:X11>
   $<$<CONFIG:Release>:xcb>

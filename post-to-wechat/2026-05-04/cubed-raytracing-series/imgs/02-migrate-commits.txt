@@ -1,0 +1,79 @@
+$ git -C /share/data/sources/development-projects/glfw-app show --name-status --oneline daf5bd5 && echo "
+---
+" && git -C /share/data/sources/development-projects/glfw-app show --name-status --oneline 7e13ae2 | sed -n "1,80p"
+
+(eval):1: can't change option: zle
+(eval):1: can't change option: zle
+daf5bd5 feat: render cube
+M	CMakeLists.txt
+A	Cubed-Client/Assets/Shaders/ColorFragmentShader.fragmentshader
+A	Cubed-Client/Assets/Shaders/TransformVertexShader.vertexshader
+M	Cubed-Client/Build-Cubed-Client.lua
+A	Cubed-Client/Cubed-Client.cmake
+M	Cubed-Client/Source/ClientLayer.cpp
+M	Cubed-Client/Source/ClientLayer.h
+M	Cubed-Client/Source/CubedApp.cpp
+M	Cubed-Client/Source/Renderer/Renderer.cpp
+M	Cubed-Client/Source/Renderer/Renderer.h
+D	Cubed-Client/Source/Renderer/Vulkan.cpp
+D	Cubed-Client/Source/Renderer/Vulkan.h
+A	Cubed-Common/Build-Cubed-Common-Headless.lua
+A	Cubed-Common/Build-Cubed-Common.lua
+A	Cubed-Common/Cubed-Common-Headless.cmake
+A	Cubed-Common/Cubed-Common.cmake
+A	Cubed-Common/Makefile
+A	Cubed-Common/Source/ServerPacket.cpp
+A	Cubed-Common/Source/ServerPacket.h
+M	Makefile
+M	Walnut/Build-Walnut-External.lua
+M	Walnut/Walnut/Platform/GUI/Walnut/Application.cpp
+M	Walnut/Walnut/Platform/GUI/Walnut/ImGui/imgui_impl_glfw.cpp
+M	Walnut/Walnut/Source/Walnut/Core/Log.h
+M	Walnut/Walnut/Walnut.cmake
+M	Walnut/Walnut/premake5.lua
+M	Walnut/premake5.lua
+M	compile_commands.json
+A	flake.lock
+A	flake.nix
+A	helper.lua
+M	imgui.ini
+M	premake5.lua
+
+---
+
+7e13ae2 feat: integrate raylib and rlImGui
+M	.gitignore
+M	CMakeLists.txt
+M	Cubed-Client/Cubed-Client.cmake
+M	Cubed-Client/Source/ClientLayer.h
+M	Cubed-Client/Source/Renderer/Renderer.cpp
+R093	Cubed-Client/Build-Cubed-Client.lua	Cubed-Client/premake5.lua
+R100	Cubed-Common/Build-Cubed-Common.lua	Cubed-Common/premake5.lua
+M	Makefile
+A	Walnut/ComputeApp/ComputeApp.cmake
+A	Walnut/ComputeApp/Makefile
+A	Walnut/ComputeApp/Source/Main.cpp
+A	Walnut/ComputeApp/WalnutApp.cmake
+A	Walnut/ComputeApp/premake5.lua
+A	Walnut/RaylibApp/RaylibApp.cmake
+A	Walnut/RaylibApp/Source/RaylibApp.cpp
+A	Walnut/RaylibApp/premake5.lua
+A	Walnut/Walnut/Platform/GUI/Raylib/Application.cpp
+A	Walnut/Walnut/Platform/GUI/Raylib/Application.h
+M	Walnut/Walnut/Platform/GUI/Walnut/Application.h
+A	Walnut/Walnut/Source/Raylib/EntryPoint.h
+M	Walnut/Walnut/Source/Walnut/EntryPoint.h
+M	Walnut/Walnut/Walnut.cmake
+M	Walnut/Walnut/premake5.lua
+M	Walnut/WalnutApp/Demo/App.cpp
+M	Walnut/WalnutApp/Demo/Main.cpp
+M	Walnut/WalnutApp/WalnutApp.cmake
+M	Walnut/WalnutApp/premake5.lua
+M	Walnut/premake5.lua
+M	compile_commands.json
+M	flake.nix
+M	helper.lua
+M	imgui.ini
+A	justfile
+M	premake5.lua
+A	scripts/Run.sh

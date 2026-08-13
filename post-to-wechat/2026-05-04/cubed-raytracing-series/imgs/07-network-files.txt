@@ -1,0 +1,12 @@
+$ find /share/data/sources/development-projects/glfw-app/Walnut -maxdepth 4 -type f | grep -E "ServerPacket|Networking" | head -n 40
+
+(eval):1: can't change option: zle
+(eval):1: can't change option: zle
+/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/LICENSE.txt
+/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Build-Walnut-Networking.lua
+/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/README.md
+/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/Walnut-Networking.cmake
+/share/data/sources/development-projects/glfw-app/Walnut/Walnut-Modules/Walnut-Networking/.git
+/share/data/sources/development-projects/glfw-app/Walnut/bin/Debug-linux-ARM64/Walnut-Networking/libWalnut-Networking.a
+/share/data/sources/development-projects/glfw-app/Walnut/CubedCommon/Source/ServerPacket.h
+/share/data/sources/development-projects/glfw-app/Walnut/CubedCommon/Source/ServerPacket.cpp

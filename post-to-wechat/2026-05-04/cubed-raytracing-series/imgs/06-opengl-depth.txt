@@ -1,0 +1,23 @@
+$ nl -ba /share/data/sources/development-projects/glfw-app/Walnut/Walnut/Platform/GUI/Walnut/Application.cpp | sed -n "72,90p"
+
+(eval):1: can't change option: zle
+(eval):1: can't change option: zle
+    72	
+    73	  glfwMakeContextCurrent(m_WindowHandle);
+    74	
+    75	  // LOAD GL
+    76	  gladLoadGL(glfwGetProcAddress);
+    77	  // Enable depth test
+    78	  glEnable(GL_DEPTH_TEST);
+    79	  // Accept fragment if it is closer to the camera than the former one
+    80	  glDepthFunc(GL_LESS);
+    81	
+    82	
+    83	  glfwSwapInterval(1);
+    84	
+    85	  // Init Imgui
+    86	  const char *glsl_version = "#version 130";
+    87	  // Create window with graphics context
+    88	  float main_scale = ImGui_ImplGlfw_GetContentScaleForMonitor(
+    89	      glfwGetPrimaryMonitor()); // Valid on GLFW 3.3+ only
+    90	  IMGUI_CHECKVERSION();
