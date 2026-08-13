@@ -1,0 +1,96 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Cubed-Server",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Cubed-Common-Headless::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Cubed-Common-Headless-Debug-8c2b58309d716e4ee831.json",
+					"name" : "Cubed-Common-Headless",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Cubed-Server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Cubed-Server-Debug-be0e3aea847bb0bf605b.json",
+					"name" : "Cubed-Server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Walnut-Headless::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Walnut-Headless-Debug-8144ab14d46c44ea4010.json",
+					"name" : "Walnut-Headless",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Walnut-Networking::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Walnut-Networking-Debug-73462e2787e5b0f6daf1.json",
+					"name" : "Walnut-Networking",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "yaml-cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-yaml-cpp-Debug-72dd11d2071015c187e0.json",
+					"name" : "yaml-cpp",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/share/sources/Cubed",
+		"source" : "/share/sources/Cubed"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

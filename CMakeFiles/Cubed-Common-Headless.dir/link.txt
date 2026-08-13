@@ -1,0 +1,2 @@
+/nix/store/8avv1sg4b8p3w8d1hcjxlzbnflzp4788-clang-wrapper-21.1.2/bin/ar qc bin/Debug-linux-ARM64/Cubed-Common-Headless/libCubed-Common-Headless.a "CMakeFiles/Cubed-Common-Headless.dir/Cubed-Common/Source/ServerPacket.cpp.o"
+/nix/store/8avv1sg4b8p3w8d1hcjxlzbnflzp4788-clang-wrapper-21.1.2/bin/ranlib bin/Debug-linux-ARM64/Cubed-Common-Headless/libCubed-Common-Headless.a
